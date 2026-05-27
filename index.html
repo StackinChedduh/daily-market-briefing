@@ -92,9 +92,40 @@
     color: var(--green);
   }
 
-  /* Jump-list */
-  nav.jump {
+  /* Jump-list dropdown */
+  details.jump-dropdown {
     margin-top: 10px;
+  }
+  details.jump-dropdown > summary.jump-toggle {
+    cursor: pointer;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--text-dim);
+    font-size: 12px;
+    user-select: none;
+  }
+  details.jump-dropdown > summary.jump-toggle::-webkit-details-marker { display: none; }
+  details.jump-dropdown > summary.jump-toggle::marker { display: none; }
+  details.jump-dropdown > summary.jump-toggle::after {
+    content: "\25BE";
+    font-size: 10px;
+    opacity: 0.6;
+  }
+  details.jump-dropdown[open] > summary.jump-toggle::after {
+    content: "\25B4";
+  }
+  details.jump-dropdown > summary.jump-toggle:hover {
+    color: var(--text);
+    border-color: var(--accent);
+  }
+  nav.jump {
+    margin-top: 8px;
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
@@ -375,7 +406,9 @@
     </div>
     <div class="meta">Today: <strong>SPX 7,140</strong> pivot · ES <strong>7,165.5</strong> · VIX <strong>18.04</strong> · WTI <strong>$104.20</strong> · <span style="color:var(--purple);">FOMC 2pm</span></div>
   </div>
-  <nav class="jump">
+  <details class="jump-dropdown">
+    <summary class="jump-toggle">Archive &middot; 22 days</summary>
+    <nav class="jump">
     <a class="current" href="#day-2026-05-27">2026-05-27 · Wed</a>
     <a href="#day-2026-05-26">2026-05-26 · Tue</a>
     <a href="#day-2026-05-22">2026-05-22 · Fri</a>
@@ -399,6 +432,7 @@
     <a href="#day-2026-04-28">2026-04-28 · Tue</a>
     <a href="#day-2026-04-27">2026-04-27 · Mon</a>
   </nav>
+  </details>
 </header>
 
 <main id="archive">
