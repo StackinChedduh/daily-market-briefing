@@ -301,6 +301,18 @@
   .down { color: var(--red); }
   .flat { color: var(--text-dim); }
 
+  /* Mobile table scroll — prevent tables from being clipped by card overflow:hidden */
+  .card { overflow: visible; }
+  .card .body { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  @media (max-width: 700px) {
+    table { font-size: 12px; min-width: 420px; }
+    th, td { padding: 6px 8px; }
+    .card .head { flex-wrap: wrap; gap: 4px; }
+    .card .head h3 { font-size: 12px; }
+    .card .body { padding: 10px 12px; }
+    .badge { font-size: 10px; padding: 2px 6px; }
+  }
+
   /* Snapshot grid */
   .snap {
     display: grid;
@@ -2909,22 +2921,4 @@
     </details>
   </article>
 
-  <article class="day" data-date="2026-04-27" id="day-2026-04-27">
-    <details>
-      <summary>
-        <div class="summary-left">
-          <h2>Mon, 2026-04-27</h2>
-          <span class="summary-meta">archived · <a href="rundowns/rundown_2026-04-27.md">rundown_2026-04-27.md</a></span>
-        </div>
-      </summary>
-    </details>
-  </article>
-
-</main>
-
-<footer>
-  Daily Market Rundown Archive · Newest day open by default · Older days collapse · Adjustments to format — flag before tomorrow's build.
-</footer>
-
-</body>
-</html>
+  <article class="day" data-date="2026-04-27" id="day
