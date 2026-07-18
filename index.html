@@ -786,19 +786,25 @@
       <!-- Section 5a: Unusual Premarket / Session Volume -->
       <section id="volume-2026-07-17" class="grid">
         <div class="col-12 card">
-          <div class="head"><h3>5a &middot; Unusual Premarket / Session Volume</h3><span class="tag">Web-Search Sourced &middot; Finviz Screener Unreachable</span></div>
+          <div class="head"><h3>5a &middot; Unusual Premarket / Session Volume</h3><span class="tag">Volume &middot; Avg. Volume &middot; RVOL &middot; Direction</span></div>
           <div class="body">
+            <p><em>Sourced via targeted per-ticker web search &mdash; Finviz's unusual-volume screener and Chrome were unreachable this run. Volume/RVOL are real sourced figures for the first 6 rows; two (marked *) look like partial-session snapshots and are flagged rather than trusted outright. The remaining rows have confirmed price moves but volume wasn't sourced this run.</em></p>
             <table>
-              <thead><tr><th>Ticker</th><th>% Move</th><th>Note</th></tr></thead>
+              <thead><tr><th>Ticker</th><th>Volume</th><th>Avg. Volume</th><th>RVOL</th><th>Direction</th><th>Note</th></tr></thead>
               <tbody>
-                <tr><td class="ticker">ISRG</td><td class="down">-12.74%</td><td>Elevated volume alongside the post-earnings guidance selloff (Section 4)</td></tr>
-                <tr><td class="ticker">CDNS</td><td class="down">~-9.65% to -9.82%</td><td>New, distinct catalyst: Moonshot's Kimi K3 reportedly completed a full chip-design flow using only open-source EDA tools, no Cadence/Synopsys software involved &mdash; a direct threat to the EDA licensing moat</td></tr>
-                <tr><td class="ticker">SNPS</td><td class="down">~-8.15% to -12%</td><td>Same EDA-disruption catalyst as CDNS</td></tr>
-                <tr><td class="ticker">NFLX</td><td class="down">~-7.11% (session)</td><td>Continuation of the premarket guide-miss reaction (Section 4)</td></tr>
-                <tr><td class="ticker">TRV</td><td class="up">+7.6% to +9.5%</td><td>Q2 beat &mdash; adjusted core EPS $10.04 vs. ~$5.39 est., combined ratio improved to 83.6% from 90.3% y/y; Raymond James hiked PT to $400 (Strong Buy)</td></tr>
+                <tr><td class="ticker">NFLX</td><td class="num">141.0M</td><td class="num">44.3M</td><td class="num">~3.18x</td><td class="down">-7% to -9%</td><td>Post-earnings Q3 guide miss; highest confirmed RVOL of the session</td></tr>
+                <tr><td class="ticker">SNPS</td><td class="num">5.04M</td><td class="num">1.7M</td><td class="num">~2.96x</td><td class="down">-8% to -12%</td><td>Kimi K3 EDA-disruption fear</td></tr>
+                <tr><td class="ticker">ISRG</td><td class="num">5.02M</td><td class="num">3.18M</td><td class="num">~1.58x</td><td class="down">-9% to -12.7%</td><td>Post-earnings guidance selloff despite EPS beat</td></tr>
+                <tr><td class="ticker">NVDA</td><td class="num">144.28M</td><td class="num">129.89M</td><td class="num">~1.11x</td><td class="down">-2% to -3.8%</td><td>Bellwether chip-sector move on Kimi K3</td></tr>
+                <tr><td class="ticker">MU</td><td class="num">8.29M*</td><td class="num">43.51M*</td><td class="num">~0.19x*</td><td class="down">-1% to -4.4% (conflicting)</td><td>*Likely a partial/early-session snapshot &mdash; below-average print conflicts with MU's role as a lead mover this week</td></tr>
+                <tr><td class="ticker">SOXX</td><td class="num">6.27M*</td><td class="num">9.62M*</td><td class="num">~0.65x*</td><td class="down">-3% to -3.6%</td><td>*Same caveat as MU &mdash; likely a partial-session snapshot</td></tr>
+                <tr><td class="ticker">CDNS</td><td class="num">Not confirmed</td><td class="num">Not confirmed</td><td class="num">Not confirmed</td><td class="down">-9.65% to -9.82%</td><td>Kimi K3 EDA-disruption fear (paired with SNPS)</td></tr>
+                <tr><td class="ticker">TRV</td><td class="num">Not confirmed</td><td class="num">Not confirmed</td><td class="num">Not confirmed</td><td class="up">+7.6% to +9.5%</td><td>Q2 earnings beat, multiple analyst PT hikes</td></tr>
+                <tr><td class="ticker">AMD</td><td class="num">Not confirmed</td><td class="num">Not confirmed</td><td class="num">Not confirmed</td><td class="down">-5%</td><td>Kimi K3 chip-sector selloff</td></tr>
+                <tr><td class="ticker">INTC</td><td class="num">Not confirmed</td><td class="num">Not confirmed</td><td class="num">Not confirmed</td><td class="down">-3.9% to -4%</td><td>Same catalyst</td></tr>
+                <tr><td class="ticker">SNDK</td><td class="num">Not confirmed</td><td class="num">Not confirmed</td><td class="num">Not confirmed</td><td class="down">Conflicting: -6% / -1.4% / +5.2%</td><td>Direction not reliably confirmed this run</td></tr>
               </tbody>
             </table>
-            <p><em>CDNS/SNPS's EDA-disruption angle is a meaningful addition to today's AI-capex narrative &mdash; a software-moat threat, not just chip-hardware capex skepticism.</em></p>
           </div>
         </div>
       </section>
@@ -806,17 +812,22 @@
       <!-- Section 5b: High RVOL (>3x), Multi-Session -->
       <section id="rvol-2026-07-17" class="grid">
         <div class="col-12 card">
-          <div class="head"><h3>5b &middot; High RVOL (&gt;3x) &mdash; Multi-Session</h3><span class="tag">Directional, Not Data-Verified This Run</span></div>
+          <div class="head"><h3>5b &middot; High RVOL (&gt;3x) &mdash; Multi-Session</h3><span class="tag">Optionable Only &middot; Directional, Not Data-Verified</span></div>
           <div class="body">
-            <p><em>Sourcing limitation: the Finviz Unusual Volume screener (which would confirm exact RVOL ratios and multi-day recurrence) was not reachable this run. Names below are inferred as likely multi-session &gt;3x RVOL candidates based on narrative continuity &mdash; each has been a named mover in the chip/AI-capex story for 2+ consecutive sessions &mdash; but exact RVOL figures are unconfirmed.</em></p>
+            <p><em>All names below are US-listed, optionable securities &mdash; SoftBank (Tokyo-listed, not US-optionable) was dropped for that reason. The Finviz Unusual Volume screener, which would confirm exact multi-day RVOL ratios, was not reachable this run. Inclusion is based on narrative continuity &mdash; each name has been a named mover in the chip/AI-capex story for 2+ consecutive sessions &mdash; not a verified &gt;3x reading each day.</em></p>
             <table>
               <thead><tr><th>Ticker</th><th>Sessions Flagged</th><th>Note</th></tr></thead>
               <tbody>
-                <tr><td class="ticker">AMD</td><td>3rd consecutive session</td><td>Chip-sector rotation Jul 15 &rarr; Moonshot/Kimi K3 selloff Jul 17</td></tr>
+                <tr><td class="ticker">AMD</td><td>3rd consecutive session</td><td>Chip-sector rotation Jul 15 &rarr; SNDK-downgrade sympathy Jul 16 &rarr; Kimi K3 selloff Jul 17</td></tr>
                 <tr><td class="ticker">MU</td><td>3rd+ consecutive session</td><td>China memory-competition (Jul 15) &rarr; broader AI-capex selloff (Jul 17)</td></tr>
+                <tr><td class="ticker">INTC</td><td>2nd-3rd consecutive session</td><td>Grouped with AMD/MU in sympathy moves since Jul 15</td></tr>
+                <tr><td class="ticker">NVDA</td><td>2nd consecutive session</td><td>Smaller % moves than peers but a recurring bellwether name</td></tr>
                 <tr><td class="ticker">SOXX</td><td>3rd consecutive session</td><td>Extending Jul 15-16 chip-sector declines</td></tr>
-                <tr><td class="ticker">CDNS / SNPS</td><td>1st session (new to the pattern)</td><td>Newly added today via the EDA-disruption angle &mdash; watch for continuation tomorrow</td></tr>
-                <tr><td class="ticker">SoftBank (Tokyo)</td><td>2nd consecutive session</td><td>~-7% Thu, ~-9% to -11% Fri</td></tr>
+                <tr><td class="ticker">SMH</td><td>2nd consecutive session</td><td>Semis-ETF peer to SOXX; both show fresh options positioning today (5c)</td></tr>
+                <tr><td class="ticker">SNDK</td><td>2nd consecutive session</td><td>Today's direction conflicts across sources (5a) but volume elevated since Jul 16 downgrade</td></tr>
+                <tr><td class="ticker">QQQ</td><td>Multi-session</td><td>Central battleground of the $690-723 pattern all week (Section 0); heavy put activity struck right at $690 today (5c)</td></tr>
+                <tr><td class="ticker">NBIS</td><td>2nd+ consecutive session</td><td>Weak short-term price trend flagged in Section 7; notable options activity today (5c)</td></tr>
+                <tr><td class="ticker">CRWV</td><td>2nd+ consecutive session</td><td>Same AI-infrastructure-adjacent weak-trend flag as NBIS (Section 7)</td></tr>
               </tbody>
             </table>
           </div>
@@ -826,21 +837,33 @@
       <!-- Section 5c: Unusual Options Activity, Multi-Session -->
       <section id="options-2026-07-17" class="grid">
         <div class="col-12 card">
-          <div class="head"><h3>5c &middot; Unusual Options Activity</h3><span class="tag">Benzinga Unusual Options Calendar &middot; End-of-Session</span></div>
+          <div class="head"><h3>5c &middot; Unusual Options Activity</h3><span class="tag">Benzinga Unusual Options Calendar &middot; 18 Contracts</span></div>
           <div class="body">
+            <p><em>All 18 contracts below traded 07/17/2026 (times ET). This source provides trade volume, day volume, vol/OI ratio, and open interest &mdash; it does NOT include per-contract premium/price, so exact dollar amounts spent could not be sourced this run; that data point typically requires a paid options-flow terminal (Benzinga Pro, Unusual Whales, etc.) not accessible via web search. Distinct from Discord's `unusual-options-sweeps` community chatter (Section 8, skipped this run).</em></p>
             <table>
-              <thead><tr><th>Ticker</th><th>Contract</th><th>Vol / OI</th><th>Sentiment</th><th>Note</th></tr></thead>
+              <thead><tr><th>Time (ET)</th><th>Ticker</th><th>Type</th><th>Strike</th><th>Exp</th><th>DTE</th><th>Trade Vol</th><th>Day Vol</th><th>Vol/OI</th><th>OI</th><th>Sentiment</th></tr></thead>
               <tbody>
-                <tr><td class="ticker">QQQ</td><td>$690 put, exp 7/20</td><td class="num">1,037%</td><td><span class="badge bull">Bullish tag</span></td><td>Struck almost exactly at today's broken $690-700 technical level (Section 0)</td></tr>
-                <tr><td class="ticker">QQQ</td><td>$690 put, exp 7/24</td><td class="num">238%</td><td><span class="badge bear">Bearish tag</span></td><td>Second cluster of $690-strike put activity, slightly further out</td></tr>
-                <tr><td class="ticker">NVDA</td><td>$170 put, exp 1/15/27</td><td class="num">Day vol 456 / OI 33,518</td><td><span class="badge bear">Bearish tag</span></td><td>Long-dated, large-OI &mdash; reads as portfolio hedging, not a short-term trade</td></tr>
-                <tr><td class="ticker">SOXX</td><td>$500 put, exp 7/31</td><td class="num">97%</td><td><span class="badge bull">Bullish tag</span></td><td>Put activity at a round-number strike below Friday's ~$515-516 level</td></tr>
-                <tr><td class="ticker">SMH</td><td>$537.50 put, exp 7/22</td><td class="num">12,083%</td><td><span class="badge bear">Bearish tag</span></td><td>Extreme vol/OI ratio (675 traded vs. only 6 OI) &mdash; a brand-new position</td></tr>
-                <tr><td class="ticker">NBIS</td><td>Multiple calls, $165-190 strikes</td><td class="num">17%-2,448%</td><td><span class="badge event">Mixed tags</span></td><td>Conflicting sentiment tags on call activity often signals spread/hedge construction, not simple directional bets</td></tr>
-                <tr><td class="ticker">IWM</td><td>$284 / $280 puts</td><td class="num">8,652% / 57%</td><td><span class="badge bear">Bearish</span> / <span class="badge bull">Bullish</span></td><td>Small-cap index hedging activity, mixed across strikes/expiries</td></tr>
+                <tr><td>4:09 PM</td><td class="ticker">IWM</td><td>PUT</td><td class="num">$284.00</td><td>07/31/26</td><td class="num">13</td><td class="num">3,585</td><td class="num">31,061</td><td class="num">8,652%</td><td class="num">359</td><td><span class="badge bear">Bearish</span></td></tr>
+                <tr><td>4:08 PM</td><td class="ticker">IWM</td><td>PUT</td><td class="num">$280.00</td><td>08/21/26</td><td class="num">34</td><td class="num">4,056</td><td class="num">40,293</td><td class="num">57%</td><td class="num">70,608</td><td><span class="badge bull">Bullish</span></td></tr>
+                <tr><td>4:05 PM</td><td class="ticker">SOXX</td><td>PUT</td><td class="num">$500.00</td><td>07/31/26</td><td class="num">13</td><td class="num">300</td><td class="num">2,112</td><td class="num">97%</td><td class="num">2,170</td><td><span class="badge bull">Bullish</span></td></tr>
+                <tr><td>3:58 PM</td><td class="ticker">SMH</td><td>PUT</td><td class="num">$537.50</td><td>07/22/26</td><td class="num">4</td><td class="num">675</td><td class="num">725</td><td class="num">12,083%</td><td class="num">6</td><td><span class="badge bear">Bearish</span></td></tr>
+                <tr><td>3:58 PM</td><td class="ticker">SNDK</td><td>PUT</td><td class="num">$1,330.00</td><td>12/15/28</td><td class="num">881</td><td class="num">19</td><td class="num">182</td><td class="num">140%</td><td class="num">130</td><td><span class="badge event">Neutral</span></td></tr>
+                <tr><td>3:58 PM</td><td class="ticker">SNDK</td><td>PUT</td><td class="num">$1,600.00</td><td>12/15/28</td><td class="num">881</td><td class="num">19</td><td class="num">268</td><td class="num">91%</td><td class="num">296</td><td><span class="badge event">Neutral</span></td></tr>
+                <tr><td>3:56 PM</td><td class="ticker">BE</td><td>CALL</td><td class="num">$350.00</td><td>08/21/26</td><td class="num">34</td><td class="num">1,217</td><td class="num">16,865</td><td class="num">366%</td><td class="num">4,602</td><td><span class="badge bear">Bearish</span></td></tr>
+                <tr><td>3:55 PM</td><td class="ticker">MRVL</td><td>CALL</td><td class="num">$175.00</td><td>07/24/26</td><td class="num">6</td><td class="num">500</td><td class="num">343</td><td class="num">1,491%</td><td class="num">23</td><td><span class="badge bull">Bullish</span></td></tr>
+                <tr><td>3:55 PM</td><td class="ticker">NBIS</td><td>CALL</td><td class="num">$190.00</td><td>07/31/26</td><td class="num">13</td><td class="num">499</td><td class="num">159</td><td class="num">118%</td><td class="num">135</td><td><span class="badge bear">Bearish</span></td></tr>
+                <tr><td>3:55 PM</td><td class="ticker">NBIS</td><td>CALL</td><td class="num">$190.00</td><td>07/24/26</td><td class="num">6</td><td class="num">1,614</td><td class="num">1,099</td><td class="num">17%</td><td class="num">6,628</td><td><span class="badge bear">Bearish</span></td></tr>
+                <tr><td>3:55 PM</td><td class="ticker">NBIS</td><td>CALL</td><td class="num">$165.00</td><td>07/24/26</td><td class="num">6</td><td class="num">300</td><td class="num">1,028</td><td class="num">2,448%</td><td class="num">42</td><td><span class="badge bull">Bullish</span></td></tr>
+                <tr><td>3:54 PM</td><td class="ticker">NOW</td><td>PUT</td><td class="num">$72.00</td><td>01/15/27</td><td class="num">181</td><td class="num">2,500</td><td class="num">2,500</td><td class="num">45%</td><td class="num">5,596</td><td><span class="badge bull">Bullish</span></td></tr>
+                <tr><td>3:53 PM</td><td class="ticker">GFS</td><td>PUT</td><td class="num">$80.00</td><td>07/17/26 (0DTE)</td><td class="num">0</td><td class="num">310</td><td class="num">324</td><td class="num">85%</td><td class="num">380</td><td><span class="badge bull">Bullish</span></td></tr>
+                <tr><td>3:52 PM</td><td class="ticker">NVDA</td><td>PUT</td><td class="num">$170.00</td><td>01/15/27</td><td class="num">181</td><td class="num">1,000</td><td class="num">456</td><td class="num">1%</td><td class="num">33,518</td><td><span class="badge bear">Bearish</span></td></tr>
+                <tr><td>3:52 PM</td><td class="ticker">QQQ</td><td>PUT</td><td class="num">$690.00</td><td>07/20/26</td><td class="num">2</td><td class="num">2,422</td><td class="num">33,923</td><td class="num">1,037%</td><td class="num">3,270</td><td><span class="badge bull">Bullish</span></td></tr>
+                <tr><td>3:52 PM</td><td class="ticker">QQQ</td><td>PUT</td><td class="num">$690.00</td><td>07/24/26</td><td class="num">6</td><td class="num">2,425</td><td class="num">21,674</td><td class="num">238%</td><td class="num">9,113</td><td><span class="badge bear">Bearish</span></td></tr>
+                <tr><td>3:52 PM</td><td class="ticker">PDD</td><td>PUT</td><td class="num">$80.00</td><td>01/15/27</td><td class="num">181</td><td class="num">998</td><td class="num">1,007</td><td class="num">14%</td><td class="num">7,239</td><td><span class="badge bear">Bearish</span></td></tr>
+                <tr><td>3:51 PM</td><td class="ticker">QQQ</td><td>CALL</td><td class="num">$700.00</td><td>06/17/27</td><td class="num">334</td><td class="num">67</td><td class="num">256</td><td class="num">7%</td><td class="num">3,581</td><td><span class="badge event">Neutral</span></td></tr>
               </tbody>
             </table>
-            <p><em>Sentiment tags are Benzinga's own classification (often inferred from trade side/aggressor) &mdash; treat as a rough directional signal, not a certainty. Distinct from Discord's `unusual-options-sweeps` community chatter (Section 8, skipped this run).</em></p>
+            <p><em>Highlights: both QQQ put clusters are struck almost exactly at today's broken $690-700 technical level (Section 0). SMH's $537.50 put shows an extreme 12,083% vol/OI ratio &mdash; 675 contracts traded against only 6 existing open interest, an almost entirely new position. NBIS shows three call trades with conflicting sentiment tags, which often signals spread/hedge construction rather than simple directional bets. Sentiment tags are Benzinga's own classification &mdash; treat as a rough directional signal, not a certainty.</em></p>
           </div>
         </div>
       </section>
