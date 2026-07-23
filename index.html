@@ -414,15 +414,15 @@
   <div class="row">
     <div>
       <h1>Daily Market Rundown — Archive</h1>
-      <div class="subtitle">Latest: Thursday, July 23, 2026 · Postmarket</div>
+      <div class="subtitle">Latest: Thursday, July 23, 2026</div>
     </div>
     <div class="meta">Today: <strong>SPX 7,140</strong> pivot · ES <strong>7,165.5</strong> · VIX <strong>18.04</strong> · WTI <strong>$104.20</strong> · <span style="color:var(--purple);">FOMC 2pm</span></div>
   </div>
   <details class="jump-dropdown">
     <summary class="jump-toggle">Archive &middot; 97 days</summary>
     <nav class="jump">
-      <a class="current" href="#pm-2026-07-23">2026-07-23 &middot; PM</a>
-      <a href="#day-2026-07-23">2026-07-23 &middot; Thu</a>
+      <a href="#pm-2026-07-23">2026-07-23 &middot; PM</a>
+      <a class="current" href="#day-2026-07-23">2026-07-23 &middot; Thu</a>
       <a href="#pm-2026-07-22">2026-07-22 &middot; PM</a>
       <a href="#day-2026-07-22">2026-07-22 &middot; Wed</a>
       <a href="#pm-2026-07-21">2026-07-21 &middot; PM</a>
@@ -650,6 +650,7 @@
       <a href="#volume-2026-07-23">Unusual Volume</a>
       <a href="#rvol-2026-07-23">RVOL &gt;3x</a>
       <a href="#options-2026-07-23">Unusual Options</a>
+      <a href="#playbook-2026-07-23">Weekly Playbook</a>
       <a href="#themes-2026-07-23">Themes</a>
       <a href="#secondary-2026-07-23">Secondary</a>
       <a href="#digest-2026-07-23">Digest</a>
@@ -835,6 +836,50 @@
           <div class="head"><h3>5c &middot; Unusual Options Activity</h3><span class="tag">Stale Snapshot Only &mdash; Not Today's Flow</span></div>
           <div class="body">
             <p><em>The Benzinga Unusual Options Activity calendar (source 7) requires Chrome for live rendering; unreachable this run, the fetched page returned only a cached snapshot dated <strong>Jul 17, 2026</strong> (stale by four trading sessions) rather than live today-dated flow. Reporting those rows here would misrepresent them as current, so no table is populated. For reference only (not today's positioning): the Jul 17 snapshot showed bearish IWM puts ($284 strike, 7/31 exp.), bullish IWM puts ($280 strike, 8/21 exp.), bearish QQQ $690 puts (7/24 exp.), and bullish QQQ $690 puts (7/20 exp.), alongside NVDA $170 puts (1/15/27 exp., bearish) &mdash; none of this should be read as today's flow.</em></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5d: Weekly Options Playbook (GEX-Based Setups) -->
+      <section id="playbook-2026-07-23" class="grid">
+        <div class="col-12 card">
+          <div class="head"><h3>5d &middot; Weekly Options Playbook &mdash; GEX-Based Setups</h3><span class="tag">InsiderFinance Gamma Exposure &middot; Not Personalized Advice</span></div>
+          <div class="body">
+            <p><em>Sourced from InsiderFinance's gamma-exposure pages (<code>insiderfinance.io/gamma-exposure/{TICKER}</code>), which returned real, dated GEX data via <code>web_fetch</code> even with Chrome unreachable. InsiderFinance's live order-flow dashboard (<code>/flow</code>, <code>/ticker-flow/{TICKER}</code>) is JS-rendered and returned empty, so this section is built from gamma positioning (call wall / put wall / zero-gamma / max pain) plus today's news catalysts, not live sweep-level order flow. <strong>Data freshness varies by ticker and is noted per name below</strong> &mdash; treat exact levels as a structural guide, not tick-precise. This is a probabilistic framework from public options-positioning data, explicitly <strong>not personalized investment advice</strong> &mdash; strikes/expirations are illustrative starting points for the trader's own research, not a recommendation to buy or sell.</em></p>
+            <p><strong>Selection method:</strong> Of the names checked (NVDA, GOOGL, TSLA, AMD), these three had the tightest, most actionable proximity between spot and a key GEX level for a weekly-options timeframe, and all tie to today's live catalysts. AMD's nearest wall was &gt;15% from spot &mdash; too far to be weekly-relevant &mdash; so it was dropped. <strong>Suggested expiration for all three: Friday, July 31, 2026 (8 DTE)</strong> &mdash; tomorrow's weekly (1 DTE) is too theta-heavy/binary to enter fresh today; monthly (Aug 21) is too far out to isolate this week's gamma dynamics.</p>
+
+            <h4>1. TSLA &mdash; Zero-Gamma Flip Break (Momentum/Breakdown Continuation)</h4>
+            <p><em>Data as of today, Jul 23 &mdash; the freshest of the three snapshots.</em><br>
+            Spot $374.06, Net GEX +$147.2M (positive but thin), <strong>Zero-Gamma $367.39 &mdash; just 1.78% below spot.</strong> Put Wall $350.00 (-6.43%), Max Pain $390.00. Today's earnings miss (confirmed ~$25B FY capex, rising cash burn) is pressuring price toward the flip level; a confirmed break below zero-gamma would flip TSLA from a volatility-dampening (positive gamma) regime to a volatility-amplifying (negative gamma) one, the mechanical basis for downside continuation. InsiderFinance's own Gamma Squeeze Screener rates a bullish squeeze "unlikely" (16/100), consistent with this lean.</p>
+            <table>
+              <thead><tr><th>Entry Trigger</th><th>Invalidation</th><th>Target</th><th>Contract (illustrative)</th></tr></thead>
+              <tbody>
+                <tr><td>Confirmed close below $367 (zero-gamma)</td><td>Reclaim/close back above ~$370</td><td>$350 (put wall) &mdash; scale out $355-350</td><td>TSLA $365P, exp. 7/31/26 (aggressive alt: $360P; 1-DTE $367-370P exp. 7/24 for same-day risk-takers)</td></tr>
+              </tbody>
+            </table>
+
+            <h4>2. NVDA &mdash; Positive-Gamma Pin Toward the Call Wall (Grind Higher)</h4>
+            <p><em>Data flagged as ~1 week stale (InsiderFinance's snapshot references "today" as roughly Jul 16) &mdash; treat spot/wall distances as structural, not today's precise numbers; confirm current price before acting.</em><br>
+            Snapshot spot $208.95, Net GEX +$1.5B (deep positive gamma, 2.35 call/put ratio), <strong>Call Wall $215.00 &mdash; only 2.90% above spot in this snapshot.</strong> Zero-Gamma $194.19 (-7.06%). In a strong positive-gamma regime with a call wall this close, dealer hedging tends to pin/grind price toward the peak-GEX strike into expiry, layered on NVDA's continuing dip-buying momentum theme. The Gamma Squeeze Screener shows a "possible" bullish squeeze (40/100) but explicitly flags it's still "awaiting volume confirmation" &mdash; a confirmation-required setup, not a clean trigger yet.</p>
+            <table>
+              <thead><tr><th>Entry Trigger</th><th>Invalidation</th><th>Target</th><th>Contract (illustrative)</th></tr></thead>
+              <tbody>
+                <tr><td>Push through recent range with volume confirming (re-verify vs. today's live price first)</td><td>Break of prior session's low (more practical than the distant -7% zero-gamma level)</td><td>$215 call wall / peak-GEX strike</td><td>NVDA $215C, exp. 7/31/26 (higher-delta alt: $212.50C)</td></tr>
+              </tbody>
+            </table>
+
+            <h4>3. GOOGL &mdash; Put Wall / Max Pain as Support (Mean-Reversion, Two-Sided)</h4>
+            <p><em>Data as of Jul 22 close &mdash; one session stale, predating last night's capex-guide earnings reaction driving today's ~-3.6% premarket move; levels may reprice once today's post-earnings flow is captured.</em><br>
+            Snapshot spot $347.94, Net GEX +$281.0M (positive gamma), <strong>Put Wall and Max Pain both at $320.00 (-8.03%)</strong>, Zero-Gamma $325.32 (-6.50%). Today's capex-guide selloff is pushing GOOGL toward this zone. In the (pre-earnings) positive-gamma regime this snapshot captured, dealer hedging should mechanically decelerate the decline near $320-325, arguing for probable support &mdash; but a decisive break below $320 on heavy new post-earnings put flow could flip the stock negative-gamma and open room lower. Genuinely two-sided; trade the reaction at the level, not a prediction of which way it resolves.</p>
+            <table>
+              <thead><tr><th>Case</th><th>Entry Trigger</th><th>Invalidation</th><th>Target</th><th>Contract (illustrative)</th></tr></thead>
+              <tbody>
+                <tr><td>Bullish / support</td><td>Basing &amp; reclaiming $325 after testing $320-325</td><td>Close back below $320</td><td>$340-350 (retrace to pre-earnings zone)</td><td>GOOGL $330C, exp. 7/31/26</td></tr>
+                <tr><td>Bearish / breakdown (alternate)</td><td>Clean close below $320 on strong volume</td><td>Reclaim above $325</td><td>Re-assess once regime flip is confirmed &mdash; no fixed target given stale pre-earnings OI</td><td>GOOGL $315P, exp. 7/31/26</td></tr>
+              </tbody>
+            </table>
+
+            <p><em>None of the above is a recommendation to buy or sell any security or options contract &mdash; it's a probabilistic framework built from public GEX positioning and today's news, meant as a starting point for the trader's own research and risk management.</em></p>
           </div>
         </div>
       </section>
