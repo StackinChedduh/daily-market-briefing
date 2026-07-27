@@ -414,14 +414,15 @@
   <div class="row">
     <div>
       <h1>Daily Market Rundown — Archive</h1>
-      <div class="subtitle">Latest: Monday, July 27, 2026</div>
+      <div class="subtitle">Latest: Monday, July 27, 2026 · Postmarket</div>
     </div>
     <div class="meta">Today: <strong>SPX 7,140</strong> pivot · ES <strong>7,165.5</strong> · VIX <strong>18.04</strong> · WTI <strong>$104.20</strong> · <span style="color:var(--purple);">FOMC 2pm</span></div>
   </div>
   <details class="jump-dropdown">
-    <summary class="jump-toggle">Archive &middot; 101 days</summary>
+    <summary class="jump-toggle">Archive &middot; 102 days</summary>
     <nav class="jump">
-      <a class="current" href="#day-2026-07-27">2026-07-27 &middot; Mon</a>
+      <a class="current" href="#pm-2026-07-27">2026-07-27 &middot; PM</a>
+      <a href="#day-2026-07-27">2026-07-27 &middot; Mon</a>
       <a href="#wknd-2026-07-26">2026-07-26 &middot; Weekend</a>
       <a href="#pm-2026-07-24">2026-07-24 &middot; PM</a>
       <a href="#day-2026-07-24">2026-07-24 &middot; Fri</a>
@@ -527,8 +528,102 @@
 </header>
 
 <main id="archive">
-  <article class="day" data-date="2026-07-27" id="day-2026-07-27">
+  <article class="day pm" data-date="2026-07-27-pm" id="pm-2026-07-27">
   <details open>
+    <summary>
+      <div class="summary-left">
+        <h2>Monday, July 27, 2026 — Postmarket</h2>
+        <span class="badge event">postmarket · Session Close</span>
+      </div>
+      <div class="summary-meta">
+        SPX <strong>7,413.18 (+0.02%)</strong> · Dow <strong>52,210.08 (+0.51%)</strong> · Nasdaq <strong>24,932.08 (-0.18%)</strong> · VIX <strong>18.67</strong> · WTI <strong>~$82</strong> · BTC <strong>~$64,865</strong>
+      </div>
+    </summary>
+
+    <nav class="toc">
+      <a href="#pm-closes-2026-07-27">Closes</a>
+      <a href="#pm-calls-2026-07-27">Morning Calls</a>
+      <a href="#pm-narrative-2026-07-27">Narrative</a>
+      <a href="#pm-outlook-2026-07-27">Outlook</a>
+    </nav>
+
+    <div class="wrap">
+
+      <!-- Final index / asset closes -->
+      <section id="pm-closes-2026-07-27" class="grid">
+        <div class="col-12 card">
+          <div class="head"><h3>Final Closes</h3><span class="tag">Indices · Commodities · Crypto</span></div>
+          <div class="body">
+            <p class="note">Claude in Chrome was unreachable this run (retried once) — closes sourced via web search/fetch (Yahoo Finance, The Motley Fool, market-wrap coverage). Russell 2000 is proxied via IWM; Gold/BTC figures varied slightly across sources this run and are treated as approximate.</p>
+            <table>
+              <thead><tr><th>Index / Asset</th><th class="num">Close</th><th class="num">Day Change</th></tr></thead>
+              <tbody>
+                <tr><td>S&amp;P 500</td><td class="num up">7,413.18</td><td class="num up">+0.02% (+1.20)</td></tr>
+                <tr><td>Dow Jones</td><td class="num up">52,210.08</td><td class="num up">+0.51% (+262.83)</td></tr>
+                <tr><td>Nasdaq Composite</td><td class="num down">24,932.08</td><td class="num down">-0.18% (-43.74)</td></tr>
+                <tr><td>QQQ (Nasdaq-100 proxy)</td><td class="num down">$682.01</td><td class="num down">-0.32% (-$2.22)</td></tr>
+                <tr><td>Russell 2000 (IWM proxy)</td><td class="num up">$292.32</td><td class="num up">~+0.39%</td></tr>
+                <tr><td>VIX</td><td class="num flat">18.67</td><td class="num flat">~flat vs. Friday's ~18.70</td></tr>
+                <tr><td>WTI Crude</td><td class="num down">~$82</td><td class="num down">-8%+ (US-Iran pause)</td></tr>
+                <tr><td>Gold</td><td class="num up">$4,081.37</td><td class="num up">+0.28%</td></tr>
+                <tr><td>Bitcoin</td><td class="num up">~$64,865</td><td class="num up">~+0.4%</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- How morning watchlist/movers calls played out -->
+      <section id="pm-calls-2026-07-27" class="grid">
+        <div class="col-12 card">
+          <div class="head"><h3>Morning Calls — How They Played Out</h3><span class="tag">Watchlist · Movers</span></div>
+          <div class="body">
+            <table>
+              <thead><tr><th>Ticker</th><th>Morning Setup</th><th class="num">Close</th><th class="num">Day %</th><th>Result</th></tr></thead>
+              <tbody>
+                <tr><td>QQQ</td><td>Zero-gamma reclaim/hold above $691-692; bull target $700-706</td><td class="num down">$682.01</td><td class="num down">-0.32%</td><td><span class="badge bear">Stopped</span></td></tr>
+                <tr><td>MU</td><td>Two-sided GEX break; bull &gt;$904, bear rejection $890-900</td><td class="num down">$884.38</td><td class="num down">-3.97%</td><td><span class="badge bear">Worked (bear leg)</span></td></tr>
+                <tr><td>TSLA</td><td>Positive-gamma pin/mean-reversion, hold above $367 on pullback</td><td class="num down">$308.56</td><td class="num down">-1.4%</td><td><span class="badge event">Flat / no trigger</span></td></tr>
+                <tr><td>XOM</td><td>Oil-momentum short/fade continuation below premarket lows</td><td class="num flat">$156.90</td><td class="num flat">~flat</td><td><span class="badge bear">Stopped</span></td></tr>
+                <tr><td>AVAV</td><td>Friday's +19% earnings pop — follow-through vs. fade watch</td><td class="num flat">data unavailable</td><td class="num flat">—</td><td><span class="badge theme">Not confirmed</span></td></tr>
+                <tr><td>FBRX</td><td>argenx $2.2B cash acquisition premium (deal-driven gap)</td><td class="num flat">data unavailable</td><td class="num flat">—</td><td><span class="badge theme">Not tracked (deal-driven)</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Session narrative -->
+      <section id="pm-narrative-2026-07-27" class="grid">
+        <div class="col-12 card">
+          <div class="head"><h3>Session Narrative</h3><span class="tag">What Happened</span></div>
+          <div class="body">
+            <p>The morning's "risk-on but fragile" framing split almost exactly along the line it predicted: the US-Iran pause and an 8%+ crude collapse (WTI ~$82) lifted the Dow (+0.51%) and kept SPX barely positive (+0.02%, a fourth-session-in-five close near flat), but the Nasdaq (-0.18%) and QQQ (-0.32%) gave the premarket gap back entirely as a new AI-hardware shock hit tech: Chinese memory maker CXMT's Shanghai IPO soared 466% to a $487B market cap, directly threatening Micron's (-3.97%) DRAM margins and dragging Sandisk (-11.25%) sharply lower. Nvidia fell 5% on reports a Chinese firm may be able to mass-manufacture key chipmaking equipment, and AMD broke below $500 on the same pre-earnings chip-sector weakness. Apple (+1.2%) was the standout gainer and overtook Nvidia as the world's most valuable company, while Microsoft (+2.0%) and Alphabet (+2.3%) also caught a bid. The biggest surprise was how cleanly the tape split by sector rather than direction: energy-relief and value/defensive names worked, memory and AI-hardware names got hit by a genuinely new competitive threat (not just capex-ROI skepticism), and the QQQ zero-gamma level ($691-692) flagged this morning was never reclaimed.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pattern analysis & forward-looking directional call -->
+      <section id="pm-outlook-2026-07-27" class="grid">
+        <div class="col-12 card">
+          <div class="head"><h3>Pattern Analysis &amp; Next-Session Outlook</h3><span class="tag">Technicals · Cross-Session Read</span></div>
+          <div class="body">
+            <p>SPX has been range-bound for five straight sessions (7,443 → 7,509 → 7,499 → 7,408 → 7,412 → 7,413 today), repeatedly testing but not decisively breaking either the ~7,500 upper pivot or the 7,400-7,410 lower shelf; per external technical sources, SPX sits below its 5/20/50-day EMAs (50-DMA ~7,467) with support at 7,354 and the June closing low near 7,266 below that. The dominant recurring pattern is a tug-of-war: macro/geopolitical relief (this week's Iran pause, prior weeks' oil spikes) drives one-session pops in SPX/Dow, while AI-capex-ROI and now AI-hardware-competition anxiety (GOOGL's capex guide, TSLA's margin miss, and today's CXMT shock) keeps reasserting on Nasdaq/QQQ specifically — today's session is the cleanest example yet, with SPX/Dow green on oil relief while QQQ broke back below the zero-gamma flip that was supposed to confirm today's bounce. VIX (18.67) is choppy but not trending — still elevated versus mid-July's 16.64 base, consistent with unresolved two-way risk rather than a clean directional signal.</p>
+            <p>
+              <span class="badge event">Neutral / Range-bound</span>
+              — next 1-3 sessions, confidence: <strong>Medium</strong>
+            </p>
+            <p>SPX: holding above 7,400 keeps the range intact; reclaiming the 50-DMA (~7,467) would repair the technical damage, while a close below 7,354 risks an acceleration toward the June closing low (~7,266). QQQ: needs to reclaim $691-692 (zero-gamma) to flip the bounce case back on; a further close below $680 reopens last week's breakdown. The single biggest risk to this call is the FOMC decision Wednesday, July 29 — widely described as the closest, hardest-to-call Fed decision in years — landing one day before Microsoft/Meta/Arm (Wed AH) and immediately ahead of Apple/Amazon (Thu AH), compressing three major volatility events into 72 hours that could break this range in either direction.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </details>
+</article>
+
+  <article class="day" data-date="2026-07-27" id="day-2026-07-27">
+  <details>
     <summary>
       <div class="summary-left">
         <h2>MONDAY, JULY 27, 2026</h2>
@@ -2011,114 +2106,15 @@
 </article>
 
   <article class="day pm" data-date="2026-07-22-pm" id="pm-2026-07-22">
-  <details>
-    <summary>
-      <div class="summary-left">
-        <h2>Wednesday, July 22, 2026 — Postmarket</h2>
-        <span class="badge event">postmarket · Session Close</span>
-      </div>
-      <div class="summary-meta">
-        SPX <strong>7,498.96</strong> · Dow <strong>52,218.58</strong> · Nasdaq <strong>25,690.90</strong> · VIX <strong>16.64</strong> · WTI <strong>$86.83</strong> · BTC <strong>~$65,900</strong>
-      </div>
-    </summary>
-
-    <nav class="toc">
-      <a href="#pm-closes-2026-07-22">Closes</a>
-      <a href="#pm-calls-2026-07-22">Morning Calls</a>
-      <a href="#pm-earnings-2026-07-22">Earnings</a>
-      <a href="#pm-narrative-2026-07-22">Narrative</a>
-      <a href="#pm-outlook-2026-07-22">Outlook</a>
-    </nav>
-
-    <div class="wrap">
-
-      <section id="pm-closes-2026-07-22" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>Final Closes</h3><span class="tag">Indices · Commodities · Crypto</span></div>
-          <div class="body">
-            <table>
-              <thead><tr><th>Index / Asset</th><th class="num">Close</th><th class="num">Day Change</th></tr></thead>
-              <tbody>
-                <tr><td>S&amp;P 500</td><td class="num">7,498.96</td><td class="num down">-0.14% (-10.24)</td></tr>
-                <tr><td>Dow Jones</td><td class="num">52,218.58</td><td class="num down">-0.01% (-6.06)</td></tr>
-                <tr><td>Nasdaq Composite</td><td class="num">25,690.90</td><td class="num down">-0.57% (-146.30)</td></tr>
-                <tr><td>QQQ (Nasdaq-100 proxy)</td><td class="num">~$706 (approx.)</td><td class="num down">~-0.4%</td></tr>
-                <tr><td>Russell 2000</td><td class="num">data unavailable this run</td><td class="num flat">not independently confirmed</td></tr>
-                <tr><td>VIX</td><td class="num">16.64</td><td class="num down">-2.40% (-0.41)</td></tr>
-                <tr><td>WTI Crude</td><td class="num">$86.83</td><td class="num up">+~3% (11th straight night of Iran strikes)</td></tr>
-                <tr><td>Gold</td><td class="num">~$4,151</td><td class="num up">+~1.8% (approx., inflation-hedge bid)</td></tr>
-                <tr><td>Bitcoin</td><td class="num">~$65,900</td><td class="num flat">roughly flat</td></tr>
-              </tbody>
-            </table>
-          </div>
+    <details>
+      <summary>
+        <div class="summary-left">
+          <h2>2026-07-22 PM</h2>
+          <span class="summary-meta">archived · <a href="rundowns/rundown_2026-07-22.md">rundown_2026-07-22.md</a></span>
         </div>
-      </section>
-
-      <section id="pm-calls-2026-07-22" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>Morning Calls — How They Played Out</h3><span class="tag">Watchlist · Movers</span></div>
-          <div class="body">
-            <table>
-              <thead><tr><th>Ticker</th><th>Morning Setup</th><th class="num">Close</th><th class="num">Day %</th><th>Result</th></tr></thead>
-              <tbody>
-                <tr><td>SPX</td><td>Range-reclaim continuation, hold above 7,500</td><td class="num">7,498.96</td><td class="num down">-0.14%</td><td><span class="badge bear">Stopped</span> (whisker below 7,500)</td></tr>
-                <tr><td>QQQ</td><td>Reclaim-continuation, hold above $706-709</td><td class="num">~$706</td><td class="num down">~-0.4%</td><td><span class="badge event">Flat</span> — held near pivot, no clean break</td></tr>
-                <tr><td>SMCI</td><td>Guidance-driven momentum, chase risk high</td><td class="num">~$31.80</td><td class="num up">+19.84%</td><td><span class="badge bull">Worked</span></td></tr>
-                <tr><td>NVDA</td><td>Outlier strength vs. mega-cap tech weakness</td><td class="num">$207.54</td><td class="num up">+2.1%</td><td><span class="badge bull">Worked</span></td></tr>
-                <tr><td>MSFT</td><td>Pre-earnings de-risking on AI-debt scrutiny</td><td class="num">$397.81</td><td class="num down">-1.1%</td><td><span class="badge bull">Worked</span> (moderated from -2.6% premarket)</td></tr>
-                <tr><td>META</td><td>Same AI-capex/debt scrutiny</td><td class="num">$643.93</td><td class="num down">-0.3%</td><td><span class="badge event">Flat</span> — largely faded premarket loss</td></tr>
-                <tr><td>AMZN</td><td>Same theme</td><td class="num">$247.59</td><td class="num down">-1.0%</td><td><span class="badge bull">Worked</span> (moderated)</td></tr>
-                <tr><td>T (AT&amp;T)</td><td>Beat-and-raise-adjacent Q2, subscriber beat</td><td class="num">~$22.50</td><td class="num down">-1.1%</td><td><span class="badge bear">Stopped</span> — beat didn't hold, stock faded</td></tr>
-                <tr><td>ADTN</td><td>Guidance cut, negative reaction expected</td><td class="num">data unavailable</td><td class="num">—</td><td><span class="badge theme">Not confirmed</span></td></tr>
-                <tr><td>OTIS / CME</td><td>Guidance cut (OTIS) / beat-and-raise (CME)</td><td class="num">data unavailable</td><td class="num">—</td><td><span class="badge theme">Not confirmed this run</span></td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <section id="pm-earnings-2026-07-22" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>AMC Earnings Reactions</h3><span class="tag">After-Hours — First Mag 7 Prints</span></div>
-          <div class="body">
-            <table>
-              <thead><tr><th>Ticker</th><th class="num">AH Price</th><th class="num">AH Change</th><th>Notes</th></tr></thead>
-              <tbody>
-                <tr><td>GOOGL (Alphabet)</td><td class="num">data unavailable</td><td class="num down">~-1.24%</td><td>Beat top and bottom lines, cloud revenue +82% y/y — but FY26 capex guide raised to $175-185B (vs. ~$119.5B consensus) spooked investors on the AI-capex-ROI question flagged all week.</td></tr>
-                <tr><td>TSLA</td><td class="num">data unavailable</td><td class="num down">~-1.30%</td><td>Revenue beat ($28.24B vs. $26.32B est., +26% y/y) but adjusted EPS missed ($0.33 vs. $0.50 est.) on margin/cash-burn dynamics; deliveries strength didn't offset the profitability miss.</td></tr>
-                <tr><td>TXN / IBM / CSX / NOW</td><td class="num">pending</td><td class="num">pending</td><td>Also reporting tonight per the morning calendar; AH reaction data not sourced this run (Chrome unavailable, search budget prioritized GOOGL/TSLA as the binary catalyst).</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <section id="pm-narrative-2026-07-22" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>Session Narrative</h3><span class="tag">What Happened</span></div>
-          <div class="body">
-            <p>The morning's "neutral, tilt bullish, Low confidence" call landed about as uncertain as advertised: SPX closed essentially flat (-0.14% to 7,498.96), a whisker below the 7,500 pivot it had reclaimed Tuesday, while the Dow was roughly unchanged and the Nasdaq underperformed (-0.57%) as megacap tech gave back some of yesterday's gains ahead of tonight's binary. Oil was the clearest directional driver, with WTI up ~3% to $86.83 on an 11th straight night of U.S. strikes on Iran — the inflation-hedge/risk-premium theme flagged all week stayed live. NVDA (+2.1%) again diverged from MSFT (-1.1%), AMZN (-1.0%) and META (-0.3%), extending the split between chip-strength and hyperscaler-caution that's defined this week. SMCI extended its guidance-driven surge to +19.84% on the close. The biggest surprise came after the bell: both Alphabet and Tesla beat on revenue but still fell in after-hours trading — Alphabet on a much-larger-than-expected capex raise ($175-185B for FY26) and Tesla on an EPS miss despite strong deliveries, suggesting the market is currently pricing capex/margin discipline over top-line growth for the AI trade.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="pm-outlook-2026-07-22" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>Pattern Analysis &amp; Next-Session Outlook</h3><span class="tag">Technicals · Cross-Session Read</span></div>
-          <div class="body">
-            <p>SPX has chopped in a 7,443-7,572 range across the last six sessions, repeatedly testing and losing the ~7,500-7,515 pivot (bottomed 7,443.28 Jul 20, reclaimed 7,509.20 Jul 21, closed 7,498.96 today right back on the line) — a consolidation/decision-point pattern, not a confirmed trend. VIX has compressed through the window (18.37 Jul 17 → 16.64 today), which argues for range-bound churn over a breakdown even as the index itself hasn't broken out. External technical sourcing (partial, not independently cross-verified this run) places broader support around 7,400-7,515 and resistance near 7,600, with one source citing negative RSI divergence against price. The dominant recurring catalyst remains the AI-capex-ROI debate — bullish on infra-buildout enthusiasm (NVDA, SMCI, NBIS), bearish on debt-funded spending and margin dilution (MSFT/AMZN/META de-risking, now GOOGL/TSLA's AH stumble) — which is currently the market's swing factor, outweighing the Iran/oil risk premium on a day-to-day basis even as oil itself keeps grinding higher.</p>
-            <p>
-              <span class="badge event">Neutral / Range-bound</span>
-              — next 1-3 sessions, confidence: <strong>Medium</strong>
-            </p>
-            <p>Hold above 7,443-7,457 (last week's range low) keeps the six-session range intact; reclaim and hold above 7,515-7,530 is needed to challenge the 7,600 overhead resistance, while a close back below 7,450 reopens the breakdown thesis. Biggest risk to this call: Intel reports Thursday, a second same-week chip-sector data point landing right after GOOGL/TSLA's mixed-to-negative AH reaction — a soft Intel print alongside tonight's capex/margin concerns could tip the range toward its lower bound fast.</p>
-          </div>
-        </div>
-      </section>
-
-    </div>
-  </details>
-</article>
+      </summary>
+    </details>
+  </article>
 
   <article class="day" data-date="2026-07-22" id="day-2026-07-22">
     <details>
