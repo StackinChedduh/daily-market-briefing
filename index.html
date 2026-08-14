@@ -414,14 +414,15 @@
   <div class="row">
     <div>
       <h1>Daily Market Rundown — Archive</h1>
-      <div class="subtitle">Latest: Friday, August 14, 2026</div>
+      <div class="subtitle">Latest: Friday, August 14, 2026 · Postmarket</div>
     </div>
     <div class="meta">Today: <strong>SPX 7,140</strong> pivot · ES <strong>7,165.5</strong> · VIX <strong>18.04</strong> · WTI <strong>$104.20</strong> · <span style="color:var(--purple);">FOMC 2pm</span></div>
   </div>
   <details class="jump-dropdown">
-    <summary class="jump-toggle">Archive &middot; 128 days</summary>
+    <summary class="jump-toggle">Archive &middot; 129 days</summary>
     <nav class="jump">
-      <a class="current" href="#day-2026-08-14">2026-08-14 &middot; Fri</a>
+      <a class="current" href="#pm-2026-08-14">2026-08-14 &middot; PM</a>
+      <a href="#day-2026-08-14">2026-08-14 &middot; Fri</a>
       <a href="#pm-2026-08-13">2026-08-13 &middot; PM</a>
       <a href="#day-2026-08-13">2026-08-13 &middot; Thu</a>
       <a href="#pm-2026-08-11">2026-08-11 &middot; PM</a>
@@ -554,8 +555,102 @@
 </header>
 
 <main id="archive">
-  <article class="day" data-date="2026-08-14" id="day-2026-08-14">
+  <article class="day pm" data-date="2026-08-14-pm" id="pm-2026-08-14">
   <details open>
+    <summary>
+      <div class="summary-left">
+        <h2>Friday, August 14, 2026 — Postmarket</h2>
+        <span class="badge event">postmarket · Session Close</span>
+      </div>
+      <div class="summary-meta">
+        SPX <strong>7,785.76 (-0.17%)</strong> · Dow <strong>53,732.41 (-0.20%)</strong> · Nasdaq <strong>26,729.16 (-0.28%)</strong> · VIX <strong>14.25</strong> · WTI <strong>$82.40</strong> · BTC <strong>~$62,817</strong>
+      </div>
+    </summary>
+
+    <p><em>Claude in Chrome was unreachable this run (checked once via <code>tabs_context_mcp</code>) — the pipeline ran on WebSearch/web_fetch per the known-issue fallback. Direct Yahoo quote-page fetches for individual tickers repeatedly returned a stale, cached pre-market snapshot (timestamped ~8:41 AM ET) rather than a live post-close read, so most individual closes below are WebSearch-sourced instead. NVDA's confirmed close could not be pinned down this run — search results conflicted between a stale pre-market quote and unrelated historical articles — so it is marked data unavailable, with sector-wide chip weakness (AVGO, AMAT) offered as directional context only. Gold showed a modest discrepancy between sources ($4,432.00 vs. $4,373.48); the higher, ticker-widget figure is used above.</em></p>
+
+    <nav class="toc">
+      <a href="#pm-closes-2026-08-14">Closes</a>
+      <a href="#pm-calls-2026-08-14">Morning Calls</a>
+      <a href="#pm-narrative-2026-08-14">Narrative</a>
+      <a href="#pm-outlook-2026-08-14">Outlook</a>
+    </nav>
+
+    <div class="wrap">
+
+      <section id="pm-closes-2026-08-14" class="grid">
+        <div class="col-12 card">
+          <div class="head"><h3>Final Closes</h3><span class="tag">Indices · Commodities · Crypto</span></div>
+          <div class="body">
+            <table>
+              <thead><tr><th>Index / Asset</th><th class="num">Close</th><th class="num">Day Change</th></tr></thead>
+              <tbody>
+                <tr><td>S&amp;P 500</td><td class="num">7,785.76</td><td class="num down">-0.17% (-13.23) — pulled back from Thursday's record, still a 3rd straight weekly gain</td></tr>
+                <tr><td>Dow 30</td><td class="num">53,732.41</td><td class="num down">-0.20% (-107.58)</td></tr>
+                <tr><td>Nasdaq Composite</td><td class="num">26,729.16</td><td class="num down">-0.28% (-73.86)</td></tr>
+                <tr><td>Russell 2000</td><td class="num up">3,068.42</td><td class="num up">+0.51% (+15.57) — fresh record close, bucked the mega-cap pullback</td></tr>
+                <tr><td>VIX</td><td class="num down">14.25</td><td class="num down">-2.60% — fell further even on a red index day, no fear signal</td></tr>
+                <tr><td>Gold</td><td class="num up">$4,432.00</td><td class="num up">+0.26% (+11.60)</td></tr>
+                <tr><td>WTI Crude (Sep)</td><td class="num up">$82.40</td><td class="num up">+1.42% — Iran/Hormuz risk premium persists</td></tr>
+                <tr><td>Bitcoin</td><td class="num down">~$62,817</td><td class="num down">-0.93% (-591.87)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="pm-calls-2026-08-14" class="grid">
+        <div class="col-12 card">
+          <div class="head"><h3>Morning Calls — How They Played Out</h3><span class="tag">Watchlist · Movers</span></div>
+          <div class="body">
+            <table>
+              <thead><tr><th>Ticker</th><th>Morning Setup</th><th class="num">Close</th><th class="num">Day %</th><th>Result</th></tr></thead>
+              <tbody>
+                <tr><td>SPX</td><td>Hold above 7,750 keeps breakout alive, target 7,830-7,850</td><td class="num">7,785.76</td><td class="num down">-0.17%</td><td><span class="badge bull">Worked</span> — held the 7,750 line despite the red day; breakout structurally intact</td></tr>
+                <tr><td>QQQ</td><td>Hold/break above $735 call wall, target $740+</td><td class="num">$731.07</td><td class="num down">-0.14%</td><td><span class="badge event">Pending</span> — never tested $735, but stayed well clear of the $719.69 zero-gamma invalidation</td></tr>
+                <tr><td>NVDA</td><td>Break above $227.50 call wall, invalidation &lt;$220</td><td class="num">data unavailable</td><td class="num">—</td><td><span class="badge theme">Unconfirmed</span> — sector read (AVGO -5.94%, AMAT -2.48%) suggests chip-complex softness, but no clean close print sourced this run</td></tr>
+                <tr><td>MU</td><td>Two-sided put-wall test at $965; bull case = wall holds</td><td class="num">$969.34</td><td class="num up">+2.06%</td><td><span class="badge bull">Worked</span> — put wall held as support, "Micron extends AI rally" per Wall Street coverage</td></tr>
+                <tr><td>TSLA</td><td>Break above $335 call wall, target $345-348</td><td class="num">$342.27</td><td class="num up">+0.68%</td><td><span class="badge bull">Worked</span> — cleared the call wall on a TD Cowen Buy reiteration ($460 PT)</td></tr>
+                <tr><td>RDDT</td><td>Mover — S&amp;P 500 inclusion effective Aug 18</td><td class="num">$178.09</td><td class="num up">+12.63%</td><td><span class="badge bull">Worked</span> — index-inclusion flow drove the biggest S&amp;P 500-name gain of the day</td></tr>
+                <tr><td>CAPR</td><td>Mover — Lancet DMD data, FDA amendment path (+111% premarket)</td><td class="num">~+97% close</td><td class="num up">~+97%</td><td><span class="badge bull">Worked</span> — pared some premarket froth but held a massive gain</td></tr>
+                <tr><td>IMXI</td><td>Mover — NYDFS cleared $16/sh Western Union deal (+25% premarket)</td><td class="num">~+20% close</td><td class="num up">~+20%</td><td><span class="badge bull">Worked</span> — deal-close arb played out as expected</td></tr>
+                <tr><td>AMPG</td><td>Mover — Q2 EPS miss, guidance pulled (-26.7% premarket)</td><td class="num">$5.99</td><td class="num up">+3.22%</td><td><span class="badge event">Reversed</span> — opened deep red but recovered to close green, notable intraday round-trip</td></tr>
+                <tr><td>INV</td><td>Mover — Accelsius delay, going-concern language (-44.6% premarket)</td><td class="num">data unavailable</td><td class="num">—</td><td><span class="badge theme">Unconfirmed</span> — sourcing this run returned conflicting/ambiguous ticker matches</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="pm-narrative-2026-08-14" class="grid">
+        <div class="col-12 card">
+          <div class="head"><h3>Session Narrative</h3><span class="tag">What Happened</span></div>
+          <div class="body">
+            <p>The morning's "cautiously risk-on" bias came in on the softer side: July retail sales fell 0.6% month-on-month (versus a +0.2-0.3% consensus) and consumer sentiment disappointed, stalling the two-session record-close streak and pulling the S&amp;P 500 and Nasdaq modestly lower. The Russell 2000 was the tell that this was digestion rather than distribution — it notched another fresh record (+0.51%) even as mega-cap tech lagged, and VIX fell to a new multi-day low (14.25) on a red index day, a combination inconsistent with genuine risk-off. The session's biggest surprise was Broadcom's 5.9% slide after Bank of America questioned a potential $370B debt-financing vehicle tied to AI infrastructure buildouts — a fresh, concrete data point for the AI-capex financing skepticism this morning's rundown had only flagged in the abstract, and a theme distinct from (but related to) NVDA's looming Aug 26 earnings risk. Applied Materials also sold off despite an earnings beat, reinforcing that "beat isn't always enough" remains the operative theme for high-multiple names this earnings season. Elsewhere, Reddit's S&amp;P 500 inclusion news, Capricor's Lancet-published trial data, and the IMXI/Western Union deal-close arb all played out cleanly on their premarket catalysts. The 10-year yield eased slightly to 4.69% even as a 30-year Treasury auction priced at 5.216% — the highest 30-year yield in 25 years — a reminder that the "rates are high, stocks don't care" defiance trade still has a genuine cost showing up in long-end funding markets.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pm-outlook-2026-08-14" class="grid">
+        <div class="col-12 card">
+          <div class="head"><h3>Pattern Analysis &amp; Next-Session Outlook</h3><span class="tag">Technicals · Cross-Session Read</span></div>
+          <div class="body">
+            <p>Across the last six sessions (Aug 6 -0.27%, Aug 7 +0.62% record, Aug 10 -0.06%, Aug 11 -0.32%, Aug 13 +0.65% record, today -0.17%) the pattern is an uptrend punctuated by shallow, single-session pullbacks rather than any multi-day breakdown — every red session so far has been followed by a bounce or a fresh record within one to two sessions, and today's give-back (soft retail sales/sentiment) fits that same mold rather than breaking it. VIX has trended lower through the whole window (from ~16.0 on Aug 6 to 14.25 today) despite the chop, which argues against a sentiment shift. Outside technical sourcing puts SPX's 14-day RSI in the mid-60s (moderate upside momentum, not overbought) with resistance cited near 7,833 — essentially the same 7,830-7,850 extension zone flagged in this morning's rundown — and support well below at the 50-day EMA (~7,480), giving the tape a wide cushion before any structural damage.</p>
+            <p>
+              <span class="badge bull">Bullish</span>
+              — next 1-3 sessions, confidence: <strong>Medium</strong>
+            </p>
+            <p>SPX: holding above 7,750 (today's close: 7,785.76) keeps the breakout intact for a push toward 7,830-7,850; a close back below 7,700-7,690 would be the first real sign the pattern is breaking. QQQ/NDX: $735 remains the call-wall pivot to reclaim; the $719.69 zero-gamma level (untested today) is the line that would flip dealer hedging from stabilizing to volatility-amplifying. Biggest risk: NVDA's Aug 26 earnings is still the headline binary catalyst for the AI-capex trade, now joined by fresh, more immediate scrutiny of how that capex gets financed (today's AVGO/BofA debt-vehicle story) — a theme worth tracking into next week's Target/Walmart retail earnings and any follow-through selling in AI-infrastructure debt-linked names.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </details>
+</article>
+
+  <article class="day" data-date="2026-08-14" id="day-2026-08-14">
+  <details>
     <summary>
       <div class="summary-left">
         <h2>FRIDAY, AUGUST 14, 2026</h2>
@@ -2001,404 +2096,15 @@
 </article>
 
   <article class="day" data-date="2026-08-10" id="day-2026-08-10">
-  <details>
-    <summary>
-      <div class="summary-left">
-        <h2>MONDAY, AUGUST 10, 2026</h2>
-        <span class="badge event">Bias: Cautiously Risk-On &middot; Uptrend Intact, Overbought, Paused Ahead of Wednesday's CPI</span>
-      </div>
-      <div class="summary-meta">NDX outlook <strong>Bullish</strong> · SPX pivot <strong>7,757.64 (Fri close)</strong> · ES <strong>~+0.6% premarket</strong> · NQ <strong>~+0.18% premarket</strong> · VIX <strong>15.46</strong> · WTI <strong>~$78</strong></div>
-    </summary>
-
-    <nav class="toc">
-      <a href="#ndx-2026-08-10">NDX Outlook</a>
-      <a href="#tldr-2026-08-10">TL;DR</a>
-      <a href="#macro-2026-08-10">Macro</a>
-      <a href="#calendar-2026-08-10">Calendar</a>
-      <a href="#earnings-2026-08-10">Earnings</a>
-      <a href="#movers-2026-08-10">Movers</a>
-      <a href="#volume-2026-08-10">Unusual Volume</a>
-      <a href="#rvol-2026-08-10">RVOL &gt;3x</a>
-      <a href="#options-2026-08-10">Unusual Options</a>
-      <a href="#playbook-2026-08-10">Weekly Playbook</a>
-      <a href="#themes-2026-08-10">Themes</a>
-      <a href="#secondary-2026-08-10">Secondary</a>
-      <a href="#digest-2026-08-10">Digest</a>
-      <a href="#week-2026-08-10">Week Ahead</a>
-      <a href="#watchlist-2026-08-10">Watchlist</a>
-      <a href="#risks-2026-08-10">Risks</a>
-    </nav>
-
-    <div class="wrap">
-
-      <!-- Section 0: NDX Pattern Read & Directional Outlook -->
-      <section id="ndx-2026-08-10" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>0 · NDX Pattern Read &amp; Directional Outlook</h3><span class="tag">Technicals · Cross-Session Read · Next 1-3 Sessions</span></div>
-          <div class="body">
-            <p>Confirmed uptrend testing resistance. The last five sessions read Bullish (8/3), Bullish (8/4), Bullish (8/5), Neutral/Range-bound (8/6, memory &amp; software guidance punished despite beats), Bullish (8/7, weak jobs print read as Fed-relief). Friday's pop took the Nasdaq Composite to 26,690.62 (+1.3%) and QQQ to ~$723, pushing NDX right into the 28,450&ndash;28,600 resistance cluster flagged by outside technicals, with RSI overbought on daily/H4/M15.</p>
-            <p>Dominant catalyst is AI-capex optimism beating the valuation/bubble skeptics this week &mdash; JPMorgan raised its 2026 S&amp;P 500 target to 8,000 on AI/earnings strength, Zuckerberg published a pro-superintelligence essay pushing back on "AI doomers," Intel raised $15B to fund AI ambitions, and today's options tape shows OTM call buying concentrated in SNDK, MU, AMD, MSFT, META, TSM, GOOGL. The bear counter-notes (China's $28T capital-markets AI push framed as competitive threat, chip-supply-chain headline risk) haven't dented price. Separately, July's soft payrolls (-23K) is being read as Fed-hike-off-the-table rather than a growth scare &mdash; bad data, priced as good news.</p>
-            <p>
-              <span class="badge bull">Bullish</span>
-              &mdash; next 1-3 sessions, confidence: <strong>Medium</strong>
-            </p>
-            <p>NDX holding above ~28,300 keeps the focus on 28,850 and eventually the all-time-high zone near 30,500&ndash;30,770; a break below 28,150&ndash;27,850 reopens downside toward 27,500. On QQQ, holding above the $706.30 zero-gamma level keeps dealer hedging in a volatility-dampening regime; a daily close below it flips the gamma regime negative and would likely open air toward the $660 put wall. Biggest risk to the call: Wednesday's July CPI (12:30 PM ET, consensus ~3.4% YoY vs. 3.5% prior) &mdash; a hot print would revive rate-path anxiety just as the market has been rallying on rate-cut hopes born from the weak jobs report. Secondary risk: any escalation on the Strait of Hormuz, where Iran is reportedly doubling down on demands and a hardline IRGC commander was just promoted to national security chief.</p>
-            <p><strong>Options positioning (most volume/OI):</strong> QQQ (InsiderFinance, spot <strong>$723.05</strong>): Net GEX <strong>+$3.7B</strong> (positive/dampening regime, ratio 1.47). Call Wall <strong>$730.00</strong> (+0.96%). Put Wall <strong>$660.00</strong> (-8.72%). Zero-Gamma <strong>$706.30</strong> (-2.32%). Max Pain <strong>$696.00</strong>. The single largest positioning signature in the entire market today, per thetrading.tools' composite scanner (as of Friday 8/7 close, the freshest available pre-open snapshot): <strong>QQQ itself at +8.84&sigma; bearish-tilt</strong>, with +$31.65B of OTM put open-interest growth (SPY close behind at +7.01&sigma;, +$25.71B). Read this as large-scale index hedging into the CPI print rather than a directional bearish call &mdash; the underlying stock-level flow (SNDK, MU, AMD, MSFT, META) is unambiguously bullish; it's index puts being bought as insurance, not a crowd call for a top.</p>
-            <p><strong>0DTE / same-day-expiration read:</strong> Today is not a monthly OPEX (third Friday, Aug 21) and Monday carries the lightest scheduled gamma of the week &mdash; QQQ's own expiration breakdown shows just 5.5% of total gamma in the nearest weekly (Aug 14) and 13.9% in the August monthly, with the bulk further out. Expect intraday price action to be less pinned than a typical Friday; dealer hedging flows should stay modest until Wednesday's CPI-adjacent expiries build up.</p>
-            <p><strong>Entry price/signal:</strong> Bull case &mdash; a hold above QQQ's zero-gamma level ($706.30) with a push through today's spot ($723) toward the $730 call wall is the continuation trigger; invalidation is a daily close below $706.30, which flips the gamma regime negative and opens air toward the $660 put wall. The elevated index-put positioning (QQQ/SPY both &gt;7&sigma; bearish-tilt on OI growth) argues for sizing any long exposure into Wednesday's CPI with that hedge level in mind. This is a probabilistic read from today's positioning data, not a personalized trade recommendation.</p>
-          </div>
+    <details>
+      <summary>
+        <div class="summary-left">
+          <h2>Mon, 2026-08-10</h2>
+          <span class="summary-meta">archived · <a href="rundowns/rundown_2026-08-10.md">rundown_2026-08-10.md</a></span>
         </div>
-      </section>
-
-      <!-- Section 1: TL;DR -->
-      <section id="tldr-2026-08-10" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>1 · TL;DR &mdash; Tape in 60 Seconds</h3><span class="tag">Bias · Catalysts · Key Level</span></div>
-          <div class="body">
-            <div class="tldr">
-              <div class="box">
-                <h4>Bias</h4>
-                <p><span class="badge bull">Cautiously Risk-On</span> &mdash; uptrend intact, overbought, and paused ahead of Wednesday's CPI.</p>
-              </div>
-              <div class="box">
-                <h4>Three Things That Matter</h4>
-                <ol class="tight">
-                  <li>July CPI (Wed 12:30 PM ET) is this week's single biggest catalyst &mdash; the market has been rallying on rate-cut hopes from the weak jobs report, and a hot print would test that.</li>
-                  <li>AI-capex earnings keep coming: CoreWeave reports tomorrow (Tue), Nebius Wednesday &mdash; both direct tests of the AI-infrastructure spending narrative driving mega-cap tech.</li>
-                  <li>Strait of Hormuz risk stays live &mdash; Iran reportedly hardening its demands, oil bid on the uncertainty, no resolution despite Treasury's public "irrelevant in two years" framing.</li>
-                </ol>
-              </div>
-              <div class="box">
-                <h4>Key Level</h4>
-                <p>QQQ $706.30 (zero-gamma) on the downside, $730 (call wall) on the upside; NDX 28,300 support / 28,600 resistance.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 2: Macro Context -->
-      <section id="macro-2026-08-10" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>2 · Macro Context</h3><span class="tag">Snapshot · Global · Narrative</span></div>
-          <div class="body">
-            <p><em>Google Finance's live snapshot returned a clearly stale cache (referenced a mid-May 2026 Fed-chair-transition story), so the table below leans on Friday's confirmed close (Yahoo) plus premarket wrap coverage rather than a single live feed &mdash; treat exact futures ticks as directional, not tick-precise.</em></p>
-            <table>
-              <thead><tr><th>Asset</th><th>Last</th><th>Change</th><th>Note</th></tr></thead>
-              <tbody>
-                <tr><td class="ticker">S&amp;P 500 (Fri close)</td><td class="num">7,757.64</td><td class="up">+0.62%</td><td>Futures ~+0.6% premarket per wraps</td></tr>
-                <tr><td class="ticker">Nasdaq Composite (Fri close)</td><td class="num">26,690.62</td><td class="up">+1.30%</td><td>Nasdaq futures ~+0.18% premarket (one source)</td></tr>
-                <tr><td class="ticker">Dow (Fri close)</td><td class="num">54,036.93</td><td class="up">+0.28%</td><td>Dow futures 54,075, -0.14% premarket</td></tr>
-                <tr><td class="ticker">Russell 2000 (Fri close)</td><td class="num">3,034.49</td><td class="up">+1.10%</td><td>&mdash;</td></tr>
-                <tr><td class="ticker">QQQ spot (live)</td><td class="num">$723.05</td><td class="num">&mdash;</td><td>Between $706 zero-gamma and $730 call wall</td></tr>
-                <tr><td class="ticker">US 10Y yield</td><td class="num">4.65%</td><td class="down">-3bp</td><td>Softer on weak jobs read</td></tr>
-                <tr><td class="ticker">VIX</td><td class="num">15.46 premarket</td><td class="up">+3.76%</td><td>Up off Friday's 14.90 close &mdash; some hedging bid</td></tr>
-                <tr><td class="ticker">WTI crude</td><td class="num">~$78 area</td><td class="up">Firm</td><td>"Oil hits one-week high" on Hormuz uncertainty</td></tr>
-                <tr><td class="ticker">Gold</td><td class="num">$4,399.70 (Fri close)</td><td class="up">+2.33%</td><td>Reuters flags drift lower from 7-wk peak into CPI</td></tr>
-                <tr><td class="ticker">BTC</td><td class="num">~$64,950</td><td class="num">~flat</td><td>Benzinga: "dead quiet... until you look under the hood"</td></tr>
-              </tbody>
-            </table>
-
-            <h4>Global Session Recap</h4>
-            <p>European stocks are steady, weighing Strait of Hormuz risk against this week's data calendar (UK Q2 GDP prelim due Wednesday). In Asia, China's July CPI came in soft at +0.5% YoY (vs. ~1% consensus, prior 0.8%) &mdash; deflationary pressure persists. The yen continues to underperform as its recent intervention-driven bounce fades. Australia's RBA decision lands Tuesday (4:30 AM ET), expected to hold at 4.35%. Oil remains the standout: Brent/WTI both bid on continued uncertainty over Iran's terms for reopening the Strait, with a hardline IRGC commander just promoted to national security chief in Tehran.</p>
-
-            <h4>Macro Narrative</h4>
-            <p>The dominant story is still the market shrugging off bad labor data as good news for rates: Friday's -23,000 July payrolls print (against expectations for a gain) has been read as taking further Fed hikes off the table, fueling what Reuters called a "FOMO... breakout rally." JPMorgan strategists raised their 2026-end S&amp;P 500 target to 8,000 on AI capex and earnings strength, and market breadth is unusually healthy &mdash; the number of stocks beating the S&amp;P 500 is reportedly the highest in four years. Fed governance stays a background irritant (Governor Cook "grilled again" per Reuters' Morning Bid), and Zuckerberg's 6,500-word pro-AI essay pushing back on "doomers" keeps the AI-capex narrative front and center alongside Intel's $15B capital raise to fund its own AI ambitions. The one real cloud: Strait of Hormuz tensions remain unresolved, with oil bid and Trump reportedly "low-keying it" with Iran even as his own team says options for walking away have narrowed.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 3: Economic Calendar -->
-      <section id="calendar-2026-08-10" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>3 · Economic Calendar &mdash; Today &amp; This Week</h3><span class="tag">CPI Wednesday Is the Week's Headline Print</span></div>
-          <div class="body">
-            <p><strong>Today (Monday):</strong> Light US docket &mdash; no major scheduled releases. US 3-Month and 6-Month Bill auctions at 3:30 PM ET. Overseas: China July CPI (soft, above), South Korea 3-Year KTB auction, Japan Eco Watchers Survey (softer than prior).</p>
-            <table>
-              <thead><tr><th>Day</th><th>Key Events</th></tr></thead>
-              <tbody>
-                <tr><td>Tue Aug 11</td><td>RBA rate decision (4:30 AM ET, expected hold 4.35%) &middot; NFIB Business Optimism (10 AM) &middot; ADP Employment Change Weekly (12:15 PM) &middot; Existing Home Sales July (2 PM) &middot; 3-Year Note Auction (5 PM)</td></tr>
-                <tr><td>Wed Aug 12</td><td><strong>US CPI July (12:30 PM ET)</strong> &mdash; headline print &middot; Fed Hammack speech (12:15 PM) &middot; Fed Barkin speech (12:40 PM) &middot; UK Q2 GDP prelim (6 AM) &middot; 10-Year Note Auction (5 PM)</td></tr>
-                <tr><td>Thu Aug 13</td><td>US PPI July + Core PPI (12:30 PM) &middot; Initial Jobless Claims (12:30 PM) &middot; Fed Barkin speech again &middot; 30-Year Bond Auction (5 PM)</td></tr>
-                <tr><td>Fri Aug 14</td><td>Light calendar per sourcing this run &mdash; no major US releases confirmed</td></tr>
-              </tbody>
-            </table>
-            <p><strong>Fed speakers:</strong> Hammack and Barkin both speak Wednesday; Barkin again Thursday &mdash; three appearances bracketing the CPI print. <strong>Auctions:</strong> 3-Year Note (Tue), 10-Year Note (Wed), 30-Year Bond (Thu) &mdash; a full coupon slate, all pricing into the CPI outcome.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 4: Earnings -->
-      <section id="earnings-2026-08-10" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>4 · Earnings</h3><span class="tag">BMO Prints Landing, SPG After the Close</span></div>
-          <div class="body">
-            <p><span class="badge bull">Monday.com (MNDY)</span> Beat &mdash; adj. EPS $1.48 vs. $1.11 est., revenue $364.6M vs. $355.2M est.</p>
-            <p><span class="badge bear">Bitdeer Technologies (BTDR)</span> Miss &mdash; adj. EPS $(2.08) vs. $(0.36) est., revenue $228.8M vs. $235.9M est.</p>
-            <p><span class="badge bear">Axsome Therapeutics (AXSM)</span> Miss &mdash; EPS $(0.99) vs. $(0.83) est., revenue $218.4M vs. $221.2M est.</p>
-            <p>Also reporting premarket: CEVA (beat), N-able/NABL (inline EPS but lowered FY26 sales guidance), Village Farms (beat), PowerFleet/AIOT (beat + raised FY26 guidance), Perion Network, plus Regenxbio-adjacent analyst notes.</p>
-            <p><strong>After the close:</strong> Simon Property Group (SPG) &mdash; consensus ~$3.21 FFO/share on ~$1.61B revenue. RUM Group (RUM) &mdash; shares sit ~9% above their 20-day average into the print.</p>
-            <p><strong>This week &mdash; names to watch:</strong> CoreWeave (CRWV) reports tomorrow (Tue) &mdash; trades below its 200-day average heading in, a direct AI-infrastructure-spend test. Nebius Group reports Wednesday &mdash; trades ~30% above its 200-day average, a much higher bar. Cerebras Systems and Super Micro Computer are also in the AI-earnings spotlight this week per broader coverage, alongside Cisco's Q4 print later in the cycle.</p>
-            <p><strong>Prior-session reaction:</strong> Berkshire Hathaway (BRK.B/BRK.A) reported Saturday &mdash; operating earnings +16% Q2, EPS beat (+17-22% surprise), ended a 14-quarter streak of net equity selling, repurchased $4.5B of stock. Well received, with bullish follow-on commentary dominating Monday's premarket wires.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 5: Top Movers -->
-      <section id="movers-2026-08-10" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>5 · Top Movers with Catalysts</h3><span class="tag">Named Catalysts Only</span></div>
-          <div class="body">
-            <table>
-              <thead><tr><th>Ticker</th><th>Move / Context</th><th>Catalyst</th></tr></thead>
-              <tbody>
-                <tr><td class="ticker">INTC</td><td class="up">Active</td><td>Raised $15B to fund AI ambitions</td></tr>
-                <tr><td class="ticker">WDC</td><td class="num">Active</td><td>Premarket mover; no single named catalyst confirmed this run</td></tr>
-                <tr><td class="ticker">AirSculpt (ASLE)</td><td class="down">-13.4%</td><td>Q2 results landed in-line &mdash; weak reaction to an inline print</td></tr>
-                <tr><td class="ticker">SPCX</td><td class="up">+4.31% Fri to $139.05</td><td>Expected to open back above its $135 IPO price; retail sold SpaceX shares for the first time Friday</td></tr>
-                <tr><td class="ticker">TTWO</td><td class="up">Analyst target raises</td><td>Q1 beat, but bookings/full-year guidance soft &mdash; mixed reaction</td></tr>
-                <tr><td class="ticker">TDC</td><td class="down">Downgraded</td><td>Among today's top-5 Wall Street downgrades</td></tr>
-                <tr><td class="ticker">PTGX / LECO / JHX</td><td class="up">Upgraded</td><td>Top-5 Wall Street upgrades Monday</td></tr>
-                <tr><td class="ticker">RUM</td><td class="up">~9% above 20-day avg</td><td>Earnings after tonight's close</td></tr>
-                <tr><td class="ticker">NBIS</td><td class="up">~30% above 200-day avg</td><td>Earnings Wednesday &mdash; high bar already priced in</td></tr>
-                <tr><td class="ticker">CRWV</td><td class="down">Below 200-day avg</td><td>Earnings tomorrow (Tue) &mdash; more skeptical setup than NBIS</td></tr>
-                <tr><td class="ticker">Barrick Mining</td><td class="down">Lower</td><td>Chairman's planned overhaul running into investor backlash</td></tr>
-                <tr><td class="ticker">BA</td><td class="num">Active</td><td>Reportedly selling 3 autonomous-flight subsidiaries; Archer Aviation named as possible buyer</td></tr>
-              </tbody>
-            </table>
-            <p><em>Movers list drawn from wire headlines rather than a single scanner this run &mdash; treat percentage moves as directional per the source article, not tick-verified.</em></p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 5a: Unusual Volume -->
-      <section id="volume-2026-08-10" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>5a · Unusual Premarket / Session Volume</h3><span class="tag">thetrading.tools Fallback · Snapshot as of Fri 8/7 Close</span></div>
-          <div class="body">
-            <p><em>Finviz's screener.ashx is JS-rendered and unreachable via web_fetch; used the thetrading.tools fallback per the run's playbook. Its snapshot is explicitly dated "as of market close Fri, Aug 7, 2026" &mdash; the most recent trading session before today's open (no weekend session) &mdash; the freshest available pre-open read, not a live premarket scan.</em></p>
-            <table>
-              <thead><tr><th>Ticker</th><th>Volume</th><th>Avg. Volume</th><th>RVOL</th><th>Direction</th><th>Note</th></tr></thead>
-              <tbody>
-                <tr><td class="ticker">TTD</td><td class="num">133.34M</td><td class="num">16.00M</td><td class="num">8.3x</td><td class="up">Up</td><td>+7.23% Fri; rebounding off the week's guide-down slide</td></tr>
-                <tr><td class="ticker">QNST</td><td class="num">4.90M</td><td class="num">701.99K</td><td class="num">7.0x</td><td class="up">Up</td><td>+7.06%</td></tr>
-                <tr><td class="ticker">CRSR</td><td class="num">9.52M</td><td class="num">1.61M</td><td class="num">5.9x</td><td class="up">Up</td><td>+13.17%</td></tr>
-                <tr><td class="ticker">MTW</td><td class="num">1.35M</td><td class="num">246.99K</td><td class="num">5.5x</td><td class="up">Up</td><td>+9.74%</td></tr>
-                <tr><td class="ticker">ABNB</td><td class="num">15.91M</td><td class="num">3.40M</td><td class="num">4.7x</td><td class="up">Up</td><td>+8.12%</td></tr>
-                <tr><td class="ticker">HALO</td><td class="num">7.69M</td><td class="num">1.76M</td><td class="num">4.4x</td><td class="up">Up</td><td>+14.58%</td></tr>
-                <tr><td class="ticker">MAC</td><td class="num">15.26M</td><td class="num">3.66M</td><td class="num">4.2x</td><td class="up">Up</td><td>+3.04%</td></tr>
-                <tr><td class="ticker">CELH</td><td class="num">33.66M</td><td class="num">9.21M</td><td class="num">3.65x</td><td class="up">Up</td><td>+15.85%</td></tr>
-                <tr><td class="ticker">OMDA</td><td class="num">4.92M</td><td class="num">1.35M</td><td class="num">3.64x</td><td class="up">Up</td><td>+14.29%</td></tr>
-                <tr><td class="ticker">FLR</td><td class="num">7.96M</td><td class="num">2.30M</td><td class="num">3.46x</td><td class="up">Up</td><td>+4.55%</td></tr>
-                <tr><td class="ticker">SVV</td><td class="num">2.95M</td><td class="num">851.29K</td><td class="num">3.46x</td><td class="up">Up</td><td>+7.19%</td></tr>
-                <tr><td class="ticker">DKNG</td><td class="num">37.78M</td><td class="num">11.84M</td><td class="num">3.19x</td><td class="up">Up</td><td>+4.93%</td></tr>
-                <tr><td class="ticker">SPT</td><td class="num">3.40M</td><td class="num">1.13M</td><td class="num">3.0x</td><td class="up">Up</td><td>+7.60%</td></tr>
-                <tr><td class="ticker">PLTR</td><td class="num">77.58M</td><td class="num">44.31M</td><td class="num">1.75x</td><td class="up">Up</td><td>+7.46%; also #30 bullish OTM-call name in Section 5c</td></tr>
-                <tr><td class="ticker">OKLO</td><td class="num">22.10M</td><td class="num">9.52M</td><td class="num">2.32x</td><td class="up">Up</td><td>+9.32%</td></tr>
-              </tbody>
-            </table>
-            <p><em>All figures as of Friday 8/7 close. Showing 15 of 65+ names with confirmed data (full scanner returned 207 flagged names, 65 shown before truncation).</em></p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 5b: RVOL Multi-Session -->
-      <section id="rvol-2026-08-10" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>5b · High RVOL (&gt;3x) &mdash; Multi-Session</h3><span class="tag">Optionable Only · Sustained Interest</span></div>
-          <div class="body">
-            <p><em>Genuine multi-day cross-referencing is limited this run &mdash; several of the last five sessions' local archives had degraded volume sourcing themselves (stale-source notes on file for 8/5&ndash;8/7), so most names below reflect confirmed single-session (Fri 8/7) elevated RVOL rather than a verified multi-day pattern. One exception: TTD shows real cross-session continuity.</em></p>
-            <table>
-              <thead><tr><th>Ticker</th><th>Sessions Flagged</th><th>Note</th></tr></thead>
-              <tbody>
-                <tr><td class="ticker">TTD</td><td class="num">2</td><td>Flagged both on the guide-down slide (8/6 rundown) and now on the rebound (8/7 close) &mdash; elevated volume both times, genuine recurring name</td></tr>
-                <tr><td class="ticker">CRSR</td><td class="num">1 confirmed</td><td>5.9x RVOL Fri 8/7; no confirmed prior-session read this run</td></tr>
-                <tr><td class="ticker">MTW</td><td class="num">1 confirmed</td><td>5.5x RVOL Fri 8/7; no confirmed prior-session read this run</td></tr>
-                <tr><td class="ticker">ABNB</td><td class="num">1 confirmed</td><td>4.7x RVOL Fri 8/7; no confirmed prior-session read this run</td></tr>
-                <tr><td class="ticker">HALO</td><td class="num">1 confirmed</td><td>4.4x RVOL Fri 8/7; no confirmed prior-session read this run</td></tr>
-                <tr><td class="ticker">MAC</td><td class="num">1 confirmed</td><td>4.2x RVOL Fri 8/7; no confirmed prior-session read this run</td></tr>
-                <tr><td class="ticker">CELH</td><td class="num">1 confirmed</td><td>3.65x RVOL Fri 8/7; no confirmed prior-session read this run</td></tr>
-                <tr><td class="ticker">FLR</td><td class="num">1 confirmed</td><td>3.46x RVOL Fri 8/7; no confirmed prior-session read this run</td></tr>
-                <tr><td class="ticker">DKNG</td><td class="num">1 confirmed</td><td>3.19x RVOL Fri 8/7; no confirmed prior-session read this run</td></tr>
-              </tbody>
-            </table>
-            <p><em>QNST, OMDA, SVV, SPT excluded &mdash; smaller/newer listings where standing options liquidity wasn't confirmed this run. Fewer than 10 genuinely multi-session-confirmed names this run &mdash; sourcing limitation, not padded.</em></p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 5c: Unusual Options Activity -->
-      <section id="options-2026-08-10" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>5c · Unusual Options Activity</h3><span class="tag">thetrading.tools Composite Fallback · Snapshot as of Fri 8/7 Close</span></div>
-          <div class="body">
-            <p><em>Benzinga's unusual-options-activity page showed "Updated: Aug 10, 2026" (fresh) but the web_fetch fallback returned only a single visible row (GDX puts, likely paginated/JS-truncated) &mdash; short of the 15-contract target. Using thetrading.tools' composite scanner instead: each name scored on a 3-factor composite (OTM open-interest growth, volume/OI ratio, IV z-score vs. 30-day baseline), z-scored across ~2,874 scanned optionable names, snapshot "as of market close Aug 7, 2026" (freshest available pre-open). No reliable per-contract dollar premium available from this source.</em></p>
-            <table>
-              <thead><tr><th>Ticker</th><th>Composite Score</th><th>OI &Delta; ($)</th><th>Vol/OI</th><th>IV z-score</th><th>Spot</th><th>Sentiment</th></tr></thead>
-              <tbody>
-                <tr><td class="ticker">CON</td><td class="num">+6.45&sigma;</td><td class="num">-$189K</td><td class="num">371.26</td><td class="num">-0.66&sigma;</td><td class="num">$34.06</td><td><span class="badge bull">BULLISH</span></td></tr>
-                <tr><td class="ticker">HSBC</td><td class="num">+4.08&sigma;</td><td class="num">-$1.2M</td><td class="num">0.14</td><td class="num">+13.61&sigma;</td><td class="num">$103.73</td><td><span class="badge bull">BULLISH</span></td></tr>
-                <tr><td class="ticker">SNDK</td><td class="num">+3.53&sigma;</td><td class="num">+$6.38B</td><td class="num">0.45</td><td class="num">+0.17&sigma;</td><td class="num">$1,212.21</td><td><span class="badge bull">BULLISH</span></td></tr>
-                <tr><td class="ticker">MU</td><td class="num">+3.01&sigma;</td><td class="num">+$5.53B</td><td class="num">0.29</td><td class="num">+0.00&sigma;</td><td class="num">$877.57</td><td><span class="badge bull">BULLISH</span> &mdash; see Section 5d</td></tr>
-                <tr><td class="ticker">AMD</td><td class="num">+2.97&sigma;</td><td class="num">+$4.79B</td><td class="num">0.21</td><td class="num">+1.23&sigma;</td><td class="num">$483.36</td><td><span class="badge bull">BULLISH</span> &mdash; see Section 5d</td></tr>
-                <tr><td class="ticker">MSFT</td><td class="num">+2.54&sigma;</td><td class="num">+$4.79B</td><td class="num">0.09</td><td class="num">-0.22&sigma;</td><td class="num">$499.99</td><td><span class="badge bull">BULLISH</span></td></tr>
-                <tr><td class="ticker">META</td><td class="num">+2.51&sigma;</td><td class="num">+$4.61B</td><td class="num">0.09</td><td class="num">+0.03&sigma;</td><td class="num">$592.10</td><td><span class="badge bull">BULLISH</span></td></tr>
-                <tr><td class="ticker">TSM</td><td class="num">+1.56&sigma;</td><td class="num">+$3.02B</td><td class="num">0.05</td><td class="num">-0.25&sigma;</td><td class="num">$420.04</td><td><span class="badge bull">BULLISH</span></td></tr>
-                <tr><td class="ticker">GOOGL</td><td class="num">+1.46&sigma;</td><td class="num">+$2.44B</td><td class="num">0.11</td><td class="num">+0.47&sigma;</td><td class="num">$354.30</td><td><span class="badge bull">BULLISH</span></td></tr>
-                <tr><td class="ticker">GLD</td><td class="num">+0.97&sigma;</td><td class="num">+$2.02B</td><td class="num">0.09</td><td class="num">-0.41&sigma;</td><td class="num">$398.47</td><td><span class="badge bull">BULLISH</span> &mdash; two-sided, also on bearish list</td></tr>
-                <tr><td class="ticker">CAT</td><td class="num">+0.94&sigma;</td><td class="num">+$910.6M</td><td class="num">0.17</td><td class="num">+1.49&sigma;</td><td class="num">$842.19</td><td><span class="badge bull">BULLISH</span></td></tr>
-                <tr><td class="ticker">BRK.B</td><td class="num">+0.92&sigma;</td><td class="num">+$1.72B</td><td class="num">0.04</td><td class="num">-0.05&sigma;</td><td class="num">$521.80</td><td><span class="badge bull">BULLISH</span></td></tr>
-                <tr><td class="ticker">NXPI</td><td class="num">+0.85&sigma;</td><td class="num">+$1.83B</td><td class="num">0.03</td><td class="num">-0.50&sigma;</td><td class="num">$239.71</td><td><span class="badge bull">BULLISH</span></td></tr>
-                <tr><td class="ticker">WDC</td><td class="num">+0.83&sigma;</td><td class="num">+$1.47B</td><td class="num">0.33</td><td class="num">+0.08&sigma;</td><td class="num">$434.30</td><td><span class="badge bull">BULLISH</span></td></tr>
-                <tr><td class="ticker">PINS</td><td class="num">+0.80&sigma;</td><td class="num">+$867K</td><td class="num">0.06</td><td class="num">+2.67&sigma;</td><td class="num">$23.68</td><td><span class="badge bull">BULLISH</span></td></tr>
-                <tr><td class="ticker">QQQ</td><td class="num">+8.84&sigma;</td><td class="num">+$31.65B</td><td class="num">0.12</td><td class="num">+0.65&sigma;</td><td class="num">$723.03</td><td><span class="badge bear">BEARISH</span> &mdash; see Section 0, index hedging</td></tr>
-                <tr><td class="ticker">SPY</td><td class="num">+7.01&sigma;</td><td class="num">+$25.71B</td><td class="num">0.06</td><td class="num">+0.24&sigma;</td><td class="num">$773.26</td><td><span class="badge bear">BEARISH</span> &mdash; index hedging</td></tr>
-                <tr><td class="ticker">BUD</td><td class="num">+4.18&sigma;</td><td class="num">+$2.6M</td><td class="num">0.07</td><td class="num">+14.45&sigma;</td><td class="num">$83.76</td><td><span class="badge bear">BEARISH</span></td></tr>
-                <tr><td class="ticker">IWM</td><td class="num">+3.59&sigma;</td><td class="num">+$12.25B</td><td class="num">0.05</td><td class="num">+1.28&sigma;</td><td class="num">$301.56</td><td><span class="badge bear">BEARISH</span> &mdash; index hedging</td></tr>
-                <tr><td class="ticker">TTD</td><td class="num">+2.22&sigma;</td><td class="num">-$78.9M</td><td class="num">1.97</td><td class="num">-0.13&sigma;</td><td class="num">$13.80</td><td><span class="badge bear">BEARISH</span> &mdash; but stock rallied Fri, likely unwind/short-cover</td></tr>
-                <tr><td class="ticker">PFE</td><td class="num">+1.45&sigma;</td><td class="num">+$60.9M</td><td class="num">0.03</td><td class="num">+5.45&sigma;</td><td class="num">$26.76</td><td><span class="badge bear">BEARISH</span></td></tr>
-                <tr><td class="ticker">ADI</td><td class="num">+1.37&sigma;</td><td class="num">+$60.2M</td><td class="num">0.21</td><td class="num">+4.44&sigma;</td><td class="num">$389.93</td><td><span class="badge bear">BEARISH</span></td></tr>
-                <tr><td class="ticker">GLD</td><td class="num">+1.34&sigma;</td><td class="num">+$4.92B</td><td class="num">0.17</td><td class="num">+0.03&sigma;</td><td class="num">$398.47</td><td><span class="badge bear">BEARISH</span> &mdash; two-sided, also on bullish list</td></tr>
-                <tr><td class="ticker">ABNB</td><td class="num">+1.28&sigma;</td><td class="num">+$285.2M</td><td class="num">0.22</td><td class="num">+3.90&sigma;</td><td class="num">$178.07</td><td><span class="badge bear">BEARISH</span></td></tr>
-                <tr><td class="ticker">TSLA</td><td class="num">+1.04&sigma;</td><td class="num">+$3.69B</td><td class="num">0.19</td><td class="num">+0.09&sigma;</td><td class="num">$328.58</td><td><span class="badge bear">BEARISH</span></td></tr>
-                <tr><td class="ticker">NVDA</td><td class="num">+1.03&sigma;</td><td class="num">+$4.06B</td><td class="num">0.08</td><td class="num">+0.15&sigma;</td><td class="num">$223.96</td><td><span class="badge bear">BEARISH</span> &mdash; see Section 5d</td></tr>
-                <tr><td class="ticker">MU</td><td class="num">+0.87&sigma;</td><td class="num">+$3.26B</td><td class="num">0.24</td><td class="num">-0.29&sigma;</td><td class="num">$877.57</td><td><span class="badge bear">BEARISH</span> &mdash; two-sided, also on bullish list</td></tr>
-                <tr><td class="ticker">DIS</td><td class="num">+0.78&sigma;</td><td class="num">+$18.4M</td><td class="num">0.04</td><td class="num">+3.24&sigma;</td><td class="num">$104.91</td><td><span class="badge bear">BEARISH</span></td></tr>
-                <tr><td class="ticker">PLTR</td><td class="num">+0.77&sigma;</td><td class="num">+$1.79B</td><td class="num">0.19</td><td class="num">+0.93&sigma;</td><td class="num">$172.01</td><td><span class="badge bear">BEARISH</span></td></tr>
-              </tbody>
-            </table>
-            <p><em>12 strongly bullish (&ge;1.5&sigma;) and 7 strongly bearish names flagged across 709 scored names out of 2,874 scanned. GLD and MU each appear on both lists &mdash; a tell of two-sided/binary-event positioning per the source's own methodology notes.</em></p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 5d: Weekly Options Playbook -->
-      <section id="playbook-2026-08-10" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>5d · Weekly Options Playbook &mdash; GEX-Based Setups</h3><span class="tag">InsiderFinance Gamma Exposure · Not Personalized Advice</span></div>
-          <div class="body">
-            <p><em>InsiderFinance's gamma-exposure pages via web_fetch were reliable and fresh (confirmed same-day "Aug 10 1d" nearest-expiry columns on QQQ, NVDA, MU, and AMD). Its /flow and /ticker-flow pages remain JS-rendered/empty without Chrome, so this section leans on gamma positioning, not live sweep-level order flow. Probabilistic framework from public positioning data &mdash; not personalized investment advice.</em></p>
-            <p><strong>Selection method:</strong> Checked 5 candidates this run &mdash; QQQ (covered in Section 0), NVDA, MU, AMD, and PLTR. PLTR's snapshot showed spot $156.00 against a confirmed live price of $172.01 (a &gt;10% gap) &mdash; clearly a stale pre-move cache &mdash; so PLTR was dropped despite being today's most obvious catalyst name. The remaining three (NVDA, MU, AMD) all show live "Aug 10" nearest-expiry data and appear on the bullish OTM-call list in Section 5c; kept all three given the semiconductor cluster is this week's dominant flow theme.</p>
-
-            <h4>1. MU (Micron) &mdash; Bullish continuation toward call wall</h4>
-            <p><em>Data freshness: live, nearest expiry labeled Aug 10 (1DTE).</em><br>Spot $883.65, net GEX +$248.9M (positive/long gamma, ratio 1.40) &mdash; a volatility-dampening regime. Call wall sits just $16.35 away (+1.85%) at $900, with zero-gamma at $821.24 (-7.06%) well below spot, giving the setup real room before the regime would flip negative. Catalyst: MU shows the largest OTM-call OI growth of the whole bullish scanner list (+$5.53B, +3.01&sigma;) alongside SNDK's memory-sector strength. Gamma Squeeze Screener: 35/100 (possible, early-stage &mdash; needs volume confirmation).</p>
-            <table>
-              <thead><tr><th>Entry Trigger</th><th>Invalidation</th><th>Target</th><th>Contract (illustrative)</th></tr></thead>
-              <tbody><tr><td>Hold/reclaim above $883 with volume</td><td>Daily close below $821.24 (zero-gamma)</td><td>$900 (call wall)</td><td>MU Aug 21 (~11 DTE) $900 call</td></tr></tbody>
-            </table>
-
-            <h4>2. NVDA &mdash; Bullish continuation, wider room to call wall</h4>
-            <p><em>Data freshness: live, nearest expiry labeled Aug 10 (1DTE).</em><br>Spot $222.50, net GEX +$1.50B (positive gamma, ratio 2.56 &mdash; the most call-skewed of the three). Call wall at $230 (+3.37%), zero-gamma at $190.52 (-14.37% &mdash; a long way below spot). Catalyst: NVDA is on the bearish OTM-put list too (+1.03&sigma;, +$4.06B OI growth) alongside the bullish tape &mdash; a two-sided positioning pattern consistent with pre-CPI hedging on a high-beta AI name rather than a clean directional signal. Gamma Squeeze Screener: 25/100 (unlikely &mdash; long gamma dampens squeeze potential).</p>
-            <table>
-              <thead><tr><th>Entry Trigger</th><th>Invalidation</th><th>Target</th><th>Contract (illustrative)</th></tr></thead>
-              <tbody><tr><td>Hold above $220 with confirming volume</td><td>Daily close below $190.52 (zero-gamma) &mdash; a wide stop</td><td>$230 (call wall)</td><td>NVDA Aug 21 (~11 DTE) $230 call</td></tr></tbody>
-            </table>
-
-            <h4>3. AMD &mdash; Bullish, tightest zero-gamma cushion of the three</h4>
-            <p><em>Data freshness: live, nearest expiry labeled 0DTE (today).</em><br>Spot $483.20, net GEX +$111.8M (positive gamma, ratio 1.31 &mdash; the least cushioned of the three, meaning a smaller drawdown could flip the regime). Call wall at $500 (+3.48%), zero-gamma at $464.28 (-3.92% &mdash; the tightest downside buffer of the three names). Catalyst: AMD is the third-ranked bullish name in Section 5c (+2.97&sigma;, +$4.79B OTM-call OI growth), part of the same semiconductor-strength cluster as MU and SNDK. Gamma Squeeze Screener: 25/100 (unlikely, long-gamma regime).</p>
-            <table>
-              <thead><tr><th>Entry Trigger</th><th>Invalidation</th><th>Target</th><th>Contract (illustrative)</th></tr></thead>
-              <tbody><tr><td>Hold above $480 with volume</td><td>Daily close below $464.28 (zero-gamma)</td><td>$500 (call wall)</td><td>AMD Aug 21 (~11 DTE) $500 call</td></tr></tbody>
-            </table>
-            <p><em>None of the above is a recommendation to buy or sell any security or options contract &mdash; it's a probabilistic framework built from public GEX positioning and today's news, meant as a starting point for the trader's own research and risk management.</em></p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 6: Broader Market Themes -->
-      <section id="themes-2026-08-10" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>6 · Broader Market Themes</h3><span class="tag">Rotation · Factors · Cross-Asset · Positioning</span></div>
-          <div class="body">
-            <p><span class="badge bull">Sector rotation: semis/memory leading</span> Semiconductors/memory (SNDK, MU, AMD) are today's clear options-flow leaders &mdash; a continuation of the AI-capex trade. Private credit and BDCs (FSK, OWL) show up repeatedly on the unusual-volume tape this week on earnings-driven re-ratings, though both remain well below 2025 highs &mdash; the market "un-pricing despair," not pricing in new growth, per thetrading.tools' own framing.</p>
-            <p><span class="badge event">Cross-asset tells</span> The 10Y yield easing to 4.65% alongside a rallying equity tape is the week's core tension &mdash; bond and stock markets are both reading the weak jobs print as dovish, but that read gets tested hard on Wednesday's CPI. Oil is the odd one out, bid on Hormuz risk rather than macro data.</p>
-            <p><span class="badge event">Positioning &amp; flows</span> Index-level put buying (QQQ +8.84&sigma;, SPY +7.01&sigma;, IWM +3.59&sigma; on the bearish composite scanner) sitting alongside single-stock bullish call buying in AI names is a classic "buy the dip protection while staying long the theme" posture &mdash; consistent with a market that wants to stay long the AI trade into CPI but is paying up for insurance.</p>
-            <p><span class="badge bull">Breadth</span> Per Marketwatch coverage cited on the wires, the share of S&amp;P 500 stocks beating the index is the highest in four years &mdash; a genuinely broad rally, not just mega-cap concentration, a supportive underlying signal for the bull case in Section 0.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 7: Secondary Names -->
-      <section id="secondary-2026-08-10" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>7 · Secondary Names with Fresh News</h3><span class="tag">Under-the-Radar Catalysts</span></div>
-          <div class="body">
-            <table>
-              <thead><tr><th>Ticker</th><th>Headline</th><th>Why It Matters</th></tr></thead>
-              <tbody>
-                <tr><td class="ticker">BA</td><td>Reportedly selling 3 autonomous-flight subsidiaries</td><td>Archer Aviation named as a possible buyer</td></tr>
-                <tr><td class="ticker">BKKT</td><td>BIO-Key scores Portuguese national-security deal</td><td>Small-cap contract win</td></tr>
-                <tr><td class="ticker">n/a</td><td>Aspire Biopharma: $30M DCS deal expanding into global auto market</td><td>Exclusive Benzinga item, cross-sector expansion</td></tr>
-                <tr><td class="ticker">n/a</td><td>World Liberty Financial (Trump-affiliated) received $100M from a man under UK money-laundering investigation</td><td>NYT reporting cited by Benzinga &mdash; political/regulatory overhang</td></tr>
-                <tr><td class="ticker">PLUG</td><td>Gaining Monday</td><td>No single confirmed catalyst this run</td></tr>
-                <tr><td class="ticker">n/a</td><td>Shein IPO valuation tracking $22-25B</td><td>Short of the $30B some investors had targeted</td></tr>
-                <tr><td class="ticker">TWE</td><td>Shares up after flagging a $395M writedown to address excess US supply</td><td>"Clear the decks" reaction</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 8: Digest -->
-      <section id="digest-2026-08-10" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>8 · YouTube / Channel &amp; Discord Digest</h3><span class="tag">Skipped &mdash; Chrome Unreachable</span></div>
-          <div class="body">
-            <p><em>Discord digest skipped this run &mdash; Claude in Chrome was unreachable (confirmed after 2 retries at the start of the session), and there is no web_fetch fallback for authenticated Discord content. The entire run switched to the web_fetch/WebSearch fallback path per the known-outage protocol. This is a recurring intermittent issue for the Chrome extension connector across recent runs &mdash; worth flagging if it persists.</em></p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 9: Week Ahead -->
-      <section id="week-2026-08-10" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>9 · Week Ahead</h3><span class="tag">Data · Earnings · Policy · Technicals</span></div>
-          <div class="body">
-            <p><strong>Data:</strong> RBA decision Tue; NFIB, ADP weekly, Existing Home Sales Tue; <strong>CPI Wed</strong> (the week's headline print); PPI + Jobless Claims Thu.</p>
-            <p><strong>Earnings:</strong> CoreWeave Tue, Nebius Wed &mdash; the week's two direct AI-infrastructure-spend tests, with the market already pricing a much higher bar into Nebius (+30% above its 200-day average) than CoreWeave (below its 200-day average).</p>
-            <p><strong>Policy:</strong> Three Fed speaker appearances (Hammack Wed, Barkin Wed and again Thu) bracket the CPI print &mdash; watch for any pushback or confirmation of the market's dovish read on the July jobs miss.</p>
-            <p><strong>Technicals:</strong> NDX sits at a resistance test (28,450-28,600) after Friday's breakout attempt; RSI overbought across multiple timeframes argues for a stall or shallow pullback being a healthy, not alarming, outcome if it happens.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 10: Watchlist -->
-      <section id="watchlist-2026-08-10" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>10 · Watchlist &amp; Levels</h3><span class="tag">Setups From Today's Data</span></div>
-          <div class="body">
-            <table>
-              <thead><tr><th>Ticker</th><th>Setup</th><th>Entry</th><th>Invalidation</th><th>Target</th></tr></thead>
-              <tbody>
-                <tr><td class="ticker">QQQ</td><td>Gamma-regime continuation</td><td>Hold/reclaim $706.30, push through $723</td><td>Close below $706.30</td><td>$730</td></tr>
-                <tr><td class="ticker">MU</td><td>Bullish OTM-call flow + tight call-wall proximity</td><td>Hold above $883</td><td>Close below $821.24</td><td>$900</td></tr>
-                <tr><td class="ticker">NVDA</td><td>Bullish flow, wide gamma cushion</td><td>Hold above $220</td><td>Close below $190.52</td><td>$230</td></tr>
-                <tr><td class="ticker">AMD</td><td>Bullish flow, tightest zero-gamma buffer</td><td>Hold above $480</td><td>Close below $464.28</td><td>$500</td></tr>
-                <tr><td class="ticker">CRWV</td><td>Earnings Tue, below 200-day average</td><td>Post-earnings reaction</td><td>Failure to reclaim 200-day average</td><td>Retest of 200-day average</td></tr>
-                <tr><td class="ticker">NBIS</td><td>Earnings Wed, +30% above 200-day average</td><td>Post-earnings reaction (high bar priced in)</td><td>Break of pre-earnings support on a miss</td><td>Continuation if beat confirms AI-infra demand</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 11: Risks -->
-      <section id="risks-2026-08-10" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>11 · Risks &amp; What Could Break the Thesis</h3><span class="tag">Tail Risks</span></div>
-          <div class="body">
-            <p><span class="badge bear">A hot CPI print Wednesday</span> The single biggest scheduled risk to the bullish NDX call &mdash; it would directly contradict the "bad jobs data = good for stocks" read the market has run with since Friday.</p>
-            <p><span class="badge bear">Strait of Hormuz escalation</span> Iran's hardening demands and the promotion of a hardline IRGC commander are a live tail risk to the oil-and-geopolitics side of the tape; a genuine supply disruption would hit both energy prices and risk sentiment simultaneously.</p>
-            <p><span class="badge event">Overbought technicals</span> RSI overbought on daily/H4/M15 for NDX means a mean-reversion pullback is a live possibility even absent a specific catalyst; the resistance cluster at 28,450-28,600 is a real level, not just a round number.</p>
-            <p><span class="badge event">Elevated index put positioning</span> QQQ/SPY/IWM all showing top-of-universe bearish composite scores on OI growth signals the professional/institutional crowd is paying up for downside insurance &mdash; worth noting even though it reads more as hedging than a directional call.</p>
-            <p><span class="badge event">Data-quality caveat this run</span> Chrome was unreachable, Discord digest was skipped entirely, and several sections (5a/5b/5c) relied on Friday 8/7 close data rather than a live Monday premarket scan &mdash; treat volume/RVOL/options figures as the most recent confirmed session, not real-time.</p>
-          </div>
-        </div>
-      </section>
-
-    </div>
-  </details>
-</article>
+      </summary>
+    </details>
+  </article>
 
   <article class="day wknd" data-date="2026-08-09-wknd" id="wknd-2026-08-09">
     <details>
