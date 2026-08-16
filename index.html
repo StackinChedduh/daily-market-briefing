@@ -1152,6 +1152,47 @@
 })();
 </script>
 
+<!-- Live Market Data — patched daily by bin/update_checklist_data.py (id-based regex patch,
+     never a full read/rewrite of this file). Lives outside the archive main element so the
+     day-article splice (bin/update_dashboard.py) never touches it either. -->
+<section class="checklist-wrap" id="live-market-data">
+  <div class="card">
+    <div class="head">
+      <h3>Live Market Data</h3>
+      <span class="tag">As of: <span id="lmd-asof">Friday, August 14, 2026 &middot; Close (market closed for the weekend &mdash; refreshes premarket Monday)</span> <span id="lmd-stale-flag"></span></span>
+    </div>
+    <div class="body">
+      <p style="margin:0 0 12px;font-size:11px;color:var(--text-muted);">Auto-updated each trading morning from live sources (Google Finance / stockanalysis.com / InsiderFinance gamma-exposure data) as part of the Daily Market Rundown task. Reference data only — always confirm against your own live quote/chain before entering a trade.</p>
+
+      <div class="snap">
+        <div class="tile"><div class="label">VIX</div><div class="val" id="data-vix">14.25</div><div class="chg" id="data-vix-note">&lt; 15 &mdash; slow/reduce size</div></div>
+        <div class="tile"><div class="label">ES (S&amp;P Futures)</div><div class="val" id="data-es-dir">N/A</div><div class="chg" id="data-es-pct">market closed</div></div>
+        <div class="tile"><div class="label">NQ (Nasdaq Futures)</div><div class="val" id="data-nq-dir">N/A</div><div class="chg" id="data-nq-pct">market closed</div></div>
+        <div class="tile"><div class="label">QQQ Spot</div><div class="val" id="data-spot">$731.07 (last close)</div></div>
+        <div class="tile"><div class="label">Premarket High (QQQ)</div><div class="val" id="data-pm-high">N/A</div></div>
+        <div class="tile"><div class="label">Premarket Low (QQQ)</div><div class="val" id="data-pm-low">N/A &mdash; refreshes premarket Mon</div></div>
+      </div>
+
+      <h4 style="margin:16px 0 8px;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);">Previous Session (QQQ) &mdash; <span id="data-prev-date">Fri, Aug 14 2026</span></h4>
+      <div class="snap">
+        <div class="tile"><div class="label">Open</div><div class="val" id="data-prev-open">$733.41</div></div>
+        <div class="tile"><div class="label">High</div><div class="val" id="data-prev-high">$734.39</div></div>
+        <div class="tile"><div class="label">Low</div><div class="val" id="data-prev-low">$728.32</div></div>
+        <div class="tile"><div class="label">Close</div><div class="val" id="data-prev-close">$731.07</div><div class="chg" id="data-prev-chg">-0.14%</div></div>
+      </div>
+
+      <h4 style="margin:16px 0 8px;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);">Reference Strikes &mdash; QQQ Options Positioning</h4>
+      <div class="snap">
+        <div class="tile"><div class="label">Call Wall</div><div class="val" id="data-call-wall">$740.00 (+1.51%, per last GEX snapshot)</div></div>
+        <div class="tile"><div class="label">Put Wall</div><div class="val" id="data-put-wall">$660.00 (-9.47%)</div></div>
+        <div class="tile"><div class="label">Zero Gamma</div><div class="val" id="data-zero-gamma">$716.97 (-1.65%)</div></div>
+        <div class="tile"><div class="label">Max Pain</div><div class="val" id="data-max-pain">$700.00</div></div>
+      </div>
+      <p style="margin:10px 0 0;font-size:11px;color:var(--text-muted);font-style:italic;">Call wall / put wall / zero gamma / max pain are dealer gamma-positioning levels (support/resistance context for strike selection) — not a live delta feed. The checklist's "Strike selected (delta 0.30&ndash;0.45)" item is a judgment call you make against your broker's live chain at entry; these levels are a reference input, not a substitute.</p>
+    </div>
+  </div>
+</section>
+
 <main id="archive">
   <article class="day pm" data-date="2026-08-14-pm" id="pm-2026-08-14">
   <details open>
