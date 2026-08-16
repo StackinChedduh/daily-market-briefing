@@ -406,6 +406,232 @@
   ::-webkit-scrollbar-track { background: var(--bg); }
   ::-webkit-scrollbar-thumb { background: var(--bg-elev-2); border-radius: 6px; }
   ::-webkit-scrollbar-thumb:hover { background: var(--border); }
+
+  /* ===== Premarket Checklist (persistent section, lives outside the archive main
+     element so the daily update_dashboard.py splice never touches it) ===== */
+  section.checklist-wrap { max-width: 1400px; margin: 0 auto; padding: 18px 24px 6px; }
+  details.checklist-card {
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  details.checklist-card > summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 14px 18px;
+    background: var(--bg-elev-2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  details.checklist-card > summary::-webkit-details-marker { display: none; }
+  details.checklist-card > summary::marker { display: none; }
+  details.checklist-card > summary::before {
+    content: "";
+    display: inline-block;
+    width: 0; height: 0;
+    border-left: 6px solid var(--text-dim);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    margin-right: 10px;
+    transition: transform 150ms ease;
+    flex-shrink: 0;
+  }
+  details.checklist-card[open] > summary::before { transform: rotate(90deg); }
+  .checklist-title { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .checklist-title h2 { margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.2px; }
+  .checklist-title .badge { position: relative; top: -1px; }
+  .checklist-overall {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+    font-size: 12px;
+    color: var(--text-dim);
+  }
+  .checklist-overall strong { color: var(--accent); }
+  .checklist-overall.all-done strong { color: var(--green); }
+  .checklist-progressbar {
+    width: 130px;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }
+  .checklist-progressbar > span {
+    display: block;
+    height: 100%;
+    background: var(--accent);
+    width: 0%;
+    transition: width 200ms ease;
+  }
+  .checklist-progressbar.all-done > span { background: var(--green); }
+  .checklist-body { padding: 16px 18px; }
+  .checklist-body > .checklist-intro {
+    font-size: 12.5px;
+    color: var(--text-dim);
+    margin: 0 0 14px;
+  }
+  .checklist-groups {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+  @media (max-width: 1100px) { .checklist-groups { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 700px) { .checklist-groups { grid-template-columns: 1fr; } }
+  .check-group {
+    background: var(--bg-elev-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+  }
+  .check-group-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  .check-group-head h4 {
+    margin: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .check-count {
+    font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    padding: 2px 7px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    flex-shrink: 0;
+  }
+  .check-count.complete {
+    color: var(--green);
+    border-color: rgba(46,204,113,0.4);
+    background: rgba(46,204,113,0.12);
+  }
+  .check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 7px 0;
+    border-bottom: 1px dashed var(--border);
+  }
+  .check-item:last-child { border-bottom: none; }
+  .check-item input[type="checkbox"] {
+    margin-top: 3px;
+    width: 15px;
+    height: 15px;
+    accent-color: var(--green);
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .check-item label { flex: 1; cursor: pointer; }
+  .check-item .check-label-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .check-item .info-icon {
+    color: var(--text-muted);
+    font-size: 10px;
+    cursor: help;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .check-item .check-hint {
+    display: block;
+    color: var(--text-muted);
+    font-size: 11px;
+    margin-top: 2px;
+    font-style: italic;
+  }
+  .check-item.checked .check-label-row { color: var(--text-dim); text-decoration: line-through; text-decoration-color: var(--border); }
+  .check-item.checked .check-hint { opacity: 0.5; }
+  .checklist-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+  }
+  .checklist-note { font-size: 11px; color: var(--text-muted); }
+  .reset-btn {
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .reset-btn:hover { color: var(--text); border-color: var(--accent); }
+
+  /* Framework reference (collapsible sub-card inside the checklist) */
+  details.framework {
+    margin-top: 16px;
+    background: var(--bg-elev-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+  details.framework > summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 10px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  details.framework > summary::-webkit-details-marker { display: none; }
+  details.framework > summary::marker { display: none; }
+  details.framework > summary::before {
+    content: "\25B8";
+    font-size: 10px;
+    color: var(--text-muted);
+    display: inline-block;
+    transition: transform 150ms ease;
+  }
+  details.framework[open] > summary::before { transform: rotate(90deg); }
+  .framework-body { padding: 2px 16px 14px; font-size: 12.5px; color: var(--text-dim); }
+  .framework-body h5 {
+    margin: 14px 0 6px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+  }
+  .framework-body h5:first-child { margin-top: 0; }
+  .framework-body ul { margin: 0 0 4px; padding-left: 18px; }
+  .framework-body li { margin-bottom: 5px; }
+  .framework-body table { margin-top: 6px; font-size: 12px; }
+  .framework-body p.jn { margin-top: 6px; }
 </style>
 </head>
 <body>
@@ -553,6 +779,378 @@
     </nav>
   </details>
 </header>
+
+<section class="checklist-wrap" id="premarket-checklist">
+  <details class="checklist-card" open>
+    <summary>
+      <div class="checklist-title">
+        <h2>Premarket Options Checklist</h2>
+        <span class="badge event">Trading · Daily · Resets Each Session</span>
+      </div>
+      <div class="checklist-overall" id="checklist-overall">
+        <span><strong id="checklist-count">0/22</strong> complete</span>
+        <div class="checklist-progressbar" id="checklist-bar"><span id="checklist-bar-fill" style="width:0%"></span></div>
+      </div>
+    </summary>
+    <div class="checklist-body">
+      <p class="checklist-intro">Only trade when every box below is checked. Checkmarks are saved in this browser and auto-reset at the start of a new calendar day &mdash; this is a personal readiness checklist, not trading advice.</p>
+
+      <div class="checklist-groups">
+
+        <div class="check-group" data-group="market">
+          <div class="check-group-head">
+            <h4>&#127760; Market Context</h4>
+            <span class="check-count" data-group-count="market">0/4</span>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-market-1" data-group="market">
+            <label for="chk-market-1">
+              <span class="check-label-row">VIX checked <span class="info-icon" title="< 15 = slow/reduce size · 15–25 = normal · > 25 = reduce size or sit out">i</span></span>
+              <span class="check-hint">&lt; 15 = slow/reduce size &middot; 15&ndash;25 = normal &middot; &gt; 25 = reduce size or sit out</span>
+            </label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-market-2" data-group="market">
+            <label for="chk-market-2">
+              <span class="check-label-row">Pre-market futures direction noted <span class="info-icon" title="ES/NQ trending direction gives you initial bias">i</span></span>
+              <span class="check-hint">ES/NQ trending direction gives you initial bias</span>
+            </label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-market-3" data-group="market">
+            <label for="chk-market-3">
+              <span class="check-label-row">No major news in next 30 min <span class="info-icon" title="Fed speakers, CPI, jobs data — check ForexFactory or Bloomberg">i</span></span>
+              <span class="check-hint">Fed speakers, CPI, jobs data &mdash; check ForexFactory or Bloomberg</span>
+            </label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-market-4" data-group="market">
+            <label for="chk-market-4">
+              <span class="check-label-row">Overnight gap assessed <span class="info-icon" title="Large gaps often fill — factor into your directional bias">i</span></span>
+              <span class="check-hint">Large gaps often fill &mdash; factor into your directional bias</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="check-group" data-group="levels">
+          <div class="check-group-head">
+            <h4>&#128202; Key Levels</h4>
+            <span class="check-count" data-group-count="levels">0/4</span>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-levels-1" data-group="levels">
+            <label for="chk-levels-1">
+              <span class="check-label-row">Previous day close marked <span class="info-icon" title="Price magnets — often act as support/resistance">i</span></span>
+              <span class="check-hint">Price magnets &mdash; often act as support/resistance</span>
+            </label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-levels-2" data-group="levels">
+            <label for="chk-levels-2">
+              <span class="check-label-row">VWAP plotted on chart <span class="info-icon" title="Price above VWAP = bullish bias · below = bearish bias">i</span></span>
+              <span class="check-hint">Price above VWAP = bullish bias &middot; below = bearish bias</span>
+            </label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-levels-3" data-group="levels">
+            <label for="chk-levels-3">
+              <span class="check-label-row">Pre-market high/low noted <span class="info-icon" title="Breaks of these levels often drive directional moves">i</span></span>
+              <span class="check-hint">Breaks of these levels often drive directional moves</span>
+            </label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-levels-4" data-group="levels">
+            <label for="chk-levels-4">
+              <span class="check-label-row">Nearby round numbers identified <span class="info-icon" title="NDX reacts to round 100/500 levels — note them">i</span></span>
+              <span class="check-hint">NDX reacts to round 100/500 levels &mdash; note them</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="check-group" data-group="window">
+          <div class="check-group-head">
+            <h4>&#9201; Trade Window</h4>
+            <span class="check-count" data-group-count="window">0/3</span>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-window-1" data-group="window">
+            <label for="chk-window-1">
+              <span class="check-label-row">Within valid trade window <span class="info-icon" title="9:45–11:30am or 1:30–3:00pm only — no exceptions">i</span></span>
+              <span class="check-hint">9:45&ndash;11:30am or 1:30&ndash;3:00pm only &mdash; no exceptions</span>
+            </label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-window-2" data-group="window">
+            <label for="chk-window-2">
+              <span class="check-label-row">Past the 9:30&ndash;9:45 chaos zone <span class="info-icon" title="First 15 min are unpredictable — let it settle">i</span></span>
+              <span class="check-hint">First 15 min are unpredictable &mdash; let it settle</span>
+            </label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-window-3" data-group="window">
+            <label for="chk-window-3">
+              <span class="check-label-row">Not within 60 min of market close <span class="info-icon" title="After 3pm, gamma risk spikes — avoid unless exiting">i</span></span>
+              <span class="check-hint">After 3pm, gamma risk spikes &mdash; avoid unless exiting</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="check-group" data-group="setup">
+          <div class="check-group-head">
+            <h4>&#127919; Trade Setup</h4>
+            <span class="check-count" data-group-count="setup">0/4</span>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-setup-1" data-group="setup">
+            <label for="chk-setup-1">
+              <span class="check-label-row">Clear directional bias with a reason <span class="info-icon" title="Write it down: 'Bullish because NDX held VWAP on retest'">i</span></span>
+              <span class="check-hint">Write it down: "Bullish because NDX held VWAP on retest"</span>
+            </label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-setup-2" data-group="setup">
+            <label for="chk-setup-2">
+              <span class="check-label-row">Strike selected (delta 0.30&ndash;0.45) <span class="info-icon" title="Not a lottery ticket — slightly OTM with real delta">i</span></span>
+              <span class="check-hint">Not a lottery ticket &mdash; slightly OTM with real delta</span>
+            </label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-setup-3" data-group="setup">
+            <label for="chk-setup-3">
+              <span class="check-label-row">Bid/ask spread is acceptable <span class="info-icon" title="Spread should be < 20% of the mid price — else skip">i</span></span>
+              <span class="check-hint">Spread should be &lt; 20% of the mid price &mdash; else skip</span>
+            </label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-setup-4" data-group="setup">
+            <label for="chk-setup-4">
+              <span class="check-label-row">Know what could invalidate your thesis <span class="info-icon" title="If X happens, I'm wrong and I exit. Define X now.">i</span></span>
+              <span class="check-hint">If X happens, I'm wrong and I exit. Define X now.</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="check-group" data-group="risk">
+          <div class="check-group-head">
+            <h4>&#128737; Risk Management</h4>
+            <span class="check-count" data-group-count="risk">0/4</span>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-risk-1" data-group="risk">
+            <label for="chk-risk-1">
+              <span class="check-label-row">Position size &le; 5% of account (~$500 max) <span class="info-icon" title="Hard rule — no exceptions regardless of conviction">i</span></span>
+              <span class="check-hint">Hard rule &mdash; no exceptions regardless of conviction</span>
+            </label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-risk-2" data-group="risk">
+            <label for="chk-risk-2">
+              <span class="check-label-row">Daily loss limit not hit (max -10%) <span class="info-icon" title="If you're down $1k+ today, you're done. No revenge trades.">i</span></span>
+              <span class="check-hint">If you're down $1k+ today, you're done. No revenge trades.</span>
+            </label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-risk-3" data-group="risk">
+            <label for="chk-risk-3">
+              <span class="check-label-row">Fewer than 2 trades currently open <span class="info-icon" title="No more than 2 simultaneous positions">i</span></span>
+              <span class="check-hint">No more than 2 simultaneous positions</span>
+            </label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-risk-4" data-group="risk">
+            <label for="chk-risk-4">
+              <span class="check-label-row">Exit rules defined before entry <span class="info-icon" title="+50% = take profit · -35% = hard stop · 2pm = exit all">i</span></span>
+              <span class="check-hint">+50% = take profit &middot; -35% = hard stop &middot; 2pm = exit all</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="check-group" data-group="mindset">
+          <div class="check-group-head">
+            <h4>&#129504; Mindset Check</h4>
+            <span class="check-count" data-group-count="mindset">0/3</span>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-mindset-1" data-group="mindset">
+            <label for="chk-mindset-1">
+              <span class="check-label-row">Not trading to recover losses <span class="info-icon" title="Revenge trading is the #1 account killer — be honest">i</span></span>
+              <span class="check-hint">Revenge trading is the #1 account killer &mdash; be honest</span>
+            </label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-mindset-2" data-group="mindset">
+            <label for="chk-mindset-2">
+              <span class="check-label-row">Not chasing a move already underway <span class="info-icon" title="If you missed it, you missed it. Next setup.">i</span></span>
+              <span class="check-hint">If you missed it, you missed it. Next setup.</span>
+            </label>
+          </div>
+          <div class="check-item">
+            <input type="checkbox" id="chk-mindset-3" data-group="mindset">
+            <label for="chk-mindset-3">
+              <span class="check-label-row">Last trade journaled <span class="info-icon" title="If you haven't logged yesterday's trades, do it now">i</span></span>
+              <span class="check-hint">If you haven't logged yesterday's trades, do it now</span>
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="checklist-actions">
+        <span class="checklist-note" id="checklist-saved-note">Not started today</span>
+        <button type="button" class="reset-btn" id="checklist-reset">Reset checklist</button>
+      </div>
+
+      <details class="framework">
+        <summary>The Framework &mdash; full trading rules reference</summary>
+        <div class="framework-body">
+          <h5>1. Trade Setup Criteria (only trade when ALL are met)</h5>
+          <ul>
+            <li><strong>Time window:</strong> 9:45&ndash;11:30am or 1:30&ndash;3:00pm. Avoid the open (chaotic) and final hour (gamma trap).</li>
+            <li><strong>Clear bias:</strong> You need a reason &mdash; VWAP direction, prior day level test, macro catalyst. "Feels like it'll go up" doesn't count.</li>
+            <li><strong>VIX check:</strong> VIX above 20 = wider spreads, faster moves. Adjust size down. VIX below 15 = sluggish, harder to profit on directional plays.</li>
+            <li><strong>No major news in the next 30 min</strong> (Fed speakers, economic data).</li>
+          </ul>
+          <h5>2. Position Sizing Rules</h5>
+          <ul>
+            <li>Max per trade: 3-5% of account (~$300-500 on a $10k account)</li>
+            <li>Max 2 trades open simultaneously</li>
+            <li>Max daily loss: 10% &mdash; hit it, you're done for the day, no exceptions</li>
+          </ul>
+          <h5>3. Entry</h5>
+          <ul>
+            <li>Buy slightly OTM (1-2 strikes out), not deep OTM lottery tickets</li>
+            <li>Target options with delta 0.30&ndash;0.45 &mdash; enough sensitivity without paying for pure gamma</li>
+            <li>Check the bid/ask spread &mdash; if it's wider than 20% of the mid price, skip it</li>
+          </ul>
+          <h5>4. Exit Rules (the part most people skip)</h5>
+          <table>
+            <thead><tr><th>Scenario</th><th>Action</th></tr></thead>
+            <tbody>
+              <tr><td>Up 50-80%</td><td>Take profit, no questions</td></tr>
+              <tr><td>Up 100%+</td><td>Sell half, let rest run with stop at breakeven</td></tr>
+              <tr><td>Down 30-40%</td><td>Cut it. Done.</td></tr>
+              <tr><td>Approaching 2pm</td><td>Exit regardless of P&amp;L &mdash; theta accelerates</td></tr>
+            </tbody>
+          </table>
+          <h5>5. Trade Journal (non-negotiable)</h5>
+          <p class="jn">Log every trade: time, bias/reason, entry delta, P&amp;L, and what you were thinking. This is where the real edge comes from over time.</p>
+        </div>
+      </details>
+    </div>
+  </details>
+</section>
+
+<script>
+(function () {
+  var STORAGE_KEY = 'premarketChecklistV1';
+  var groups = {
+    market:  4,
+    levels:  4,
+    window:  3,
+    setup:   4,
+    risk:    4,
+    mindset: 3
+  };
+  var TOTAL = Object.keys(groups).reduce(function (sum, g) { return sum + groups[g]; }, 0);
+
+  var checklistEl = document.getElementById('premarket-checklist');
+  if (!checklistEl) return;
+  var checkboxes = checklistEl.querySelectorAll('input[type="checkbox"]');
+  var savedNote = document.getElementById('checklist-saved-note');
+  var overallCountEl = document.getElementById('checklist-count');
+  var overallWrapEl = document.getElementById('checklist-overall');
+  var barFillEl = document.getElementById('checklist-bar-fill');
+  var barEl = document.getElementById('checklist-bar');
+
+  function todayKey() {
+    return new Date().toDateString();
+  }
+
+  function loadState() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return null;
+      var parsed = JSON.parse(raw);
+      if (!parsed || parsed.date !== todayKey()) return null;
+      return parsed;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function saveState() {
+    var checked = {};
+    checkboxes.forEach(function (cb) { checked[cb.id] = cb.checked; });
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ date: todayKey(), checked: checked }));
+    } catch (e) { /* localStorage unavailable — degrade silently, still works in-session */ }
+  }
+
+  function updateGroupCount(group) {
+    var groupBoxes = checklistEl.querySelectorAll('input[data-group="' + group + '"]');
+    var checkedCount = 0;
+    groupBoxes.forEach(function (cb) { if (cb.checked) checkedCount++; });
+    var countEl = checklistEl.querySelector('[data-group-count="' + group + '"]');
+    if (countEl) {
+      countEl.textContent = checkedCount + '/' + groups[group];
+      countEl.classList.toggle('complete', checkedCount === groups[group]);
+    }
+    return checkedCount;
+  }
+
+  function updateAll() {
+    var totalChecked = 0;
+    Object.keys(groups).forEach(function (g) { totalChecked += updateGroupCount(g); });
+
+    checkboxes.forEach(function (cb) {
+      var item = cb.closest('.check-item');
+      if (item) item.classList.toggle('checked', cb.checked);
+    });
+
+    overallCountEl.textContent = totalChecked + '/' + TOTAL;
+    var pct = TOTAL ? Math.round((totalChecked / TOTAL) * 100) : 0;
+    barFillEl.style.width = pct + '%';
+    var allDone = totalChecked === TOTAL;
+    overallWrapEl.classList.toggle('all-done', allDone);
+    barEl.classList.toggle('all-done', allDone);
+
+    if (totalChecked === 0) {
+      savedNote.textContent = 'Not started today';
+    } else if (allDone) {
+      savedNote.textContent = 'All clear — cleared to trade';
+    } else {
+      savedNote.textContent = 'Saved in this browser · resets tomorrow';
+    }
+  }
+
+  function applyState(state) {
+    if (!state) return;
+    checkboxes.forEach(function (cb) {
+      if (Object.prototype.hasOwnProperty.call(state.checked, cb.id)) {
+        cb.checked = !!state.checked[cb.id];
+      }
+    });
+  }
+
+  // Restore today's progress (if any), otherwise start fresh.
+  applyState(loadState());
+  updateAll();
+
+  checkboxes.forEach(function (cb) {
+    cb.addEventListener('change', function () {
+      updateAll();
+      saveState();
+    });
+  });
+
+  var resetBtn = document.getElementById('checklist-reset');
+  resetBtn.addEventListener('click', function () {
+    checkboxes.forEach(function (cb) { cb.checked = false; });
+    updateAll();
+    saveState();
+  });
+})();
+</script>
 
 <main id="archive">
   <article class="day pm" data-date="2026-08-14-pm" id="pm-2026-08-14">
