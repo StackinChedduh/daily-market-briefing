@@ -640,14 +640,15 @@
   <div class="row">
     <div>
       <h1>Daily Market Rundown — Archive</h1>
-      <div class="subtitle">Latest: Tuesday, August 18, 2026</div>
+      <div class="subtitle">Latest: Tuesday, August 18, 2026 · Postmarket</div>
     </div>
     <div class="meta">Today: <strong>SPX 7,140</strong> pivot · ES <strong>7,165.5</strong> · VIX <strong>18.04</strong> · WTI <strong>$104.20</strong> · <span style="color:var(--purple);">FOMC 2pm</span></div>
   </div>
   <details class="jump-dropdown">
-    <summary class="jump-toggle">Archive &middot; 133 days</summary>
+    <summary class="jump-toggle">Archive &middot; 134 days</summary>
     <nav class="jump">
-      <a class="current" href="#day-2026-08-18">2026-08-18 &middot; Tue</a>
+      <a class="current" href="#pm-2026-08-18">2026-08-18 &middot; PM</a>
+      <a href="#day-2026-08-18">2026-08-18 &middot; Tue</a>
       <a href="#pm-2026-08-17">2026-08-17 &middot; PM</a>
       <a href="#day-2026-08-17">2026-08-17 &middot; Mon</a>
       <a href="#wknd-2026-08-16">2026-08-16 &middot; Weekend</a>
@@ -1198,8 +1199,121 @@
 </section>
 
 <main id="archive">
-  <article class="day" data-date="2026-08-18" id="day-2026-08-18">
+  <article class="day pm" data-date="2026-08-18-pm" id="pm-2026-08-18">
   <details open>
+    <summary>
+      <div class="summary-left">
+        <h2>Tuesday, August 18, 2026 — Postmarket</h2>
+        <span class="badge event">postmarket · Session Close</span>
+      </div>
+      <div class="summary-meta">
+        SPX <strong>7,691.76 (-0.69%)</strong> · Dow <strong>53,343.40 (-0.22%)</strong> · Nasdaq <strong>26,289.71 (-1.33%)</strong> · VIX <strong>15.84 (+4.28%)</strong> · WTI <strong>~$84.89</strong> · BTC <strong>~$64,300</strong>
+      </div>
+    </summary>
+
+    <p><em>Chrome browser tools were unreachable this run (confirmed after 2 retries), consistent with the known-issue pattern flagged in this morning's rundown — this postmarket build used the WebSearch/web_fetch fallback path throughout. Individual closing prices below are best-effort from search-sourced recaps, not a live terminal; figures noted "unconfirmed" carry wider error bars. Gold and the precise 30-year Treasury settlement print were not reliably pinned down this run.</em></p>
+
+    <nav class="toc">
+      <a href="#pm-closes-2026-08-18">Closes</a>
+      <a href="#pm-calls-2026-08-18">Morning Calls</a>
+      <a href="#pm-earnings-2026-08-18">Earnings</a>
+      <a href="#pm-narrative-2026-08-18">Narrative</a>
+      <a href="#pm-outlook-2026-08-18">Outlook</a>
+    </nav>
+
+    <div class="wrap">
+
+      <!-- Final index / asset closes -->
+      <section id="pm-closes-2026-08-18" class="grid">
+        <div class="col-12 card">
+          <div class="head"><h3>Final Closes</h3><span class="tag">Indices · Commodities · Crypto</span></div>
+          <div class="body">
+            <table>
+              <thead><tr><th>Index / Asset</th><th class="num">Close</th><th class="num">Day Change</th></tr></thead>
+              <tbody>
+                <tr><td>S&amp;P 500</td><td class="num">7,691.76</td><td class="num down">-53.30 (-0.69%)</td></tr>
+                <tr><td>Dow Jones</td><td class="num">53,343.40</td><td class="num down">-116.38 (-0.22%)</td></tr>
+                <tr><td>Nasdaq Composite</td><td class="num">26,289.71</td><td class="num down">~-355 (-1.33%)</td></tr>
+                <tr><td>Russell 2000</td><td class="num">3,057.54</td><td class="num down">-0.35%</td></tr>
+                <tr><td>VIX</td><td class="num">15.84</td><td class="num up">+0.65 (+4.28%)</td></tr>
+                <tr><td>WTI Crude</td><td class="num">~$84.89</td><td class="num up">+0.46%, Brent ~$91</td></tr>
+                <tr><td>Gold</td><td class="num">~$4,389</td><td class="num down">~-1.9% (sourcing thin)</td></tr>
+                <tr><td>Bitcoin</td><td class="num">~$64,300</td><td class="num up">~+2.4% off weekly low</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- How morning watchlist/movers calls played out -->
+      <section id="pm-calls-2026-08-18" class="grid">
+        <div class="col-12 card">
+          <div class="head"><h3>Morning Calls — How They Played Out</h3><span class="tag">Watchlist · Movers</span></div>
+          <div class="body">
+            <table>
+              <thead><tr><th>Ticker</th><th>Morning Setup</th><th class="num">Close</th><th class="num">Day %</th><th>Result</th></tr></thead>
+              <tbody>
+                <tr><td>QQQ</td><td>Bearish trigger: confirmed close below $721.93 zero-gamma → $700 magnet</td><td class="num">~$719.66 (unconfirmed)</td><td class="num down">~-1.4%</td><td><span class="badge bull">Worked</span></td></tr>
+                <tr><td>NVDA</td><td>Bullish squeeze: hold above $228, invalidation below $220</td><td class="num">~$219.63 (unconfirmed)</td><td class="num down">-2.39%</td><td><span class="badge bear">Stopped</span></td></tr>
+                <tr><td>SNDK</td><td>Zero-gamma break setup: close below $1,666.62 → $1,650 put wall</td><td class="num">~$1,668 (unconfirmed)</td><td class="num down">-6.66%</td><td><span class="badge event">Right at the line</span></td></tr>
+                <tr><td>CBRS</td><td>Momentum/story continuation — monitor follow-through vs. fade</td><td class="num">$221.85</td><td class="num down">~-12.0%</td><td><span class="badge bear">Faded</span></td></tr>
+                <tr><td>HD</td><td>Earnings reaction (BMO) — revenue/EPS beat, guidance reaffirmed</td><td class="num">data unavailable — conflicting recaps</td><td class="num">n/a</td><td><span class="badge event">Mixed</span></td></tr>
+                <tr><td>AVGO</td><td>Mover — continued weakness post-BofA AI-financing note</td><td class="num">data unavailable</td><td class="num down">-3.33%</td><td><span class="badge bear">Worked (bearish)</span></td></tr>
+                <tr><td>AMD</td><td>Mover — trading with memory/AI-hardware complex</td><td class="num">data unavailable</td><td class="num down">-5.04%</td><td><span class="badge bear">Reversed</span></td></tr>
+                <tr><td>MU</td><td>Mover — "memory boom" complex</td><td class="num">data unavailable</td><td class="num down">-5.07%</td><td><span class="badge bear">Reversed</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- AMC earnings -->
+      <section id="pm-earnings-2026-08-18" class="grid">
+        <div class="col-12 card">
+          <div class="head"><h3>AMC Earnings Reactions</h3><span class="tag">After-Hours</span></div>
+          <div class="body">
+            <table>
+              <thead><tr><th>Ticker</th><th class="num">AH Price</th><th class="num">AH Change</th><th>Notes</th></tr></thead>
+              <tbody>
+                <tr><td>MRCY (Mercury Systems)</td><td class="num">~$105.00</td><td class="num down">~-7.4%</td><td>EPS $0.37 vs. $0.38 est. (narrow miss); revenue $289.78M vs. $266.09M est. (sizable beat) — market weighted the EPS miss over the revenue beat.</td></tr>
+                <tr><td>JKHY (Jack Henry)</td><td class="num">pending</td><td class="num">pending</td><td>GAAP EPS $1.57 beat $1.44 consensus; operating margin narrowed to 21.2% from 25.3% on deconversion-revenue drop and higher personnel costs; FY2027 guidance $7.33-$7.38 EPS. Stock reaction not confirmed at this run's cutoff.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Session narrative -->
+      <section id="pm-narrative-2026-08-18" class="grid">
+        <div class="col-12 card">
+          <div class="head"><h3>Session Narrative</h3><span class="tag">What Happened</span></div>
+          <div class="body">
+            <p>The morning's "bearish-leaning neutral" bias was validated and then some: the S&amp;P 500 fell a third straight session (-0.69%, its steepest single-day drop of the stretch) as the 30-year Treasury yield pushed to a fresh multi-decade high and Trump confirmed he would not extend the expired Iran ceasefire, keeping oil bid and the geopolitical risk premium live. QQQ's exact zero-gamma pivot ($721.93) flagged at the open as "the whole ballgame today" was breached, with the ETF closing roughly 1.4% lower — the bearish continuation trigger the morning rundown described. The memory-boom trade cracked hard: SanDisk, which rallied 8.9% Monday, gave essentially all of it back (-6.66%), landing almost exactly on its own zero-gamma level, while Micron and AMD reversed into the red alongside broader chip-sector selling (Broadcom -3.33% on continued AI-financing skepticism). Cerebras extended its post-IPO round-trip with an ugly -12% fade, echoing the "beat isn't always enough" pattern this name has shown in prior sessions. Home Depot's headline beat (revenue $47.9B vs. $47.5B est., EPS $4.92 vs. $4.71 est., guidance reaffirmed) got a mixed, hard-to-pin-down reaction as the stock whipped in a wide intraday range against the negative macro tape.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pattern analysis & forward-looking directional call -->
+      <section id="pm-outlook-2026-08-18" class="grid">
+        <div class="col-12 card">
+          <div class="head"><h3>Pattern Analysis &amp; Next-Session Outlook</h3><span class="tag">Technicals · Cross-Session Read</span></div>
+          <div class="body">
+            <p>SPX has now fallen three straight sessions off its Aug 13 record close (7,798.99): -0.17% (Aug 14), -0.52% (Aug 17), -0.69% (Aug 18) — an accelerating, not stabilizing, pullback. Yesterday's postmarket read flagged 7,700 as "the line in the sand" before the picture changes; today's 7,691.76 close sits right at/marginally below that floor. Independent technical sourcing today corroborates the deterioration: RSI crossed below its signal line for the first time since the August breakout, and breadth collapsed to ~38% advancers/59% decliners versus 77-80% advancing on Aug 12-13 — a real loss of participation, not just index-level noise. The 50-day (~7,568) and 200-day (~7,193) moving averages are still well below and rising, which keeps the structural uptrend technically intact, but the last three sessions read as a genuine test of that structure rather than routine chop.</p>
+            <p>
+              <span class="badge bear">Bearish-tilted / Neutral-Range-bound</span>
+              — next 1-3 sessions, confidence: <strong>Medium</strong>
+            </p>
+            <p>Watch SPX 7,690-7,700: holding/reclaiming that zone keeps this a shallow, three-day pullback with a retest of 7,745-7,785 in play; a confirmed close below opens room toward the 50-day MA near 7,568. On the chip/Nasdaq side, QQQ has already breached its $721.93 zero-gamma pivot intraday — the morning rundown's own bearish trigger — with $700 (max pain) the next magnet unless it reclaims $725-726. Biggest risk to this read: Wednesday's TJX/Lowe's/Estée Lauder prints and Thursday's Walmart earnings are the nearest scheduled catalysts that could confirm or break the consumer-health narrative feeding this selloff, while the live Iran/Strait of Hormuz standoff remains a headline-driven wildcard that could reverse the move in either direction just as fast as it built.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </details>
+</article>
+
+  <article class="day" data-date="2026-08-18" id="day-2026-08-18">
+  <details>
     <summary>
       <div class="summary-left">
         <h2>TUESDAY, AUGUST 18, 2026</h2>
@@ -2628,97 +2742,15 @@
 </article>
 
   <article class="day pm" data-date="2026-08-13-pm" id="pm-2026-08-13">
-  <details>
-    <summary>
-      <div class="summary-left">
-        <h2>Thursday, August 13, 2026 — Postmarket</h2>
-        <span class="badge event">postmarket · Session Close</span>
-      </div>
-      <div class="summary-meta">
-        SPX <strong>7,798.99 (+0.65%)</strong> · Dow <strong>53,839.99 (+0.13%)</strong> · Nasdaq <strong>26,803.03 (+0.81%)</strong> · VIX <strong>14.63</strong> · WTI <strong>$81.25</strong> · BTC <strong>~$63,403</strong>
-      </div>
-    </summary>
-
-    <p><em>Claude in Chrome was unreachable this run (retried once per protocol) — all figures below are sourced via WebSearch/web_fetch, not a live terminal. Individual-ticker closes for the AI-infrastructure earnings cohort (NBIS, SMCI, CRWV, LITE) are drawn from a live quote widget embedded in a Benzinga recap page rather than an end-of-day settle print, so treat them as closely-timed intraday reads, not confirmed closes. Russell 2000 close (3,052.85) and index-level closes are independently confirmed via AP/Yahoo wire recap.</em></p>
-
-    <nav class="toc">
-      <a href="#pm-closes-2026-08-13">Closes</a>
-      <a href="#pm-calls-2026-08-13">Morning Calls</a>
-      <a href="#pm-narrative-2026-08-13">Narrative</a>
-      <a href="#pm-outlook-2026-08-13">Outlook</a>
-    </nav>
-
-    <div class="wrap">
-
-      <section id="pm-closes-2026-08-13" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>Final Closes</h3><span class="tag">Indices · Commodities · Crypto</span></div>
-          <div class="body">
-            <table>
-              <thead><tr><th>Index / Asset</th><th class="num">Close</th><th class="num">Day Change</th></tr></thead>
-              <tbody>
-                <tr><td>S&amp;P 500</td><td class="num">7,798.99</td><td class="num up">+0.65% — first close above 7,800, fresh record</td></tr>
-                <tr><td>Dow 30</td><td class="num">53,839.99</td><td class="num up">+0.13% (+69.72 pts)</td></tr>
-                <tr><td>Nasdaq Composite</td><td class="num">26,803.03</td><td class="num up">+0.81%</td></tr>
-                <tr><td>Russell 2000</td><td class="num">3,052.85</td><td class="num up">+0.20% — 27th record close of 2026</td></tr>
-                <tr><td>VIX</td><td class="num">14.63</td><td class="num down">~-4% — fresh multi-day low, steady decline all week</td></tr>
-                <tr><td>Gold</td><td class="num">$4,423.60</td><td class="num down">-1.0% — profit-taking after Wednesday's highs</td></tr>
-                <tr><td>WTI Crude (Sep)</td><td class="num">$81.25</td><td class="num down">-2.4% — IEA demand-contraction forecast + Hormuz claim/counterclaim</td></tr>
-                <tr><td>Bitcoin</td><td class="num">~$63,403</td><td class="num flat">~flat</td></tr>
-              </tbody>
-            </table>
-          </div>
+    <details>
+      <summary>
+        <div class="summary-left">
+          <h2>2026-08-13 PM</h2>
+          <span class="summary-meta">archived · <a href="rundowns/rundown_2026-08-13.md">rundown_2026-08-13.md</a></span>
         </div>
-      </section>
-
-      <section id="pm-calls-2026-08-13" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>Morning Calls — How They Played Out</h3><span class="tag">Watchlist · Movers</span></div>
-          <div class="body">
-            <table>
-              <thead><tr><th>Ticker</th><th>Morning Setup</th><th class="num">Close</th><th class="num">Day %</th><th>Result</th></tr></thead>
-              <tbody>
-                <tr><td>QQQ</td><td>Hold $716.15 zero-gamma, confirmed push through $725 call wall, target $730+</td><td class="num">~$730 (intraday high $730.28)</td><td class="num up">~+1.2%</td><td><span class="badge bull">Worked</span> — cleared the call wall exactly as the gamma setup called for</td></tr>
-                <tr><td>NVDA</td><td>Two-sided into Aug 26 earnings; bull &gt;$223 target $230, bear &lt;$210 target $200</td><td class="num">~$225.30</td><td class="num up">~+1%</td><td><span class="badge event">Pinned</span> — modest gain, neither trigger cleanly hit</td></tr>
-                <tr><td>NBIS</td><td>Post-earnings momentum continuation, hold above premarket gap</td><td class="num">~$254 (live quote)</td><td class="num up">still far above pre-earnings ~$193</td><td><span class="badge bull">Worked</span> — gap held despite a ~-1.9% intraday pullback</td></tr>
-                <tr><td>SMCI</td><td>Post-earnings momentum continuation, hold above premarket gap</td><td class="num">~$37.33 (live quote)</td><td class="num up">up sharply from Tue's $31.60</td><td><span class="badge bull">Worked</span></td></tr>
-                <tr><td>CBRS</td><td>Fade the after-hours weakness vs. beat-and-raise fundamentals — event-driven, avoid catching the knife</td><td class="num">~-12% to -14% (from a premarket low near -16%)</td><td class="num down">still down double digits</td><td><span class="badge event">Mixed</span> — stock pared some of the premarket damage but stayed sharply lower; "beat isn't always enough" theme held</td></tr>
-                <tr><td>CRWV</td><td>Momentum continuation off Wednesday's beat-and-raise (+18% premarket)</td><td class="num">~$106.20 (live quote)</td><td class="num up">up big from Tue's $90.32</td><td><span class="badge bull">Worked</span></td></tr>
-                <tr><td>CAVA</td><td>Post-earnings momentum continuation (+17.2% premarket)</td><td class="num">~$69.50 (live quote)</td><td class="num up">up from Tue's $60.81</td><td><span class="badge bull">Worked</span></td></tr>
-                <tr><td>LITE</td><td>Post-earnings momentum continuation (+13.6-14.8% premarket)</td><td class="num">~$934.50 (live quote)</td><td class="num up">up sharply from Tue's $820.59</td><td><span class="badge bull">Worked</span></td></tr>
-                <tr><td>QNT</td><td>Bernstein Outperform, PT raised to $95, +20-28% premarket</td><td class="num">~$71.61</td><td class="num up">held most of the premarket pop</td><td><span class="badge bull">Worked</span></td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <section id="pm-narrative-2026-08-13" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>Session Narrative</h3><span class="tag">What Happened</span></div>
-          <div class="body">
-            <p>The morning's "Cautiously Risk-On" bias came in soft — the session was outright risk-on. A cooler-than-expected July PPI (flat MoM vs. +0.2% consensus), stacked on Wednesday's in-line CPI, pushed the S&amp;P 500 through 7,800 for the first time and gave the Russell 2000 its 27th record close of the year, confirming the rally's breadth beyond just mega-cap tech. QQQ decisively cleared the $725 call-wall level flagged in this morning's options section, touching $730.28 intraday exactly as the gamma-pin setup projected. The AI-infrastructure earnings cohort (NBIS, SMCI, CRWV, LITE, CAVA, QNT) extended Wednesday's beat-and-raise pops, though most gave back a point or two intraday rather than running further. The biggest surprise was the Fed: Cleveland's Hammack doubled down on her hawkish "act now" stance exactly as the morning rundown warned, while Richmond's Barkin struck a notably more dovish, "open question" tone — the market shrugged off the dissonance entirely rather than the jolt this morning's risk section flagged. Cerebras remained the session's cautionary tale, sliding double digits despite a beat-and-raise on core metrics, keeping the "beat isn't always enough" theme alive for high-multiple AI names.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="pm-outlook-2026-08-13" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>Pattern Analysis &amp; Next-Session Outlook</h3><span class="tag">Technicals · Cross-Session Read</span></div>
-          <div class="body">
-            <p>The Aug 5-11 window was choppy digestion — mostly small down sessions (Aug 5 -0.17%, Aug 6 -0.27%, Aug 10 -0.06%, Aug 11 -0.32%) punctuated by one record close (Aug 7 +0.62%) — with VIX drifting lower throughout (16.3 → 15.2) even as the index chopped sideways. That consolidation has now resolved bullishly over two straight sessions: Wednesday's tame-CPI record and today's cooler-PPI record, with VIX extending its decline to 14.63 (a fresh multi-day low) and breadth confirming via the Russell 2000's own record. Technical sourcing was thin and inconsistent this run — RSI reads ranged from 63 to a much higher 85 depending on source, an unusually wide spread — so treat precise overbought/oversold levels with caution; the consistent thread across sources is an intact uptrend with the next round-number resistance near 7,830-7,850.</p>
-            <p>
-              <span class="badge bull">Bullish</span>
-              — next 1-3 sessions, confidence: <strong>Medium</strong>
-            </p>
-            <p>SPX: holding above 7,750 keeps today's breakout structurally intact for a push toward 7,830-7,850; a close back below the 7,700-7,690 shelf would reopen the choppy-range case that dominated most of the past week. QQQ/Nasdaq: the former $725 call wall is now the pivot to hold — a slip back below the $716 zero-gamma level would flip the dealer-hedging regime. Biggest risk: NVDA's Aug 26 earnings, already showing heavy bearish OTM put positioning building in today's options data, is the next binary test for the AI-capex trade driving this breakout; nearer-term, Friday's Retail Sales/Michigan Sentiment prints and the Hammack/Barkin Fed divergence are the immediate wildcards.</p>
-          </div>
-        </div>
-      </section>
-
-    </div>
-  </details>
-</article>
+      </summary>
+    </details>
+  </article>
 
   <article class="day" data-date="2026-08-13" id="day-2026-08-13">
     <details>
