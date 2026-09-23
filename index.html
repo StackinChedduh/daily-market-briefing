@@ -1196,26 +1196,26 @@
   <div class="card">
     <div class="head">
       <h3>Live Market Data</h3>
-      <span class="tag">As of: <span id="lmd-asof">Tuesday, September 22, 2026 &middot; Close (post-close run ~9:20 PM ET &mdash; refreshes premarket next session)</span> <span id="lmd-stale-flag"></span></span>
+      <span class="tag">As of: <span id="lmd-asof">Tuesday, September 22, 2026 &middot; Close (post-close run &mdash; refreshes premarket next session)</span> <span id="lmd-stale-flag"></span></span>
     </div>
     <div class="body">
       <p style="margin:0 0 12px;font-size:11px;color:var(--text-muted);">Auto-updated each trading morning from live sources (Google Finance / stockanalysis.com / InsiderFinance gamma-exposure data) as part of the Daily Market Rundown task. Reference data only — always confirm against your own live quote/chain before entering a trade.</p>
 
       <div class="snap">
         <div class="tile"><div class="label">VIX</div><div class="val" id="data-vix">14.21</div><div class="chg" id="data-vix-note">&lt; 15 &mdash; slow/reduce size</div></div>
-        <div class="tile"><div class="label">ES (S&amp;P Futures)</div><div class="val" id="data-es-dir">Flat</div><div class="chg" id="data-es-pct">SPX 0.00% (cash close; futures little changed evening)</div></div>
-        <div class="tile"><div class="label">NQ (Nasdaq Futures)</div><div class="val" id="data-nq-dir">Up</div><div class="chg" id="data-nq-pct">Nasdaq +0.45% (cash close; record)</div></div>
-        <div class="tile"><div class="label">QQQ Spot</div><div class="val" id="data-spot">$748.28 (after-hours; close $747.46)</div></div>
-        <div class="tile"><div class="label">Premarket High (QQQ)</div><div class="val" id="data-pm-high">N/A &mdash; refreshes premarket Wed Sep 23</div></div>
-        <div class="tile"><div class="label">Premarket Low (QQQ)</div><div class="val" id="data-pm-low">N/A &mdash; refreshes premarket Wed Sep 23</div></div>
+        <div class="tile"><div class="label">ES (S&amp;P Futures)</div><div class="val" id="data-es-dir">Flat</div><div class="chg" id="data-es-pct">+0.04% (ES fut, Google Finance; SPX cash -0.00%)</div></div>
+        <div class="tile"><div class="label">NQ (Nasdaq Futures)</div><div class="val" id="data-nq-dir">Up</div><div class="chg" id="data-nq-pct">+0.33% (NQ fut, Google Finance; Nasdaq cash +0.45%)</div></div>
+        <div class="tile"><div class="label">QQQ Spot</div><div class="val" id="data-spot">$747.46 (Sep 22 close; AH $748.28)</div></div>
+        <div class="tile"><div class="label">Premarket High (QQQ)</div><div class="val" id="data-pm-high">N/A &mdash; refreshes premarket next session</div></div>
+        <div class="tile"><div class="label">Premarket Low (QQQ)</div><div class="val" id="data-pm-low">N/A &mdash; refreshes premarket next session</div></div>
       </div>
 
-      <h4 style="margin:16px 0 8px;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);">Previous Session (QQQ) &mdash; <span id="data-prev-date">Tue Sep 22, 2026</span></h4>
+      <h4 style="margin:16px 0 8px;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);">Previous Session (QQQ) &mdash; <span id="data-prev-date">Tue, Sep 22 2026</span></h4>
       <div class="snap">
         <div class="tile"><div class="label">Open</div><div class="val" id="data-prev-open">$740.98</div></div>
         <div class="tile"><div class="label">High</div><div class="val" id="data-prev-high">$748.35</div></div>
         <div class="tile"><div class="label">Low</div><div class="val" id="data-prev-low">$740.93</div></div>
-        <div class="tile"><div class="label">Close</div><div class="val" id="data-prev-close">$747.46</div><div class="chg" id="data-prev-chg">+5.99 (+0.81%)</div></div>
+        <div class="tile"><div class="label">Close</div><div class="val" id="data-prev-close">$747.46</div><div class="chg" id="data-prev-chg">+0.81%</div></div>
       </div>
 
       <h4 style="margin:16px 0 8px;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);">Reference Strikes &mdash; QQQ Options Positioning</h4>
@@ -1223,7 +1223,7 @@
         <div class="tile"><div class="label">Call Wall</div><div class="val" id="data-call-wall">$748.00 (+0.01%)</div></div>
         <div class="tile"><div class="label">Put Wall</div><div class="val" id="data-put-wall">$700.00 (-6.40%)</div></div>
         <div class="tile"><div class="label">Zero Gamma</div><div class="val" id="data-zero-gamma">$732.82 (-2.01%)</div></div>
-        <div class="tile"><div class="label">Max Pain</div><div class="val" id="data-max-pain">$716.00 (-4.26%)</div></div>
+        <div class="tile"><div class="label">Max Pain</div><div class="val" id="data-max-pain">$716.00</div></div>
       </div>
       <p style="margin:10px 0 0;font-size:11px;color:var(--text-muted);font-style:italic;">Call wall / put wall / zero gamma / max pain are dealer gamma-positioning levels (support/resistance context for strike selection) — not a live delta feed. The checklist's "Strike selected (delta 0.30&ndash;0.45)" item is a judgment call you make against your broker's live chain at entry; these levels are a reference input, not a substitute.</p>
     </div>
@@ -1236,9 +1236,9 @@
     <summary>
       <div class="summary-left">
         <h2>TUESDAY, SEPTEMBER 22, 2026</h2>
-        <span class="badge event">Bias: Risk-on, tech-led · Nasdaq record · QQQ pinned at $748 call wall</span>
+        <span class="badge event">Bias: Mixed · Tech record, financials lag</span>
       </div>
-      <div class="summary-meta">NDX outlook <strong>Bullish</strong> · SPX pivot <strong>7,765</strong> · SPX <strong>7,764.64</strong> · Nasdaq <strong>27,244.28</strong> · QQQ <strong>747.46</strong> · VIX <strong>14.21</strong> · WTI <strong>&lt;$96 (6th down day)</strong></div>
+      <div class="summary-meta">NDX outlook <strong>Bullish</strong> · SPX pivot <strong>7,750</strong> · SPX <strong>7,764.64</strong> · Nasdaq <strong>27,244.28</strong> · QQQ <strong>747.46</strong> · VIX <strong>14.21</strong> · WTI <strong>$90.30</strong></div>
     </summary>
 
     <nav class="toc">
@@ -1261,1078 +1261,417 @@
     </nav>
 
     <div class="wrap">
+
+      <!-- Section 0 -->
       <section id="ndx-2026-09-22" class="grid">
         <div class="col-12 card">
           <div class="head"><h3>0 · NDX Pattern Read &amp; Directional Outlook</h3><span class="tag">Technicals · Cross-Session Read · Next 1-3 Sessions</span></div>
           <div class="body">
-<p><em>Run note: This build ran after the close (~9:20 PM ET), not at the 8:30 AM pre-open slot. All figures are **Sep 22 closing prints**, and the forward-looking sections set up **Wednesday, Sep 23**. Chrome was reachable. Discord channel content did not render (see Section 8). The local archive has no articles for Sep 16–21, a four-session gap.</em></p>
-<p><strong>Pattern: confirmed breakout to records, now pinned at the call wall.</strong> QQQ went from $704.54 (Sep 15, the bearish decision point in the last archived rundown) to $741.47 (Sep 21) and $747.46 (Sep 22, +0.81%, range 740.93–748.35). That is +6.1% in five sessions and a close within $1.19 of the 52-week high ($748.65). The Nasdaq Composite closed at a record 27,244.28 (+0.45%), its fourth straight gain. The Nasdaq-100 posted its first record since June. The catalysts that drove the Sep 15 bearish call have reversed. The 10Y fell back below 5% (~4.93% Mon). WTI dropped to $95.78 Monday (-4.5%) and extended its slide a sixth session Tuesday on Iran-talks optimism. AI leadership has returned: Meta's Muse agent, the chip rally led by ARM, MPWR and VICR, and positioning ahead of the Trump–Xi summit. All of this came despite the Fed's Sep 16 25 bp <strong>hike</strong> to 3.75–4.00% and dots signaling more. Breadth was narrow on Tuesday: S&amp;P flat, Dow -0.36%, financials hit by curve flattening and Muse disruption fears. Technical sourcing was moderate. Forex.com shows NDX RSI above 50 and approaching 70, with 29,800 retracement support and 29,200 near the 50-period SMA. That note's date isn't confirmed as today's, so treat its levels as approximate.</p>
-<p><span class="badge bull">Bullish</span>, next 1–3 sessions. <strong>Confidence: Medium.</strong> Trend and catalysts are clearly bullish. Medium rather than High because QQQ sits exactly on a positive-gamma call wall with RSI near overbought, and the Sep 16–21 archive gap limits the cross-session read.</p>
-<p><strong>Levels / risk:</strong> A hold above <strong>$741</strong> (Sep 21 close / Sep 22 low) keeps the breakout intact. A close through <strong>$748.65</strong> makes dealers roll the wall higher. Losing <strong>$732.82</strong> (zero-gamma) flips the regime to negative gamma and opens max pain at <strong>$716</strong>. Biggest risk: the <strong>Trump–Xi summit</strong> (TE lists Wed Sep 23; thetrading.tools says Sep 24). Close behind are the rates tape (2Y auction cleared at 4.787% vs 4.204% prior; 5Y Wed, 7Y Thu) and any reversal in Iran/oil headlines.</p>
-<p><strong>Options positioning (most volume/OI):</strong> InsiderFinance QQQ has spot $747.89 and net GEX <strong>+$20.43B</strong> (positive gamma, so dealer hedging dampens moves). The <strong>call wall and peak-GEX strike are both $748</strong> (30.6K OI; spot is +0.01% from it). Zero-gamma is <strong>$732.82</strong> (-2.0%). The <strong>put wall is $700</strong> (426.5K OI, the heaviest single strike on the chain, -6.4%). <strong>Max pain is $716.</strong> Total OI is 11.5M with P/C 1.36, so hedges are still heavy under a rising market. InsiderFinance aggregates OI across expirations, and QQQ didn't appear in Benzinga's visible UOA rows, so no single QQQ strike+expiry is sourced. The heaviest-OI QQQ strike is the $700 put (all expiries). Benzinga's highest day-volume print was <strong>NEM $155C 11/20/2026</strong> (5,002 day vol vs 561 OI, bullish, 3:19 PM).</p>
-<p><strong>0DTE / same-day-expiration read:</strong> Wednesday Sep 23 is <strong>not</strong> a monthly OPEX. Quarterly triple-witching was Fri Sep 18, and the next expirations are the weekly Fri Sep 25 and quarter-end Wed Sep 30. QQQ still lists daily expiries, and after the Sep 18 roll-off, gamma has rebuilt at $748. Expect same-day hedging to pin price near $748 unless a summit headline forces it through. The pin loosens into Friday's weekly, and Sep 30 quarter-end plus MU earnings (Sep 30 AMC) is the next concentration point.</p>
-<p><strong>Entry price/signal:</strong> This is a probabilistic setup, not personalized advice. <em>Continuation:</em> a 30-min close above <strong>$748.65</strong> (52-week high / call wall) targets roughly <strong>$755</strong> (+1%, a measured reference, not a sourced GEX level). Invalidate on a close back below $741. <em>Pullback:</em> holding $741 on a dip is the higher-quality entry back toward $748. Invalidate below $732.82 zero-gamma. The flow concentration is the $748 strike. An illustrative contract is the QQQ Oct 2 2026 $750C (~9 DTE from Wed).</p>
+            <p><em>Run note: this was a manual build after the cash close (~6:15 PM ET), not the usual 8:30 AM pre-open slot. The scheduled morning job left no files for Sep 16&ndash;22. All figures are Sep 22 closing or after-hours prints.</em></p>
+            <p>QQQ ran from <span class="num">704.54</span> on Sep 15, when it sat on its 100-day SMA with negative gamma, to <span class="num">747.46</span> today. That is +6.09% in five sessions and 0.16% below the 748.65 52-week high. The Nasdaq Composite set back-to-back records (27,122.09 Monday, 27,244.28 today), its first since June. The local archive skips Sep 16&ndash;21, so that leg is search-sourced. The Fed hiked 25bp to 3.75&ndash;4.00% on Sep 16 and signaled one more hike. Stocks sold off, then chips led the reversal (<span class="ticker">INTC</span> +12%, <span class="ticker">AMD</span> ~+10% through $1T on Sep 21). The dominant catalyst has flipped from bearish macro to AI/semis plus falling oil. Brent is under $100 after five straight declines on Iran diplomacy, and the chip bid is building into the Trump&ndash;Xi summit. The rally is narrow, though. The Dow fell 185 points, SPX was flat, financials lost ~2% on a flatter curve, and only 44.4% of stocks sit above their moving averages. Technical sourcing was thin: one CFD-based read shows hourly RSI near 90 (deeply overbought), but its absolute levels don't reconcile with QQQ/NQ and weren't used.</p>
+            <p>
+              <span class="badge bull">Bullish</span>
+              &mdash; next 1-3 sessions, confidence: <strong>Medium</strong>. Primary sources were fresh and date-verified, but the lookback has a four-session gap and momentum is stretched.
+            </p>
+            <p>If QQQ holds <span class="num">$741</span> (prior close/open zone; today's low 740.93), the breakout stays intact. A close under the <span class="num">$732.82</span> zero-gamma flip would mark a failed breakout and reopen $716 max pain. Upside needs a clean close above <span class="num">$748.35&ndash;748.65</span>. Biggest risk: the <strong>Trump&ndash;Xi summit (Sep 24; Trading Economics lists Sep 23)</strong>, where chips are bargaining currency. Rates are the secondary risk: the 2Y auction printed 4.787% vs 4.204% prior, and 5Y/7Y supply lands Wed and Thu.</p>
+            <p><strong>Options positioning (most volume/OI):</strong> QQQ spot $747.89, net GEX <span class="num up">+$20.43B</span>. The regime is positive gamma, where dealer hedging damps moves, a full flip from &minus;$11.72B on Sep 15. Call wall and peak GEX are at <span class="num">$748.00</span> (30.6K OI, +0.01%), right at spot. The put wall at <span class="num">$700.00</span> is the heaviest-OI strike (426.5K, &minus;6.40%). Zero-gamma is <span class="num">$732.82</span> (&minus;2.01%) and max pain <span class="num">$716.00</span> (&minus;4.26%). Put/call OI is 1.36. The highest day-volume contract visible in Benzinga's feed was <span class="ticker">NEM</span> <strong>$155 CALL 11/20/2026</strong> (5,002 day volume vs 561 OI, bullish). No QQQ strike appeared in the flow sources. The options scanner tilted put-side (15 vs 7 signatures above the 1.5 cutoff).</p>
+            <p><strong>0DTE / same-day-expiration read:</strong> Today was not a monthly OPEX (September OPEX was Sep 18; October monthly is Oct 16). QQQ has daily expirations, and the $748 peak-GEX strike sits at spot, so near-dated gamma is pinning price. Expect a $741&ndash;$748 grind unless the summit breaks it. Quarter-end (Sep 30) rebalancing is a possible headwind after a strong month.</p>
+            <p><strong>Entry price/signal:</strong> This is a probabilistic setup from today's data, <em>not</em> personalized investment advice. <em>Continuation:</em> a 30-minute close above $748.65 clears the call wall and 52-week high. Invalidation is a close below $741, first target $755&ndash;760, where there's no sourced overhead strike. <em>Failure:</em> a close below $740.93 on a disappointing summit headline targets $732.82. Invalidation is a reclaim of $748. No QQQ contract was sourced as the flow's focus.</p>
           </div>
         </div>
       </section>
+
+      <!-- Section 1 -->
       <section id="tldr-2026-09-22" class="grid">
         <div class="col-12 card">
-          <div class="head"><h3>1 · TL;DR — Tape in 60 Seconds</h3><span class="tag">Bias · Catalysts · Key Level</span></div>
+          <div class="head"><h3>1 · TL;DR &mdash; Tape in 60 Seconds</h3><span class="tag">Bias · Catalysts · Key Level</span></div>
           <div class="body">
-<ul class="tight">
-<li><strong>Bias:</strong> Risk-on, tech-led, narrow. Nasdaq record while the Dow and financials lag. Positive gamma should keep Wednesday tight.</li>
-<li><strong>Three things that matter (Wed Sep 23):</strong></li>
-<li>Trump–Xi summit (chips/export controls). This is what the semis rally is positioned for.</li>
-<li>Oil below $100 Brent and the Iran talks. Oil fell for six sessions, and diesel is at a record $6.52 with Trump backing an export ban.</li>
-<li>Rates: flash PMIs at 9:45, 5Y auction at 1 PM, Fed Barr at 10:05. Tuesday's 2Y auction cleared at 4.787%.</li>
-<li><strong>Key level:</strong> SPX 7,764.64 flat on the day. Pivot is <strong>~7,765</strong>. QQQ <strong>$748</strong> is the call wall/magnet, with <strong>$741</strong> support below.</li>
-</ul>
+            <div class="tldr">
+              <div class="box"><h4>Bias</h4><p>Mixed. Tech is risk-on, cyclicals and financials risk-off. Nasdaq set a record (+0.45%), SPX was flat, the Dow fell 0.36%, the Russell gained 0.51%, and VIX dropped to 14.21.</p></div>
+              <div class="box"><h4>Three Things That Matter</h4><ol class="tight">
+                <li><strong>Trump&ndash;Xi summit (Sep 23&ndash;24):</strong> chips, rare earths, tariffs and Iran are on the agenda, and the semis rally was bought into it.</li>
+                <li><strong>Brent under $100:</strong> its fifth straight decline, even as Trump threatened Iran at the UN and backed a diesel export ban (diesel at a record $6.52).</li>
+                <li><strong>Rates:</strong> the 2Y auction printed 4.787% (prev 4.204%) and the 10Y is ~4.95%. The curve flattened, banks got hit, and Collins and Barkin stayed hawkish.</li>
+              </ol></div>
+              <div class="box"><h4>Key Level</h4><p>SPX <strong>7,764.64</strong>. 7,750 is the near pivot and the <strong>7,816.70</strong> record is 0.67% above. QQQ is pinned at the <strong>$748</strong> call wall.</p></div>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- Section 2 -->
       <section id="macro-2026-09-22" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>2 · Macro Context</h3><span class="tag">Sep 22 Closing Snapshot · Narrative</span></div>
+        <div class="col-8 card">
+          <div class="head"><h3>2 · Macro Context</h3><span class="tag">Session Close Snapshot</span></div>
           <div class="body">
-<table>
-<thead>
-<tr>
-<th>Asset</th>
-<th>Sep 22 close</th>
-<th>Change</th>
-<th>Note</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>S&amp;P 500</td>
-<td>7,764.64</td>
-<td>-0.06 (0.00%)</td>
-<td>Flat; financials drag</td>
-</tr>
-<tr>
-<td>Nasdaq Comp</td>
-<td>27,244.28</td>
-<td>+122.18 (+0.45%)</td>
-<td>Record; 4th straight gain</td>
-</tr>
-<tr>
-<td>Dow</td>
-<td>51,863.69</td>
-<td>-185.14 (-0.36%)</td>
-<td>Banks weak on curve flattening</td>
-</tr>
-<tr>
-<td>Russell 2000</td>
-<td>2,889.92</td>
-<td>+14.56 (+0.51%)</td>
-<td></td>
-</tr>
-<tr>
-<td>VIX</td>
-<td>14.21</td>
-<td>-0.66 (-4.44%)</td>
-<td>&lt; 15: slow-tape regime</td>
-</tr>
-<tr>
-<td>QQQ</td>
-<td>747.46</td>
-<td>+5.99 (+0.81%)</td>
-<td>AH 748.28; 52w high 748.65</td>
-</tr>
-<tr>
-<td>SPY</td>
-<td>~773.7</td>
-<td>—</td>
-<td>Benzinga AH ticker</td>
-</tr>
-<tr>
-<td>10Y</td>
-<td>~4.93% (Mon)</td>
-<td>—</td>
-<td>Back below 5%; Tue exact not sourced (TE: "edged up")</td>
-</tr>
-<tr>
-<td>WTI</td>
-<td>$95.78 (Mon settle)</td>
-<td>-4.5% Mon</td>
-<td>6th straight loss Tue; Tue settle not sourced</td>
-</tr>
-<tr>
-<td>Brent</td>
-<td>$100.34 (Mon)</td>
-<td>—</td>
-<td>Below $100 Tue</td>
-</tr>
-<tr>
-<td>BTC</td>
-<td>~$86.7K</td>
-<td>flat</td>
-<td>~$1B spot ETF inflows</td>
-</tr>
-<tr>
-<td>Gold (GLD)</td>
-<td>~$400</td>
-<td>—</td>
-<td>Steady on softer oil</td>
-</tr>
-<tr>
-<td>ES / NQ futures</td>
-<td>Not sourced</td>
-<td>"Little changed" evening</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Global:</strong> Asia rose after the US tech rally (Bloomberg wrap). Reports had South Korea's consumer sentiment improving, while Australian manufacturing contracted for the first time in six months. The IMF told advanced economies to cut debt as borrowing costs rise.</p>
-<p><strong>Narrative:</strong> The Fed hiked 25 bp on Sep 16 (12–0, to 3.75–4.00%, first hike since 2023), and 16 of 18 dots see another. On Tuesday, Collins said the hike would help reach the inflation goal and Barkin said inflation pressures may take time to pass. The market has looked through the hike because oil is falling (Iran diplomacy; Tehran says Hormuz could reopen within seven days if the US eases pressure) and the AI trade has re-accelerated. The curve is flattening (2Y 4.787% at auction), which hits banks and supports mega-cap growth.</p>
+            <table>
+              <thead><tr><th>Instrument</th><th>Level</th><th>Change</th></tr></thead>
+              <tbody>
+                <tr><td>S&amp;P 500</td><td class="num">7,764.64</td><td class="num flat">&minus;0.00%</td></tr>
+                <tr><td>Nasdaq Comp (record)</td><td class="num">27,244.28</td><td class="num up">+0.45%</td></tr>
+                <tr><td>Dow</td><td class="num">51,863.69</td><td class="num down">&minus;0.36%</td></tr>
+                <tr><td>Russell 2000</td><td class="num">2,889.92</td><td class="num up">+0.51%</td></tr>
+                <tr><td>ES fut (level unconfirmed vs cash)</td><td class="num">7,643.25</td><td class="num flat">+0.04%</td></tr>
+                <tr><td>NQ fut</td><td class="num">29,544.50</td><td class="num up">+0.33%</td></tr>
+                <tr><td>US 10Y (search-sourced)</td><td class="num">~4.95%</td><td class="num flat">little changed</td></tr>
+                <tr><td>DXY</td><td class="num">Not sourced</td><td class="num">&mdash;</td></tr>
+                <tr><td>WTI</td><td class="num">$90.30</td><td class="num down">&minus;0.24%</td></tr>
+                <tr><td>Brent</td><td class="num">~$99.25</td><td class="num down">lower</td></tr>
+                <tr><td>Gold</td><td class="num">$4,388.30</td><td class="num up">+0.27%</td></tr>
+                <tr><td>BTC</td><td class="num">$86,679.61</td><td class="num up">+0.56%</td></tr>
+                <tr><td>VIX</td><td class="num">14.21</td><td class="num down">&minus;4.44%</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-4 card">
+          <div class="head"><h3>Global &amp; Narrative</h3><span class="tag">Asia · Europe · Rates</span></div>
+          <div class="body">
+            <p><strong>Asia:</strong> Nikkei +1.38% (65,018.95), HSI flat, Shanghai +0.06%, Sensex &minus;0.44%.</p>
+            <p><strong>Europe:</strong> Flat. DAX +0.02%, CAC +0.20%, STOXX 50 +0.10%, FTSE &minus;0.29%.</p>
+            <p><strong>FX/Rates:</strong> EUR/USD 1.1442, USD/JPY 157.59. The front end sold off on the 2Y auction and the curve flattened. Pimco trimmed its long-bond underweight with long yields above 5%.</p>
+            <p><strong>Narrative:</strong> The Fed is back to hiking (3.75&ndash;4.00%), yet equities are pricing falling oil plus AI earnings power over the policy rate. Since Sep 15, WTI has gone from ~$105 to ~$90, VIX from 17.20 to 14.21, and QQQ gamma from negative to strongly positive.</p>
           </div>
         </div>
       </section>
+
+      <!-- Section 3 -->
       <section id="calendar-2026-09-22" class="grid">
         <div class="col-12 card">
-          <div class="head"><h3>3 · Economic Calendar — Wed Sep 23</h3><span class="tag">Trading Economics · Wed Sep 23</span></div>
+          <div class="head"><h3>3 · Economic Calendar</h3><span class="tag">Today's Actuals · Next 3 Sessions</span></div>
           <div class="body">
-<table>
-<thead>
-<tr>
-<th>Time (ET)</th>
-<th>Event</th>
-<th>Prior</th>
-<th>Consensus/Fcst</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>7:00</td>
-<td>MBA mortgage apps / 30Y rate</td>
-<td>-4.1% / 6.97%</td>
-<td>—</td>
-</tr>
-<tr>
-<td>9:45</td>
-<td>S&amp;P Global Mfg PMI Flash (Sep)</td>
-<td>53.9</td>
-<td>53.6</td>
-</tr>
-<tr>
-<td>9:45</td>
-<td>S&amp;P Global Services PMI Flash (Sep)</td>
-<td>56.5</td>
-<td>56.0</td>
-</tr>
-<tr>
-<td>9:45</td>
-<td>Composite PMI Flash</td>
-<td>56.0</td>
-<td>55.2 (fcst)</td>
-</tr>
-<tr>
-<td>10:05</td>
-<td>Fed Barr speech</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>10:30</td>
-<td>EIA crude inventories</td>
-<td>-0.64M</td>
-<td>-0.6M</td>
-</tr>
-<tr>
-<td>11:30</td>
-<td>17-wk bill / 2Y FRN auctions</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>13:00</td>
-<td><strong>5-Year Note Auction</strong></td>
-<td>4.393%</td>
-<td></td>
-</tr>
-<tr>
-<td>All day</td>
-<td><strong>Trump–Xi Summit</strong>; UN General Assembly</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Tuesday actuals:</strong> Richmond Fed Mfg -2 (prior 4, cons 5). Richmond Services Revenues 0 (prior -8). 2Y auction 4.787% (prior 4.204%). API crude +1.786M (prior 7.14M). Fed speakers were Williams, Jefferson and Barkin.</p>
-<p><strong>Rest of week:</strong> Thu has Jobless Claims (cons 201K), New Home Sales (cons 0.62M), the 7Y auction, and Fed Williams/Barkin/Hammack/Paulson. Fri has Durable Goods (cons -0.4%) and final UMich (cons 47.6; 1Y inflation expectations 4.6%).</p>
+            <table>
+              <thead><tr><th>When (ET)</th><th>Event</th><th>Actual / Prev</th><th>Consensus</th></tr></thead>
+              <tbody>
+                <tr><td>Tue 10:00</td><td>Richmond Fed Mfg (Sep)</td><td class="num down">&minus;2 / 4</td><td class="num">5</td></tr>
+                <tr><td>Tue 1:00 PM</td><td>2-Year Note auction</td><td class="num down">4.787% / 4.204%</td><td class="num">&mdash;</td></tr>
+                <tr><td>Tue 5:00 PM</td><td>API crude</td><td class="num">+1.786M / 7.14M</td><td class="num">&minus;0.5M</td></tr>
+                <tr><td>Tue</td><td>Fed: Williams, Jefferson, Barkin, Collins</td><td colspan="2">Barkin: inflation pressures may take time to pass. Collins: the hike will help.</td></tr>
+                <tr><td>Wed 9:45</td><td><strong>S&amp;P Flash PMIs</strong> (Mfg / Svcs)</td><td class="num">prev 53.9 / 56.5</td><td class="num">53.6 / 56</td></tr>
+                <tr><td>Wed 10:05</td><td>Fed Barr</td><td colspan="2">&mdash;</td></tr>
+                <tr><td>Wed 10:30</td><td>EIA crude</td><td class="num">prev &minus;0.64M</td><td class="num">&minus;0.6M</td></tr>
+                <tr><td>Wed 1:00 PM</td><td><strong>5-Year Note auction</strong></td><td class="num">prev 4.393%</td><td class="num">&mdash;</td></tr>
+                <tr><td>Wed/Thu</td><td><strong>Trump&ndash;Xi summit</strong></td><td colspan="2">Chips, rare earths, tariffs, Iran</td></tr>
+                <tr><td>Thu 8:30</td><td>Jobless claims</td><td class="num">prev 196K</td><td class="num">201K</td></tr>
+                <tr><td>Thu 10:00</td><td>New Home Sales (Aug)</td><td class="num">prev 0.607M</td><td class="num">0.62M</td></tr>
+                <tr><td>Thu 1:00 PM</td><td>7-Year Note auction</td><td class="num">prev 4.512%</td><td class="num">&mdash;</td></tr>
+                <tr><td>Fri 8:30</td><td>Durable Goods (Aug)</td><td class="num">prev 1.1%</td><td class="num">&minus;0.4%</td></tr>
+                <tr><td>Fri 10:00</td><td>UMich Sentiment final</td><td class="num">prev 51.7</td><td class="num">47.6</td></tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
+
+      <!-- Section 4 -->
       <section id="earnings-2026-09-22" class="grid">
         <div class="col-12 card">
-          <div class="head"><h3>4 · Earnings</h3><span class="tag">BMO · AMC · Reactions</span></div>
+          <div class="head"><h3>4 · Earnings</h3><span class="tag">Reported Today · Wed/Thu Slate</span></div>
           <div class="body">
-<ul class="tight">
-<li><strong>Tue BMO:</strong> <strong>AZO</strong> reported EPS $56.05 (beat, +4.1%) on revenue of $6.59B (miss, -1.6%). <strong>THO</strong> rose ~5% on Q4 results, though the CEO said the RV recovery "never arrived."</li>
-<li><strong>Tue AMC:</strong> <strong>KBH</strong> reported EPS $1.05 (vs $1.61 last year) on revenue of $1.30B. Benzinga calls it a double beat, but management flagged a weakening housing market. <strong>Voyager (VOYG)</strong> tanked after hours; the cause was not sourced this run. <strong>HPQ</strong> warned of weaker PC demand in 2027.</li>
-<li><strong>Wed BMO:</strong> <strong>GIS</strong> (7:00; EPS est $0.72, revenue $4.3B), <strong>PAYX</strong> (EPS est $1.32, revenue $1.6B), <strong>CTAS</strong> (EPS est $1.35, revenue $3.0B), <strong>VFS</strong>.</li>
-<li><strong>Wed AMC:</strong> Not sourced. The Yahoo earnings calendar wasn't read this run; the names above come from Google Finance's upcoming-earnings panel.</li>
-<li><strong>On deck:</strong> <strong>MU FQ4 on Wed Sep 30 AMC.</strong> Consensus is $31.16 EPS on ~$50.4B revenue. Benzinga (Sep 17) put the options-implied move at ±11%.</li>
-</ul>
+            <table>
+              <thead><tr><th>Ticker</th><th class="num">EPS Est</th><th class="num">Actual</th><th class="num">Surprise</th><th>Reaction</th></tr></thead>
+              <tbody>
+                <tr><td class="ticker">AZO</td><td class="num">53.89</td><td class="num">56.05</td><td class="num up">+4.0%</td><td>Record store growth</td></tr>
+                <tr><td class="ticker">KBH</td><td class="num">0.90</td><td class="num">1.05</td><td class="num up">+16.7%</td><td>Fell. Full-year sales guide missed; "weakening" housing</td></tr>
+                <tr><td class="ticker">THO</td><td class="num">0.92</td><td class="num">0.78</td><td class="num down">&minus;15.2%</td><td>Rose ~5% despite the miss. CEO: RV recovery "never arrived"</td></tr>
+                <tr><td class="ticker">WOR</td><td class="num">0.75</td><td class="num">0.82</td><td class="num up">+9.3%</td><td>Stock soared</td></tr>
+                <tr><td class="ticker">MLKN</td><td class="num">0.36</td><td class="num">0.53</td><td class="num up">+49.3%</td><td>&mdash;</td></tr>
+                <tr><td class="ticker">VOYG</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td>Tanked after hours; catalyst not confirmed this run</td></tr>
+              </tbody>
+            </table>
+            <p><strong>Wed BMO:</strong> <span class="ticker">CTAS</span> (1.36), <span class="ticker">PAYX</span> (1.32), <span class="ticker">GIS</span> (0.72), <span class="ticker">CBRL</span>, <span class="ticker">VFS</span>, <span class="ticker">MANU</span>. <strong>Wed AMC:</strong> <span class="ticker">FUL</span>, <span class="ticker">SFIX</span>. <strong>Thu:</strong> <span class="ticker">DRI</span> (BMO), <span class="ticker">SNX</span> (BMO), <span class="ticker">COST</span> (AMC, 6.52 est), <span class="ticker">BB</span>.</p>
           </div>
         </div>
       </section>
+
+      <!-- Section 5 -->
       <section id="movers-2026-09-22" class="grid">
-        <div class="col-12 card">
-          <div class="head"><h3>5 · Top Movers with Catalysts (Sep 22 session)</h3><span class="tag">Named Catalysts Only</span></div>
+        <div class="col-6 card">
+          <div class="head"><h3>5 · Session Gainers</h3><span class="tag">Named Catalysts</span></div>
           <div class="body">
-<p><strong>Gainers</strong></p>
-<table>
-<thead>
-<tr>
-<th>Ticker</th>
-<th>Close</th>
-<th>%</th>
-<th>Catalyst</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>VKTX</td>
-<td>$40.85</td>
-<td>+35.7%</td>
-<td>VK2735 maintenance study: up to 97% of weight loss kept on every-other-week dosing</td>
-</tr>
-<tr>
-<td>BFLY</td>
-<td>$9.93</td>
-<td>+22.0%</td>
-<td>Top-4 gainer (Google Finance); catalyst not sourced</td>
-</tr>
-<tr>
-<td>VICR</td>
-<td>$268.34</td>
-<td>+19.8%</td>
-<td>Q3 sequential growth guide raised to &gt;20% on patent-licensing royalties from 4 OEMs/hyperscalers</td>
-</tr>
-<tr>
-<td>GRAB</td>
-<td>$3.17</td>
-<td>+8.9%</td>
-<td>Most active; also #3 put-side UOA signature</td>
-</tr>
-<tr>
-<td>MPWR</td>
-<td>$1,380.62</td>
-<td>+8.1%</td>
-<td>StoneX initiation, Buy, $1,800 PT; 5th straight gain</td>
-</tr>
-<tr>
-<td>ONON</td>
-<td>$29.39</td>
-<td>+7.6%</td>
-<td>Investor day: Q3 guide above consensus, $1B buyback</td>
-</tr>
-<tr>
-<td>TWLO</td>
-<td>$284.53</td>
-<td>+6.9%</td>
-<td>Rosenblatt PT raised to $290; 52-week high</td>
-</tr>
-<tr>
-<td>ARM</td>
-<td>$333.20</td>
-<td>+4.3%</td>
-<td>Follows +17.2% Monday; data-center CPU narrative</td>
-</tr>
-<tr>
-<td>INTC</td>
-<td>$123.86</td>
-<td>+1.7%</td>
-<td>Most active</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Losers</strong></p>
-<table>
-<thead>
-<tr>
-<th>Ticker</th>
-<th>Close</th>
-<th>%</th>
-<th>Catalyst</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CLDX</td>
-<td>$33.51</td>
-<td>-11.6%</td>
-<td>Top loser (Google Finance); catalyst not sourced</td>
-</tr>
-<tr>
-<td>PLNT</td>
-<td>$42.60</td>
-<td>-9.5%</td>
-<td>Top loser; catalyst not sourced</td>
-</tr>
-<tr>
-<td>CMPX</td>
-<td>~$1.24</td>
-<td>Craters</td>
-<td>FDA wants a survival-benefit trial before tovecimig filing</td>
-</tr>
-<tr>
-<td>VLO</td>
-<td>$377.14</td>
-<td>-4.1%</td>
-<td>Jefferies downgrade to Hold, $401 PT; diesel export-ban talk</td>
-</tr>
-<tr>
-<td>INTU</td>
-<td>—</td>
-<td>Lower</td>
-<td>Fears Meta's Muse disrupts legacy software</td>
-</tr>
-<tr>
-<td>CSCO</td>
-<td>—</td>
-<td>Lower</td>
-<td>Piper Sandler PT cut, Neutral</td>
-</tr>
-<tr>
-<td>JPM</td>
-<td>—</td>
-<td>Lower</td>
-<td>Financials selloff on curve flattening; rotation into tech</td>
-</tr>
-<tr>
-<td>BKNG</td>
-<td>—</td>
-<td>-18.6% MTD</td>
-<td>Worst month since Jun 2022: blocked EU deal, Brent, AI-agent fears</td>
-</tr>
-</tbody>
-</table>
+            <table>
+              <thead><tr><th>Ticker</th><th class="num">Close</th><th class="num">Chg</th><th>Catalyst</th></tr></thead>
+              <tbody>
+                <tr><td class="ticker">VKTX</td><td class="num">40.85</td><td class="num up">+35.7%</td><td>VK2735 maintenance data: up to 97% of weight loss retained</td></tr>
+                <tr><td class="ticker">VICR</td><td class="num">268.34</td><td class="num up">+19.9%</td><td>Q3 guide raised to &gt;20% on patent royalties</td></tr>
+                <tr><td class="ticker">MAZE</td><td class="num">28.38</td><td class="num up">+26.8%</td><td>7.4x volume; catalyst unconfirmed</td></tr>
+                <tr><td class="ticker">SGRY</td><td class="num">15.80</td><td class="num up">+15.7%</td><td>3.2x volume</td></tr>
+                <tr><td class="ticker">INOD</td><td class="num">69.97</td><td class="num up">+14.6%</td><td>4.8x volume</td></tr>
+                <tr><td class="ticker">MPWR</td><td class="num">1,380.62</td><td class="num up">+8.0%</td><td>StoneX initiated at Buy, $1,800 target</td></tr>
+                <tr><td class="ticker">ONON</td><td class="num">29.39</td><td class="num up">+7.6%</td><td>Investor day: Q3 guide above consensus, $1B buyback</td></tr>
+                <tr><td class="ticker">TWLO</td><td class="num">284.53</td><td class="num up">+6.9%</td><td>Rosenblatt target to $290; 52-week high</td></tr>
+                <tr><td class="ticker">GRAB</td><td class="num">3.17</td><td class="num up">+8.9%</td><td>Most active (190M shares)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-6 card">
+          <div class="head"><h3>5 · Session Losers</h3><span class="tag">Named Catalysts</span></div>
+          <div class="body">
+            <table>
+              <thead><tr><th>Ticker</th><th class="num">Close</th><th class="num">Chg</th><th>Catalyst</th></tr></thead>
+              <tbody>
+                <tr><td class="ticker">XNDU</td><td class="num">5.78</td><td class="num down">&minus;21.6%</td><td>35M shares; catalyst unconfirmed</td></tr>
+                <tr><td class="ticker">EVER</td><td class="num">19.55</td><td class="num down">&minus;14.4%</td><td>Unusual volume</td></tr>
+                <tr><td class="ticker">CLDX</td><td class="num">33.51</td><td class="num down">&minus;11.6%</td><td>Unusual volume</td></tr>
+                <tr><td class="ticker">PLNT</td><td class="num">42.60</td><td class="num down">&minus;9.5%</td><td>Swept up in the Meta Muse "consumer-inertia" selling</td></tr>
+                <tr><td class="ticker">NYT</td><td class="num">65.45</td><td class="num down">&minus;7.2%</td><td>Unusual volume</td></tr>
+                <tr><td class="ticker">RCL</td><td class="num">234.89</td><td class="num down">&minus;6.1%</td><td>Trending lower</td></tr>
+                <tr><td class="ticker">VLO</td><td class="num">377.14</td><td class="num down">&minus;4.1%</td><td>Jefferies cut to Hold; diesel export-ban risk</td></tr>
+                <tr><td class="ticker">INTU</td><td class="num">&mdash;</td><td class="num down">lower</td><td>Meta Muse disruption fears</td></tr>
+                <tr><td class="ticker">CSCO</td><td class="num">&mdash;</td><td class="num down">lower</td><td>Piper Sandler cut its target</td></tr>
+                <tr><td class="ticker">CMPX</td><td class="num">1.24</td><td class="num down">cratered</td><td>FDA requires a survival trial before a BLA</td></tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
+
+      <!-- Section 5a -->
       <section id="volume-2026-09-22" class="grid">
         <div class="col-12 card">
-          <div class="head"><h3>5a · Unusual Session Volume (Sep 22 close, thetrading.tools)</h3><span class="tag">Volume · Avg. Volume · RVOL · Direction</span></div>
+          <div class="head"><h3>5a · Unusual Session Volume</h3><span class="tag">Volume · Avg. Volume · RVOL · Direction</span></div>
           <div class="body">
-<p>Source: thetrading.tools unusual-volume scanner. RVOL ≈ 1 + spike%/100. The scanner's "price change" is <strong>open-to-close</strong>, not close-to-close.</p>
-<table>
-<thead>
-<tr>
-<th>Ticker</th>
-<th>Volume</th>
-<th>Avg Vol (30D)</th>
-<th>RVOL</th>
-<th>Direction</th>
-<th>Note</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>VKTX</td>
-<td>40.76M</td>
-<td>1.99M</td>
-<td>20.4x</td>
-<td>Up</td>
-<td>Obesity maintenance data</td>
-</tr>
-<tr>
-<td>MAZE</td>
-<td>3.57M</td>
-<td>484K</td>
-<td>7.4x</td>
-<td>Up (+15.7% O→C)</td>
-<td>No news matched</td>
-</tr>
-<tr>
-<td>INOD</td>
-<td>5.31M</td>
-<td>1.10M</td>
-<td>4.8x</td>
-<td>Up (+13.3%)</td>
-<td>No news matched</td>
-</tr>
-<tr>
-<td>PS</td>
-<td>1.84M</td>
-<td>483K</td>
-<td>3.8x</td>
-<td>Up</td>
-<td>Pershing Square Q2 results</td>
-</tr>
-<tr>
-<td>SRAD</td>
-<td>6.36M</td>
-<td>1.93M</td>
-<td>3.3x</td>
-<td>Up (+6.7%)</td>
-<td>No news matched</td>
-</tr>
-<tr>
-<td>UNG</td>
-<td>45.39M</td>
-<td>13.78M</td>
-<td>3.3x</td>
-<td>Up (+5.0%)</td>
-<td>Nat gas; Iran/Hormuz headlines</td>
-</tr>
-<tr>
-<td>MANE</td>
-<td>2.13M</td>
-<td>660K</td>
-<td>3.2x</td>
-<td>Up</td>
-<td>No news matched</td>
-</tr>
-<tr>
-<td>SGRY</td>
-<td>8.11M</td>
-<td>2.55M</td>
-<td>3.2x</td>
-<td>Up (+14.6%)</td>
-<td>No news matched</td>
-</tr>
-<tr>
-<td>TNGX</td>
-<td>6.97M</td>
-<td>2.38M</td>
-<td>2.9x</td>
-<td>Up (+14.3%)</td>
-<td>No news matched</td>
-</tr>
-<tr>
-<td>FIVN</td>
-<td>5.15M</td>
-<td>1.98M</td>
-<td>2.6x</td>
-<td>Up</td>
-<td>Cantor PT raised to $40</td>
-</tr>
-<tr>
-<td>VICR</td>
-<td>1.96M</td>
-<td>828K</td>
-<td>2.4x</td>
-<td>Up</td>
-<td>Guidance raise</td>
-</tr>
-<tr>
-<td>MPWR</td>
-<td>1.45M</td>
-<td>625K</td>
-<td>2.3x</td>
-<td>Up</td>
-<td>StoneX initiation</td>
-</tr>
-<tr>
-<td>TWLO</td>
-<td>4.69M</td>
-<td>2.07M</td>
-<td>2.3x</td>
-<td>Up</td>
-<td>PT raise</td>
-</tr>
-<tr>
-<td>RMBS</td>
-<td>4.74M</td>
-<td>2.28M</td>
-<td>2.1x</td>
-<td>Up (+9.6%)</td>
-<td>Memory/interface chips with the semis bid</td>
-</tr>
-<tr>
-<td>ARM</td>
-<td>7.32M</td>
-<td>4.17M</td>
-<td>1.8x</td>
-<td>Up</td>
-<td>$2.4B traded, most on the tape</td>
-</tr>
-<tr>
-<td>ONON</td>
-<td>44.7M</td>
-<td>—</td>
-<td>4.5x (per card)</td>
-<td>Up</td>
-<td>Investor day; avg volume not in table</td>
-</tr>
-</tbody>
-</table>
+            <p><em>Sources: thetrading.tools (Sep 22 close; &ge;1.5x the 30-day average with a &ge;3% open-to-close move) and the Finviz unusual-volume screen (optionable, &gt;$300M cap). RVOL &asymp; volume &divide; 30-day average.</em></p>
+            <table>
+              <thead><tr><th>Ticker</th><th>Volume</th><th>Avg. Volume</th><th>RVOL</th><th>Direction</th><th>Note</th></tr></thead>
+              <tbody>
+                <tr><td class="ticker">VKTX</td><td class="num">40.76M</td><td class="num">1.99M</td><td class="num">20.4x</td><td class="up">Up</td><td>Obesity maintenance data</td></tr>
+                <tr><td class="ticker">MAZE</td><td class="num">3.57M</td><td class="num">484K</td><td class="num">7.4x</td><td class="up">Up</td><td>Catalyst unconfirmed</td></tr>
+                <tr><td class="ticker">INOD</td><td class="num">5.31M</td><td class="num">1.10M</td><td class="num">4.8x</td><td class="up">Up</td><td>+14.6%</td></tr>
+                <tr><td class="ticker">ONON</td><td class="num">44.7M</td><td class="num">~9.9M (derived)</td><td class="num">4.5x</td><td class="up">Up</td><td>Investor day, buyback</td></tr>
+                <tr><td class="ticker">PS</td><td class="num">1.84M</td><td class="num">483K</td><td class="num">3.8x</td><td class="up">Up</td><td>Q2 results</td></tr>
+                <tr><td class="ticker">SRAD</td><td class="num">6.36M</td><td class="num">1.93M</td><td class="num">3.3x</td><td class="up">Up</td><td>&mdash;</td></tr>
+                <tr><td class="ticker">UNG</td><td class="num">45.39M</td><td class="num">13.78M</td><td class="num">3.3x</td><td class="up">Up</td><td>Nat-gas ETF; Iran/Hormuz headlines</td></tr>
+                <tr><td class="ticker">SGRY</td><td class="num">8.11M</td><td class="num">2.55M</td><td class="num">3.2x</td><td class="up">Up</td><td>+15.7%</td></tr>
+                <tr><td class="ticker">TNGX</td><td class="num">6.97M</td><td class="num">2.38M</td><td class="num">2.9x</td><td class="up">Up</td><td>+14.3%</td></tr>
+                <tr><td class="ticker">VLO</td><td class="num">8.5M</td><td class="num">~3.0M (derived)</td><td class="num">2.8x</td><td class="down">Down</td><td>Jefferies downgrade</td></tr>
+                <tr><td class="ticker">VICR</td><td class="num">1.96M</td><td class="num">828K</td><td class="num">2.4x</td><td class="up">Up</td><td>Guidance raise</td></tr>
+                <tr><td class="ticker">MPWR</td><td class="num">1.45M</td><td class="num">625K</td><td class="num">2.3x</td><td class="up">Up</td><td>StoneX initiation</td></tr>
+                <tr><td class="ticker">TWLO</td><td class="num">4.69M</td><td class="num">2.07M</td><td class="num">2.3x</td><td class="up">Up</td><td>Target raise</td></tr>
+                <tr><td class="ticker">RMBS</td><td class="num">4.74M</td><td class="num">2.28M</td><td class="num">2.1x</td><td class="up">Up</td><td>+9.6%, chip bid</td></tr>
+                <tr><td class="ticker">ARM</td><td class="num">7.32M</td><td class="num">4.17M</td><td class="num">1.8x</td><td class="up">Up</td><td>Day 2 after +17.2% Monday</td></tr>
+                <tr><td class="ticker">XNDU</td><td class="num">35.3M</td><td class="num">Not confirmed</td><td class="num">Not confirmed</td><td class="down">Down</td><td>&minus;21.6% (Finviz)</td></tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
+
+      <!-- Section 5b -->
       <section id="rvol-2026-09-22" class="grid">
         <div class="col-12 card">
-          <div class="head"><h3>5b · High RVOL (>3x) — Multi-Session, Optionable Only</h3><span class="tag">Optionable Only · Sustained Interest</span></div>
+          <div class="head"><h3>5b · High RVOL (&gt;3x) &mdash; Multi-Session</h3><span class="tag">Optionable Only · Sustained Interest</span></div>
           <div class="body">
-<p>Multi-session confirmation is thin this run. The local archive has no Sep 16–21 articles, and the scanner's date picker didn't load prior sessions. Only ARM and GRAL can be confirmed across more than one session.</p>
-<table>
-<thead>
-<tr>
-<th>Ticker</th>
-<th>Sessions Flagged</th>
-<th>Note</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ARM</td>
-<td>2 (Sep 21 3.3x; Sep 22 1.8x)</td>
-<td>Sustained interest; Sep 21 +17.2% on 12.8M shares</td>
-</tr>
-<tr>
-<td>GRAL</td>
-<td>2+ (Sep 21 4.1x; UOA put-side 3 of last 10 sessions, streak 2)</td>
-<td>FDA advisory panel on Galleri <strong>Wed Sep 23</strong></td>
-</tr>
-<tr>
-<td>VKTX</td>
-<td>1 (Sep 22, 20.4x)</td>
-<td>Event-driven; watch for follow-through</td>
-</tr>
-<tr>
-<td>ONON</td>
-<td>1 (Sep 22, 4.5x)</td>
-<td>Investor day</td>
-</tr>
-<tr>
-<td>INOD</td>
-<td>1 (Sep 22, 4.8x)</td>
-<td>Catalyst unsourced</td>
-</tr>
-<tr>
-<td>SGRY</td>
-<td>1 (Sep 22, 3.2x)</td>
-<td>Catalyst unsourced</td>
-</tr>
-<tr>
-<td>SRAD</td>
-<td>1 (Sep 22, 3.3x)</td>
-<td>Catalyst unsourced</td>
-</tr>
-<tr>
-<td>UNG</td>
-<td>1 (Sep 22, 3.3x)</td>
-<td>ETF; energy/geopolitics</td>
-</tr>
-</tbody>
-</table>
-<p>Only 8 optionable names could be listed; PS, MAZE and MANE were excluded because optionability wasn't confirmed.</p>
+            <p><em>Cross-referenced against the local Sep 9 and Sep 15 articles and the scanner's Sep 21 notes. The archive has no files for Sep 16&ndash;21, so only 3 names have multi-session confirmation. The rest are single-session &gt;3x prints and are labeled as such.</em></p>
+            <table>
+              <thead><tr><th>Ticker</th><th>Sessions Flagged</th><th>Note</th></tr></thead>
+              <tbody>
+                <tr><td class="ticker">ARM</td><td>2 (Sep 21 3.3x; Sep 22 1.8x)</td><td>Sustained chip interest; +195% YTD</td></tr>
+                <tr><td class="ticker">GRAL</td><td>2 (Sep 21 4.1x; on the Sep 22 list)</td><td>FDA panel on Galleri Wed Sep 23</td></tr>
+                <tr><td class="ticker">TTAN</td><td>3 (Sep 8 AH, Sep 15, Sep 22)</td><td>Post-earnings repair</td></tr>
+                <tr><td class="ticker">VKTX</td><td>1 (Sep 22, 20.4x)</td><td>Watch day-2 follow-through</td></tr>
+                <tr><td class="ticker">ONON</td><td>1 (Sep 22, 4.5x)</td><td>Also #4 on the put-side options list</td></tr>
+                <tr><td class="ticker">INOD</td><td>1 (Sep 22, 4.8x)</td><td>&mdash;</td></tr>
+                <tr><td class="ticker">MAZE</td><td>1 (Sep 22, 7.4x)</td><td>&mdash;</td></tr>
+                <tr><td class="ticker">SGRY</td><td>1 (Sep 22, 3.2x)</td><td>&mdash;</td></tr>
+                <tr><td class="ticker">PS</td><td>1 (Sep 22, 3.8x)</td><td>&mdash;</td></tr>
+                <tr><td class="ticker">UNG</td><td>1 (Sep 22, 3.3x)</td><td>Also put-side options list (3/10 sessions)</td></tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
+
+      <!-- Section 5c -->
       <section id="options-2026-09-22" class="grid">
         <div class="col-12 card">
-          <div class="head"><h3>5c · Unusual Options Activity</h3><span class="tag">Benzinga + thetrading.tools composite</span></div>
+          <div class="head"><h3>5c · Unusual Options Activity</h3><span class="tag">Benzinga (4 public rows) + thetrading.tools composite</span></div>
           <div class="body">
-<p><strong>Benzinga (Updated Sep 22, 2026; fresh).</strong> Only four rows rendered on the free view:</p>
-<table>
-<thead>
-<tr>
-<th>Date</th>
-<th>Time (ET)</th>
-<th>Ticker</th>
-<th>Type</th>
-<th>Strike</th>
-<th>Exp</th>
-<th>DTE</th>
-<th>Trade Vol</th>
-<th>Day Vol</th>
-<th>Vol/OI</th>
-<th>OI</th>
-<th>Sentiment</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>09/22</td>
-<td>3:20 PM</td>
-<td>MU</td>
-<td>Call</td>
-<td>$880</td>
-<td>10/09/26</td>
-<td>16</td>
-<td>53</td>
-<td>61</td>
-<td>113</td>
-<td>54</td>
-<td>Bullish</td>
-</tr>
-<tr>
-<td>09/22</td>
-<td>3:19 PM</td>
-<td>NEM</td>
-<td>Call</td>
-<td>$155</td>
-<td>11/20/26</td>
-<td>58</td>
-<td>4,466</td>
-<td>5,002</td>
-<td>892</td>
-<td>561</td>
-<td>Bullish</td>
-</tr>
-<tr>
-<td>09/22</td>
-<td>3:19 PM</td>
-<td>FROG</td>
-<td>Call</td>
-<td>$100</td>
-<td>11/20/26</td>
-<td>58</td>
-<td>736</td>
-<td>736</td>
-<td>12267</td>
-<td>6</td>
-<td>Bullish</td>
-</tr>
-<tr>
-<td>09/22</td>
-<td>3:19 PM</td>
-<td>WDC</td>
-<td>Call</td>
-<td>$520</td>
-<td>10/30/26</td>
-<td>37</td>
-<td>199</td>
-<td>202</td>
-<td>2525</td>
-<td>8</td>
-<td>Bearish</td>
-</tr>
-</tbody>
-</table>
-<p><strong>thetrading.tools composite (as of Sep 22 close), used to reach the target count.</strong> This is a composite ranking (OTM OI growth, vol/OI and IV z-scores), not individual contract sweeps. "Call-side/put-side" marks which book was unusual, not trade direction. The scanner's own backtest shows neither list has been directionally predictive. Put-side tilt today: 15 put-side vs 7 call-side names scored ≥1.5.</p>
-<table>
-<thead>
-<tr>
-<th>Ticker</th>
-<th>Score</th>
-<th>OI Δ ($)</th>
-<th>Vol/OI</th>
-<th>IV z</th>
-<th>Spot</th>
-<th>Side</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>VLO</td>
-<td>+2.45</td>
-<td>+$516.0M</td>
-<td>0.30</td>
-<td>+3.86σ</td>
-<td>$377.14</td>
-<td>Call</td>
-</tr>
-<tr>
-<td>RGEN</td>
-<td>+2.34</td>
-<td>+$63.9M</td>
-<td>0.28</td>
-<td>+0.13σ</td>
-<td>$186.75</td>
-<td>Call</td>
-</tr>
-<tr>
-<td>GSAT</td>
-<td>+2.31</td>
-<td>+$55.6M</td>
-<td>0.07</td>
-<td>+5.00σ</td>
-<td>$82.52</td>
-<td>Call</td>
-</tr>
-<tr>
-<td>FRO</td>
-<td>+2.05</td>
-<td>+$344.5M</td>
-<td>0.06</td>
-<td>+1.89σ</td>
-<td>$47.92</td>
-<td>Call</td>
-</tr>
-<tr>
-<td>PAGP</td>
-<td>+1.87</td>
-<td>+$26.9M</td>
-<td>0.34</td>
-<td>+5.00σ</td>
-<td>$26.87</td>
-<td>Call</td>
-</tr>
-<tr>
-<td>TRTX</td>
-<td>+1.55</td>
-<td>$0</td>
-<td>0.45</td>
-<td>+5.00σ</td>
-<td>$7.19</td>
-<td>Call (6/10 repeat)</td>
-</tr>
-<tr>
-<td>ZTO</td>
-<td>+1.52</td>
-<td>+$4.7M</td>
-<td>0.42</td>
-<td>+2.37σ</td>
-<td>$19.84</td>
-<td>Call</td>
-</tr>
-<tr>
-<td>APG</td>
-<td>+1.46</td>
-<td>+$8K</td>
-<td>0.23</td>
-<td>+5.00σ</td>
-<td>$37.76</td>
-<td>Call</td>
-</tr>
-<tr>
-<td>HRMY</td>
-<td>+1.37</td>
-<td>+$12.7M</td>
-<td>0.76</td>
-<td>+0.85σ</td>
-<td>$41.53</td>
-<td>Call</td>
-</tr>
-<tr>
-<td>BRSL</td>
-<td>+2.41</td>
-<td>+$1.7M</td>
-<td>0.38</td>
-<td>+0.39σ</td>
-<td>$10.42</td>
-<td>Put</td>
-</tr>
-<tr>
-<td>MSOS</td>
-<td>+2.39</td>
-<td>+$16.2M</td>
-<td>0.35</td>
-<td>+0.34σ</td>
-<td>$5.33</td>
-<td>Put (ETF)</td>
-</tr>
-<tr>
-<td>GRAB</td>
-<td>+2.30</td>
-<td>+$28.9M</td>
-<td>0.20</td>
-<td>+3.26σ</td>
-<td>$3.16</td>
-<td>Put</td>
-</tr>
-<tr>
-<td>ONON</td>
-<td>+2.15</td>
-<td>+$124.0M</td>
-<td>0.09</td>
-<td>+4.42σ</td>
-<td>$29.39</td>
-<td>Put</td>
-</tr>
-<tr>
-<td>FNF</td>
-<td>+2.01</td>
-<td>+$28.0M</td>
-<td>0.64</td>
-<td>+1.84σ</td>
-<td>$42.55</td>
-<td>Put (4/10)</td>
-</tr>
-<tr>
-<td>IRON</td>
-<td>+1.99</td>
-<td>+$3.5M</td>
-<td>0.74</td>
-<td>+5.00σ</td>
-<td>$68.48</td>
-<td>Put (4/10)</td>
-</tr>
-<tr>
-<td>KOD</td>
-<td>+1.94</td>
-<td>+$7.2M</td>
-<td>0.83</td>
-<td>+2.52σ</td>
-<td>$33.80</td>
-<td>Put (two-sided)</td>
-</tr>
-<tr>
-<td>INDV</td>
-<td>+1.94</td>
-<td>+$19.1M</td>
-<td>0.03</td>
-<td>-0.93σ</td>
-<td>$36.19</td>
-<td>Put</td>
-</tr>
-<tr>
-<td>VZLA</td>
-<td>+1.72</td>
-<td>+$2.7M</td>
-<td>0.14</td>
-<td>+0.81σ</td>
-<td>$4.30</td>
-<td>Put</td>
-</tr>
-<tr>
-<td>GRAL</td>
-<td>+1.69</td>
-<td>+$11.9M</td>
-<td>0.17</td>
-<td>+5.00σ</td>
-<td>$108.52</td>
-<td>Put (FDA panel Wed)</td>
-</tr>
-</tbody>
-</table>
-<p>Per-contract dollar premiums were not available from either source this run.</p>
+            <p><em>Benzinga was "Updated: Sep 22, 2026" but showed only 4 rows publicly. The rest comes from the thetrading.tools composite (as of the Sep 22 close), which ranks OTM open-interest growth, vol/OI and relative IV rather than individual sweeps. Its own backtest shows the call-side list lagging the universe over 20 sessions, so read it as a map of activity, not a direction. Dollar premiums were not available.</em></p>
+            <table>
+              <thead><tr><th>Time (ET)</th><th>Ticker</th><th>Type</th><th>Strike</th><th>Exp</th><th>DTE</th><th>Trade Vol</th><th>Day Vol</th><th>Vol/OI</th><th>OI</th><th>Sentiment</th></tr></thead>
+              <tbody>
+                <tr><td>09/22 3:20 PM</td><td class="ticker">MU</td><td>CALL</td><td class="num">$880</td><td>10/09/2026</td><td class="num">16</td><td class="num">53</td><td class="num">61</td><td class="num">113</td><td class="num">54</td><td><span class="badge bull">Bullish</span></td></tr>
+                <tr><td>09/22 3:19 PM</td><td class="ticker">NEM</td><td>CALL</td><td class="num">$155</td><td>11/20/2026</td><td class="num">58</td><td class="num">4,466</td><td class="num">5,002</td><td class="num">892</td><td class="num">561</td><td><span class="badge bull">Bullish</span></td></tr>
+                <tr><td>09/22 3:19 PM</td><td class="ticker">FROG</td><td>CALL</td><td class="num">$100</td><td>11/20/2026</td><td class="num">58</td><td class="num">736</td><td class="num">736</td><td class="num">12,267</td><td class="num">6</td><td><span class="badge bull">Bullish</span></td></tr>
+                <tr><td>09/22 3:19 PM</td><td class="ticker">WDC</td><td>CALL</td><td class="num">$520</td><td>10/30/2026</td><td class="num">37</td><td class="num">199</td><td class="num">202</td><td class="num">2,525</td><td class="num">8</td><td><span class="badge bear">Bearish</span></td></tr>
+              </tbody>
+            </table>
+            <table>
+              <thead><tr><th>Ticker</th><th class="num">Composite</th><th class="num">OI &Delta; ($)</th><th class="num">Vol/OI</th><th class="num">IV z</th><th class="num">Spot</th><th>Side</th></tr></thead>
+              <tbody>
+                <tr><td class="ticker">VLO</td><td class="num">+2.45</td><td class="num">+$516.0M</td><td class="num">0.30</td><td class="num">+3.86&sigma;</td><td class="num">$377.14</td><td><span class="badge bull">Call</span></td></tr>
+                <tr><td class="ticker">RGEN</td><td class="num">+2.34</td><td class="num">+$63.9M</td><td class="num">0.28</td><td class="num">+0.13&sigma;</td><td class="num">$186.75</td><td><span class="badge bull">Call</span></td></tr>
+                <tr><td class="ticker">GSAT</td><td class="num">+2.31</td><td class="num">+$55.6M</td><td class="num">0.07</td><td class="num">+5.00&sigma;</td><td class="num">$82.52</td><td><span class="badge bull">Call</span></td></tr>
+                <tr><td class="ticker">FRO</td><td class="num">+2.05</td><td class="num">+$344.5M</td><td class="num">0.06</td><td class="num">+1.89&sigma;</td><td class="num">$47.92</td><td><span class="badge bull">Call</span></td></tr>
+                <tr><td class="ticker">PAGP</td><td class="num">+1.87</td><td class="num">+$26.9M</td><td class="num">0.34</td><td class="num">+5.00&sigma;</td><td class="num">$26.87</td><td><span class="badge bull">Call</span></td></tr>
+                <tr><td class="ticker">TRTX</td><td class="num">+1.55</td><td class="num">$0</td><td class="num">0.45</td><td class="num">+5.00&sigma;</td><td class="num">$7.19</td><td><span class="badge bull">Call (6/10)</span></td></tr>
+                <tr><td class="ticker">ZTO</td><td class="num">+1.52</td><td class="num">+$4.7M</td><td class="num">0.42</td><td class="num">+2.37&sigma;</td><td class="num">$19.84</td><td><span class="badge bull">Call</span></td></tr>
+                <tr><td class="ticker">APG</td><td class="num">+1.46</td><td class="num">+$8K</td><td class="num">0.23</td><td class="num">+5.00&sigma;</td><td class="num">$37.76</td><td><span class="badge bull">Call</span></td></tr>
+                <tr><td class="ticker">CMPX</td><td class="num">+1.45</td><td class="num">+$289K</td><td class="num">0.11</td><td class="num">+5.00&sigma;</td><td class="num">$1.24</td><td><span class="badge bull">Call</span></td></tr>
+                <tr><td class="ticker">HRMY</td><td class="num">+1.37</td><td class="num">+$12.7M</td><td class="num">0.76</td><td class="num">+0.85&sigma;</td><td class="num">$41.53</td><td><span class="badge bull">Call</span></td></tr>
+                <tr><td class="ticker">BRSL</td><td class="num">+2.41</td><td class="num">+$1.7M</td><td class="num">0.38</td><td class="num">+0.39&sigma;</td><td class="num">$10.42</td><td><span class="badge bear">Put</span></td></tr>
+                <tr><td class="ticker">MSOS</td><td class="num">+2.39</td><td class="num">+$16.2M</td><td class="num">0.35</td><td class="num">+0.34&sigma;</td><td class="num">$5.33</td><td><span class="badge bear">Put (ETF)</span></td></tr>
+                <tr><td class="ticker">GRAB</td><td class="num">+2.30</td><td class="num">+$28.9M</td><td class="num">0.20</td><td class="num">+3.26&sigma;</td><td class="num">$3.16</td><td><span class="badge bear">Put</span></td></tr>
+                <tr><td class="ticker">ONON</td><td class="num">+2.15</td><td class="num">+$124.0M</td><td class="num">0.09</td><td class="num">+4.42&sigma;</td><td class="num">$29.39</td><td><span class="badge bear">Put</span></td></tr>
+                <tr><td class="ticker">FNF</td><td class="num">+2.01</td><td class="num">+$28.0M</td><td class="num">0.64</td><td class="num">+1.84&sigma;</td><td class="num">$42.55</td><td><span class="badge bear">Put (4/10)</span></td></tr>
+                <tr><td class="ticker">IRON</td><td class="num">+1.99</td><td class="num">+$3.5M</td><td class="num">0.74</td><td class="num">+5.00&sigma;</td><td class="num">$68.48</td><td><span class="badge bear">Put (4/10)</span></td></tr>
+                <tr><td class="ticker">KOD</td><td class="num">+1.94</td><td class="num">+$7.2M</td><td class="num">0.83</td><td class="num">+2.52&sigma;</td><td class="num">$33.80</td><td><span class="badge bear">Put (two-sided)</span></td></tr>
+                <tr><td class="ticker">INDV</td><td class="num">+1.94</td><td class="num">+$19.1M</td><td class="num">0.03</td><td class="num">&minus;0.93&sigma;</td><td class="num">$36.19</td><td><span class="badge bear">Put</span></td></tr>
+                <tr><td class="ticker">VZLA</td><td class="num">+1.72</td><td class="num">+$2.7M</td><td class="num">0.14</td><td class="num">+0.81&sigma;</td><td class="num">$4.30</td><td><span class="badge bear">Put</span></td></tr>
+                <tr><td class="ticker">GRAL</td><td class="num">+1.69</td><td class="num">+$11.9M</td><td class="num">0.17</td><td class="num">+5.00&sigma;</td><td class="num">$108.52</td><td><span class="badge bear">Put (3/10)</span></td></tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
+
+      <!-- Section 5d -->
       <section id="playbook-2026-09-22" class="grid">
         <div class="col-12 card">
-          <div class="head"><h3>5d · Weekly Options Playbook — GEX-Based Setups</h3><span class="tag">InsiderFinance Gamma Exposure · Not Personalized Advice</span></div>
+          <div class="head"><h3>5d · Weekly Options Playbook &mdash; GEX-Based Setups</h3><span class="tag">InsiderFinance Gamma Exposure · Not Personalized Advice</span></div>
           <div class="body">
-<p><em>Source: InsiderFinance gamma-exposure pages, read live via Chrome on the evening of Sep 22, with spots matching Sep 22 closes/after-hours, so the snapshots are current. This reflects gamma positioning, not live order flow. </em><em>Not personalized investment advice.</em>**</p>
-<p><strong>Selection method:</strong> I checked QQQ, MU, META and ARM (QQQ is covered in Section 0). All three single names are in positive gamma, and each sits near a key GEX level with a live catalyst.</p>
-<h3>1. MU — Call-wall test into earnings (two-sided)</h3>
-<p>MU spot is $1,095.65. Net GEX is +$1.05B. The call wall and peak GEX are both <strong>$1,100</strong> (52.5K OI, <strong>+0.4%</strong>). The put wall is $800, max pain is $810, and P/C is 0.94. Catalysts: FQ4 earnings on Sep 30 AMC ($31.16 EPS consensus, ~±11% implied), Burry adding MU shorts, and a Benzinga bullish $880C 10/09 print. Positive gamma at $1,100 argues for a pin until earnings positioning takes over.</p>
-<table>
-<thead>
-<tr>
-<th>Case</th>
-<th>Entry</th>
-<th>Invalidation</th>
-<th>Target</th>
-<th>Contract (illustrative)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Bull</td>
-<td>Close &gt; $1,100</td>
-<td>Back below $1,081</td>
-<td>~$1,140 (+3.5%, measured)</td>
-<td>MU Oct 2 $1,100C (spans earnings: IV-crush risk)</td>
-</tr>
-<tr>
-<td>Bear</td>
-<td>Rejection at $1,100 + loss of $1,081</td>
-<td>Close &gt; $1,105</td>
-<td>~$1,042 (Sep 21 area)</td>
-<td>MU Oct 2 $1,060P</td>
-</tr>
-</tbody>
-</table>
-<h3>2. META — Magnet to the $750 call wall</h3>
-<p>META spot is $736.75. Net GEX is +$1.96B. The <strong>call wall and peak GEX are $750</strong> (302.1K OI, the largest wall checked, <strong>+1.8%</strong>). The put wall is $550, max pain is $640, and P/C is 0.44 (call-heavy). Catalyst: the Muse AI-agent launch, which Street commentary treats as a new revenue engine. In positive gamma, drift toward $750 is the base case, and the wall caps the move.</p>
-<table>
-<thead>
-<tr>
-<th>Entry Trigger</th>
-<th>Invalidation</th>
-<th>Target</th>
-<th>Contract (illustrative)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Hold &gt; $730 on a dip / reclaim $740</td>
-<td>Close &lt; $720 (round-number reference; not a GEX level)</td>
-<td>$750 wall</td>
-<td>META Oct 2 $740/$750 call spread</td>
-</tr>
-</tbody>
-</table>
-<h3>3. ARM — Between the $320 magnet and the $350 wall (two-sided)</h3>
-<p>ARM spot is $334.09. Net GEX is +$74.5M, which is small, so the pin is weaker. <strong>Peak GEX is $320 (-4.2%)</strong> and the <strong>call wall is $350 (+4.8%)</strong>. The put wall is $220 and max pain is $230. Catalysts: the data-center CPU narrative, +17.2% Monday on 3.3x volume, and the Trump–Xi summit. It's up 195% YTD.</p>
-<table>
-<thead>
-<tr>
-<th>Case</th>
-<th>Entry</th>
-<th>Invalidation</th>
-<th>Target</th>
-<th>Contract (illustrative)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Bull</td>
-<td>Hold &gt; $322.90 (Mon close)</td>
-<td>Close &lt; $320</td>
-<td>$350 call wall</td>
-<td>ARM Oct 2 $340C</td>
-</tr>
-<tr>
-<td>Bear</td>
-<td>Close &lt; $320 peak-GEX</td>
-<td>Close &gt; $334</td>
-<td>~$276 (pre-Monday gap, derived)</td>
-<td>ARM Oct 2 $310P</td>
-</tr>
-</tbody>
-</table>
-<p><em>These are probabilistic setups built from public positioning data. They are not a recommendation to buy or sell any security.</em></p>
+            <p><em>InsiderFinance gamma-exposure pages were read after the close, and their spot prices match Sep 22 close/after-hours prints, so the snapshots are current. This is gamma positioning, not live order flow. It is not personalized investment advice.</em></p>
+            <p><strong>Selection method:</strong> Checked QQQ (Section 0), NVDA, MU, META and ARM. The three chosen have call walls within 2% of spot, and each has a live catalyst. ARM was dropped: its call wall at $350 is +4.8% away and its peak GEX strike ($320) is below spot. Suggested expiration: Fri Oct 2 (9 DTE from Wednesday).</p>
+
+            <h4>1. NVDA &mdash; $230 call-wall pin into Trump&ndash;Xi (two-sided)</h4>
+            <p><em>Fresh (spot $228.49 matches the Sep 22 close of $228.87).</em><br>Net GEX +$2.33B (positive, damping). Call wall and peak GEX are both at <span class="num">$230</span> (+0.66%, 589.6K OI). Zero-gamma $203.98, put wall $180, max pain $195. NVDA was rejected at $230 on Sep 8, and the summit is a binary catalyst for export policy.</p>
+            <table>
+              <thead><tr><th>Case</th><th>Entry Trigger</th><th>Invalidation</th><th>Target</th><th>Contract (illustrative)</th></tr></thead>
+              <tbody>
+                <tr><td><span class="badge bull">Bull</span></td><td>Close &gt; $230.50</td><td>&lt; $227</td><td>$235&ndash;238</td><td>10/2 $235 C</td></tr>
+                <tr><td><span class="badge bear">Bear</span></td><td>Rejection at $230 plus a weak summit headline</td><td>Close &gt; $231</td><td>$222</td><td>10/2 $222.5 P</td></tr>
+              </tbody>
+            </table>
+
+            <h4>2. META &mdash; Muse momentum toward the $750 call wall</h4>
+            <p><em>Fresh (post-close snapshot).</em><br>Spot $736.75, net GEX +$1.96B. Call wall and peak GEX at <span class="num">$750</span> (+1.80%, 302.1K OI). Put wall $550, max pain $640. Put/call OI of 0.44 is bullish-skewed. The Muse AI agent launch is the catalyst, with Wall Street framing it as a new revenue engine.</p>
+            <table>
+              <thead><tr><th>Entry Trigger</th><th>Invalidation</th><th>Target</th><th>Contract (illustrative)</th></tr></thead>
+              <tbody>
+                <tr><td>Hold &gt; $735 on a pullback</td><td>Close &lt; $720</td><td>$750 (call-wall magnet)</td><td>10/2 $745 C</td></tr>
+              </tbody>
+            </table>
+
+            <h4>3. MU &mdash; $1,100 pin vs Burry short (two-sided)</h4>
+            <p><em>Fresh (post-close snapshot). Earnings timing wasn't confirmed this run, so check for IV risk.</em><br>Spot $1,095.65, net GEX +$1.05B. Call wall and peak GEX at <span class="num">$1,100</span> (+0.40%, 52.5K OI). Put wall $800, max pain $810. Burry added to his MU short, and Benzinga flagged a bullish Oct 9 $880 call print.</p>
+            <table>
+              <thead><tr><th>Case</th><th>Entry Trigger</th><th>Invalidation</th><th>Target</th><th>Contract (illustrative)</th></tr></thead>
+              <tbody>
+                <tr><td><span class="badge bull">Bull</span></td><td>Close &gt; $1,105</td><td>&lt; $1,085</td><td>$1,140</td><td>10/2 $1,120 C</td></tr>
+                <tr><td><span class="badge bear">Bear</span></td><td>Failure at $1,100 plus post-summit chip weakness</td><td>&gt; $1,110</td><td>$1,050</td><td>10/2 $1,060 P</td></tr>
+              </tbody>
+            </table>
+            <p><em>These are data-derived setups, not a recommendation to buy or sell any security. Options can lose 100% of premium.</em></p>
           </div>
         </div>
       </section>
+
+      <!-- Section 6 -->
       <section id="themes-2026-09-22" class="grid">
         <div class="col-12 card">
-          <div class="head"><h3>6 · Broader Market Themes</h3><span class="tag">Rotation · Factors · Cross-Asset</span></div>
+          <div class="head"><h3>6 · Broader Market Themes</h3><span class="tag">Rotation · Cross-Asset · Positioning</span></div>
           <div class="body">
-<ul class="tight">
-<li><strong>Rotation:</strong> Money moved out of financials and online travel (Muse disruption, a flattening curve) and into semis, AI power (MPWR, VICR) and comms services.</li>
-<li><strong>Factors:</strong> Mega-cap growth and momentum lead. Bloomberg notes the riskiest stocks are losing their performance edge as rates climb.</li>
-<li><strong>Cross-asset:</strong> Oil is down six sessions, the 10Y is back under 5%, and BTC is steady above $86K on ETF inflows. Munis are seeing record ETF inflows after the bond rout. Pimco trimmed its long-bond underweight.</li>
-<li><strong>Positioning:</strong> VIX is 14.21, and QQQ and SPX are in positive gamma. Put-side UOA tilt and QQQ P/C OI of 1.36 show hedges are still in place.</li>
-<li><strong>Narrative:</strong> AI enthusiasm is back to driving index records ("Nasdaq's rapid rise: don't wait for a pullback"). Skeptics point to Burry's shorts and SoftBank's data-center developer slowing its $50B IPO "as AI fears rise," with the Anthropic public debut ahead.</li>
-</ul>
+            <ul class="tight">
+              <li><strong>Chips and AI power lead:</strong> <span class="ticker">ARM</span>, <span class="ticker">MPWR</span>, <span class="ticker">VICR</span>, <span class="ticker">RMBS</span> +9.6%, <span class="ticker">KLIC</span> +7.3%, <span class="ticker">LSCC</span> +5.2%. Financials were weakest (~&minus;2%) on the flatter curve, and energy fell 1.1% with oil. Materials (+1.6%) and staples (+1.0%) held up.</li>
+              <li><strong>Meta Muse as a disruptor:</strong> a tailwind for <span class="ticker">META</span> and a headwind for "consumer-inertia" franchises (<span class="ticker">INTU</span>, <span class="ticker">BKNG</span> &minus;18.6% in September, travel and apparel). A new AI-loser basket is forming.</li>
+              <li><strong>Cross-asset:</strong> Oil is falling, the 10Y is stable near 4.95%, BTC is at an 8-month high on ~$1B of ETF inflows, and VIX is at 14 &mdash; all risk-on. The 2Y auction and hawkish Fed talk are the dissenters.</li>
+              <li><strong>Positioning:</strong> Burry added shorts on MU, PLTR, NBIS and SOXX. The options scanner tilted put-side (15 vs 7), and QQQ put/call OI is 1.36. Hedges are building under a record.</li>
+              <li><strong>Narrative:</strong> "Don't wait for a pullback" headlines are appearing. IPO stress is building too: SoftBank's DC developer slowed its $50B IPO, and derailed IPO plans are rattling the market ahead of Anthropic's debut.</li>
+            </ul>
           </div>
         </div>
       </section>
+
+      <!-- Section 7 -->
       <section id="secondary-2026-09-22" class="grid">
         <div class="col-12 card">
-          <div class="head"><h3>7 · Secondary Names with Fresh News</h3><span class="tag">Fresh News</span></div>
+          <div class="head"><h3>7 · Secondary Names with Fresh News</h3><span class="tag">Wires · Benzinga · Finviz</span></div>
           <div class="body">
-<ul class="tight">
-<li><strong>IONQ:</strong> Up after hours after demonstrating a real-time quantum error decoder.</li>
-<li><strong>AMGN:</strong> Phase 3 dazodalibep hit its primary endpoint in Sjögren's; filing awaits a second trial.</li>
-<li><strong>OMER:</strong> Cantor upgraded to Overweight with a $22 PT.</li>
-<li><strong>VRTX:</strong> Encouraging kidney-drug data.</li>
-<li><strong>PLUG:</strong> Expanding its New Zealand hydrogen push.</li>
-<li><strong>GRAL:</strong> FDA advisory panel Wed Sep 23; briefing docs flagged no major issues.</li>
-<li><strong>Apple:</strong> Talk of joining the $5T club.</li>
-<li><strong>Paramount:</strong> $49B debt sale to kick off.</li>
-<li><strong>JPM card business:</strong> Drawing private-credit interest.</li>
-<li><strong>Kalshi:</strong> $5B of near-identical trades drew scrutiny; the CFTC warned on "mention" contracts.</li>
-<li><strong>Burry:</strong> Added shorts in MU, PLTR, NBIS and SOXX, plus five consumer and retail names.</li>
-</ul>
+            <ul class="tight">
+              <li><span class="ticker">IONQ</span>: real-time quantum error-decoder demo; closed +0.6%.</li>
+              <li><span class="ticker">HPQ</span>: bracing for weaker PC demand in 2027.</li>
+              <li><span class="ticker">AMGN</span>: dazodalibep hit its Phase 3 Sj&ouml;gren's endpoint; filing awaits a second trial.</li>
+              <li><span class="ticker">OMER</span>: Cantor upgraded to Overweight, $22 target (+7.5%).</li>
+              <li><span class="ticker">GRAL</span>: FDA advisory panel on Galleri Wed Sep 23; briefing docs flagged no significant issues.</li>
+              <li><span class="ticker">WBD</span>/Paramount: $49B debt sale kicks off after lawsuits end.</li>
+              <li><span class="ticker">NEM</span>: bullish Nov $155 call block (~5K contracts).</li>
+              <li><span class="ticker">ORCL</span>: Wipro deal weighed against layoffs and Project Jupiter debt stress.</li>
+              <li><span class="ticker">PLUG</span>: New Zealand hydrogen expansion. <span class="ticker">VRTX</span>: kidney drug data.</li>
+            </ul>
           </div>
         </div>
       </section>
+
+      <!-- Section 8 -->
       <section id="digest-2026-09-22" class="grid">
         <div class="col-12 card">
-          <div class="head"><h3>8 · YouTube / Channel &amp; Discord Digest</h3><span class="tag">Discord skipped</span></div>
+          <div class="head"><h3>8 · YouTube / Channel &amp; Discord Digest</h3><span class="tag">Community · Commentary</span></div>
           <div class="body">
-<ul class="tight">
-<li><strong>Discord digest skipped.</strong> Chrome was reachable, but the upgrades-downgrades channel returned no readable message content, and the target server didn't appear in the logged-in sidebar. Tier A and Tier B channels were not read.</li>
-<li><strong>Consensus (news flow):</strong> AI and lower oil are driving records; buy dips.</li>
-<li><strong>Contrarian:</strong> Burry's shorts, curve-flattening warnings ("bond market flashing a warning"), the hawkish Fed path, and overbought RSI.</li>
-</ul>
+            <p><strong>Discord digest skipped.</strong> The channel pages loaded, but no message content was visible to the signed-in session. No tracked YouTube commentary was sourced this run. Wire consensus: "AI recharges as oil swoons." The contrarian read is that the bond market is flashing a warning and financials and cyclicals are already wobbling.</p>
           </div>
         </div>
       </section>
+
+      <!-- Section 9 -->
       <section id="week-2026-09-22" class="grid">
         <div class="col-12 card">
-          <div class="head"><h3>9 · Week Ahead</h3><span class="tag">Data · Earnings · Policy</span></div>
+          <div class="head"><h3>9 · Week Ahead</h3><span class="tag">Data · Earnings · Policy · Technicals</span></div>
           <div class="body">
-<ul class="tight">
-<li><strong>Data:</strong> Flash PMIs and the 5Y auction (Wed). Claims, new home sales and the 7Y auction (Thu). Durables and UMich final (Fri). <strong>Core PCE, GDP final and Chicago PMI (Wed Sep 30).</strong> ISM Mfg (Oct 1). <strong>NFP (Oct 2; cons 90K vs 162K prior).</strong></li>
-<li><strong>Earnings:</strong> GIS, PAYX, CTAS (Wed). <strong>MU (Sep 30 AMC).</strong></li>
-<li><strong>Policy:</strong> Trump–Xi summit, UNGA and Iran talks. Fed speakers daily (Barr, Williams, Barkin, Hammack, Paulson). Possible diesel export ban.</li>
-<li><strong>Technicals:</strong> QQQ $748 wall / $741 support / $732.82 flip. NDX RSI nearing 70. Quarter-end Sep 30.</li>
-</ul>
+            <ul class="tight">
+              <li><strong>Data:</strong> Flash PMIs (Wed), claims and new home sales (Thu), durable goods and UMich (Fri). Next week brings <strong>PCE (Sep 30)</strong> and <strong>NFP (Oct 2)</strong>.</li>
+              <li><strong>Supply:</strong> 5Y (Wed) and 7Y (Thu) auctions after a weak 2Y.</li>
+              <li><strong>Policy:</strong> Trump&ndash;Xi, UNGA/Iran, a possible diesel export ban, and heavy Fedspeak (Barr, Williams, Barkin, Hammack, Paulson).</li>
+              <li><strong>Earnings:</strong> CTAS, PAYX, GIS (Wed); DRI, SNX, COST (Thu).</li>
+              <li><strong>Technicals:</strong> QQQ $748 call wall vs $732.82 zero-gamma; SPX record at 7,816.70.</li>
+            </ul>
           </div>
         </div>
       </section>
+
+      <!-- Section 10 -->
       <section id="watchlist-2026-09-22" class="grid">
         <div class="col-12 card">
           <div class="head"><h3>10 · Watchlist &amp; Levels</h3><span class="tag">Setup · Entry · Invalidation · Target</span></div>
           <div class="body">
-<table>
-<thead>
-<tr>
-<th>Ticker</th>
-<th>Setup</th>
-<th>Entry</th>
-<th>Invalidation</th>
-<th>Target</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>QQQ</td>
-<td>Call-wall breakout or pullback buy</td>
-<td>&gt; $748.65 or hold $741</td>
-<td>&lt; $741 / &lt; $732.82</td>
-<td>~$755 / $748</td>
-</tr>
-<tr>
-<td>SPY/ES</td>
-<td>Flat pivot, tech-led</td>
-<td>Hold SPX 7,765</td>
-<td>&lt; 7,700 (round)</td>
-<td>New highs with QQQ</td>
-</tr>
-<tr>
-<td>MU</td>
-<td>$1,100 pin into earnings</td>
-<td>&gt; $1,100</td>
-<td>&lt; $1,081</td>
-<td>~$1,140</td>
-</tr>
-<tr>
-<td>META</td>
-<td>$750 magnet</td>
-<td>Hold $730–740</td>
-<td>&lt; $720</td>
-<td>$750</td>
-</tr>
-<tr>
-<td>ARM</td>
-<td>$320–350 range</td>
-<td>&gt; $322.90</td>
-<td>&lt; $320</td>
-<td>$350</td>
-</tr>
-<tr>
-<td>GRAL</td>
-<td>FDA panel binary (Wed)</td>
-<td>No directional read</td>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr>
-<td>VKTX</td>
-<td>Day-2 follow-through</td>
-<td>Hold &gt; $38 (O→C base)</td>
-<td>&lt; gap midpoint</td>
-<td>Momentum</td>
-</tr>
-<tr>
-<td>VLO</td>
-<td>Downgrade + diesel-ban risk</td>
-<td>Short &lt; $377</td>
-<td>&gt; $385</td>
-<td>Not sourced</td>
-</tr>
-</tbody>
-</table>
+            <table>
+              <thead><tr><th>Ticker</th><th>Setup</th><th class="num">Entry</th><th class="num">Invalidation</th><th class="num">Target</th></tr></thead>
+              <tbody>
+                <tr><td class="ticker">QQQ</td><td>Breakout vs call-wall pin</td><td class="num">&gt; 748.65</td><td class="num">&lt; 741</td><td class="num">755&ndash;760</td></tr>
+                <tr><td class="ticker">NVDA</td><td>$230 wall into Trump&ndash;Xi</td><td class="num">&gt; 230.50</td><td class="num">&lt; 227</td><td class="num">235&ndash;238</td></tr>
+                <tr><td class="ticker">META</td><td>Muse momentum</td><td class="num">Hold 735</td><td class="num">&lt; 720</td><td class="num">750</td></tr>
+                <tr><td class="ticker">MU</td><td>$1,100 pin, two-sided</td><td class="num">&gt; 1,105</td><td class="num">&lt; 1,085</td><td class="num">1,140</td></tr>
+                <tr><td class="ticker">VKTX</td><td>Day 2 after +35.7%</td><td class="num">Hold &gt; 38</td><td class="num">&lt; 35</td><td class="num">42.79 high</td></tr>
+                <tr><td class="ticker">VICR</td><td>Guide-raise follow-through</td><td class="num">&gt; 270</td><td class="num">&lt; 255</td><td class="num">300</td></tr>
+                <tr><td class="ticker">MPWR</td><td>Initiation momentum</td><td class="num">&gt; 1,385</td><td class="num">&lt; 1,340</td><td class="num">1,450</td></tr>
+                <tr><td class="ticker">ONON</td><td>Buyback floor</td><td class="num">Hold &gt; 28.50</td><td class="num">&lt; 27</td><td class="num">32</td></tr>
+                <tr><td class="ticker">VLO</td><td>Downgrade plus diesel-ban risk</td><td class="num">Short &lt; 375</td><td class="num">&gt; 385</td><td class="num">360</td></tr>
+                <tr><td class="ticker">GRAL</td><td>FDA panel Wed (binary)</td><td class="num">Event</td><td class="num">&mdash;</td><td class="num">&mdash;</td></tr>
+              </tbody>
+            </table>
+            <p><em>QQQ, NVDA, META and MU levels are anchored to sourced GEX strikes. The other rows use round-number levels around today's sourced prices. None of this is personalized advice.</em></p>
           </div>
         </div>
       </section>
+
+      <!-- Section 11 -->
       <section id="risks-2026-09-22" class="grid">
         <div class="col-12 card">
-          <div class="head"><h3>11 · Risks &amp; What Could Break the Thesis</h3><span class="tag">What Could Break the Thesis</span></div>
+          <div class="head"><h3>11 · Risks &amp; What Could Break the Thesis</h3><span class="tag">Invalidation Map</span></div>
           <div class="body">
-<ol class="tight">
-<li>Trump–Xi summit disappoints on chips or export controls. The semis rally was positioned for it.</li>
-<li>Iran talks collapse and oil re-spikes above $100 WTI, reversing the main driver.</li>
-<li>Rates: weak 5Y/7Y auctions or hot PMIs push the 10Y back through 5%. The Fed has already signaled another hike.</li>
-<li>Positioning: a close below $732.82 flips QQQ to negative gamma, and narrow breadth leaves little support.</li>
-<li>MU earnings on Sep 30 (±11% implied) as the memory-cycle referendum; MU is ~5% of QQQ.</li>
-</ol>
+            <ul class="tight">
+              <li><span class="badge high">High</span> <strong>Trump&ndash;Xi disappoints on chips.</strong> The semis rally was bought into the summit, so "sell the news" is plausible.</li>
+              <li><strong>Overbought and narrow:</strong> hourly RSI is near 90 (CFD read), the Dow and financials are falling, and breadth is only ~44%.</li>
+              <li><strong>Rates:</strong> the 2Y auction printed 4.787%. With 5Y/7Y supply and a Fed projecting one more hike, the 10Y could push back through 5%.</li>
+              <li><strong>Iran/Hormuz reversal:</strong> Trump threatened Iran at the UN, and oil's five-day slide could snap back.</li>
+              <li><strong>Hedges building:</strong> Burry's shorts, QQQ put/call OI of 1.36, and the scanner's put tilt.</li>
+              <li><strong>IPO and credit stress:</strong> SoftBank's DC IPO slowdown, Apollo capping redemptions again, and CFTC scrutiny of Kalshi.</li>
+            </ul>
           </div>
         </div>
       </section>
-      <p><em>Sources: Google Finance, Finviz, Trading Economics, Benzinga, stockanalysis.com, thetrading.tools, InsiderFinance, WebSearch. Not investment advice.</em></p>
+
     </div>
   </details>
 </article>
